@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.334" height="16.001" viewBox="0 0 13.334 16.001">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-1{stroke:#6c757d}.cls-2{fill:#6c757d}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="dcr" transform="translate(-1021 -354)">
+        <g id="Rectangle_688" class="cls-1" data-name="Rectangle 688" transform="translate(1021 354)">
+            <rect width="13.334" height="16.001" class="cls-3" rx="2"/>
+            <rect width="12.334" height="15.001" x=".5" y=".5" class="cls-4" rx="1.5"/>
+        </g>
+        <rect id="Rectangle_689" width="6" height="1" class="cls-2" data-name="Rectangle 689" rx=".5" transform="translate(1023.667 357.333)"/>
+        <rect id="Rectangle_690" width="7.334" height="1" class="cls-2" data-name="Rectangle 690" rx=".5" transform="translate(1023.667 360)"/>
+        <rect id="Rectangle_691" width="7.334" height="1" class="cls-2" data-name="Rectangle 691" rx=".5" transform="translate(1023.667 362.667)"/>
+    </g>
+</svg>

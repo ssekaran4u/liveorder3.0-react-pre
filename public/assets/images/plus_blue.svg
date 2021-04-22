@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+    <defs>
+        <style>
+            .cls-1{fill:#1b84e7;stroke:#1b84e7}.cls-2{stroke:none}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="plus" transform="translate(-1126 -458.5)">
+        <g id="Rectangle_922" class="cls-1" data-name="Rectangle 922" transform="translate(1126 462)">
+            <rect width="8" height="1" class="cls-2" rx=".5"/>
+            <rect width="7" x=".5" y=".5" class="cls-3"/>
+        </g>
+        <g id="Rectangle_923" class="cls-1" data-name="Rectangle 923" transform="rotate(90 336 794.5)">
+            <rect width="8" height="1" class="cls-2" rx=".5"/>
+            <rect width="7" x=".5" y=".5" class="cls-3"/>
+        </g>
+    </g>
+</svg>

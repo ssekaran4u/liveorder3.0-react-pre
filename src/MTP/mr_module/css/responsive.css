@@ -1,0 +1,547 @@
+@media (max-width:575px){
+    .mr-calender .mr-calender-card .dropdowns{
+        width: 40%;
+    }
+    .mr-calender .target-planned th{
+        padding: 0.8rem 0.5em;
+    }
+    .daywise-template .date-wise-template-card .mb-3{
+        max-width: 20em;
+    }
+    .mr-module-doctor-profile .doctor-name{
+        width: 50% !important;
+    }
+    .mr-module-doctor-profile .chemist-name{
+        width: 40% !important;
+    }
+    .mr-module-doctor-profile .stockist-name{
+        width: 50% !important;
+    }
+    .mr-module-doctor-profile .hospital-name{
+        width: 40% !important;
+    }
+    .mr-module-doctor-profile .others{
+        width: 40% !important;
+    }
+    .mr-module-doctor-profile .form-group{
+        display: none;
+    }
+    .mr-module-doctor-profile .singledropdown .ui.fluid.dropdown>.dropdown.icon {
+        padding: 7px 11px !important;
+    }
+    .mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .txt{
+        padding-top: 6.15em !important;
+    }
+    .mr-calender .tour-plan .calender-container{
+        /* width: 70%;
+        min-width: 525px; */
+        min-width:100px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        /* min-width: 75px; */
+        min-width:46px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        /* min-width: 75px; */
+        min-width:25px;
+        height: 3.5em;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        /* min-width: 75px; */
+        min-width:25px;
+        height:3.5em !important;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 525px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        /* width: 15%;
+        min-width: 100px; */
+        min-width:0;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        /* width: 14.28%;
+        min-width: 75px; */
+        min-width: 28px;
+    }
+    .mr-calender .target-planned{
+        overflow-x: scroll;
+    }
+    .mr-calender .target-planned .images{
+        padding-right: 0;
+    }
+    .mr-module-delete-popup .alertSubTextDelete{
+        padding: 0.865em 1.385em !important;
+    }
+    .mr-module-delete-popup .modal-content{
+        margin: 1em !important;
+    }
+    .mr-module-delete-popup .alertBtns{
+        padding-top: 1em !important;
+    }
+    .mr-calender .tour-plan .calender-container .date-box{
+        width: 100% !important;
+        padding: 0; 
+    }
+    .mr-calender .tour-plan .calender-container .holiday-container{
+        width: 100% !important;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 9% !important;
+    }
+    .mr-calender .tour-plan .tour-plan-body{
+        overflow-x: hidden;
+    }
+    .userCircleGreen{
+        border:none;
+        margin:0;
+    }
+    .userCircleRed{
+        border:none;
+        margin:0;
+    }
+    .userCircleYellow{
+        border:none;
+        margin:0;
+    }
+    .userCirclePurple{
+        border:none;
+        margin:0;
+    }
+    .userCircleBlue{
+        border:none;
+        margin:0;
+    }
+    .mr-calender .tour-plan .calender-container tbody tr td:nth-child(7) .date-box{
+        padding:0;
+    }
+    .mr-calender .tour-plan .calender-container .leave-container{
+        padding:0;
+    }
+    .mr-calender .tour-plan .calender-container .holiday-container{
+        padding:0;
+    }
+    .newEntryBtn{
+        padding: 0.3em 1em !important;
+        margin-right:1em;
+        margin-left:1em;
+    }
+    .informationIndicators div{
+        padding-left:1em !important;
+        padding-bottom: 10px;
+    }
+    .patchWidth{
+        width:250px !important;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .mr-calender .mr-calender-card .dropdowns{
+        width: 35%;
+        margin-right: 3em;
+    }
+    .mr-calender .target-planned th{
+        padding: 0.8rem 0.5em;
+    }
+    .mr-module-doctor-profile .doctor-name{
+        width: 30% !important;
+    }
+    .mr-module-doctor-profile .chemist-name{
+        width: 30% !important;
+    }
+    .mr-module-doctor-profile .stockist-name{
+        width: 30% !important;
+    }
+    .mr-module-doctor-profile .hospital-name{
+        width: 30% !important;
+    }
+    .mr-module-doctor-profile .others{
+        width: 30% !important;
+    }
+    .mr-module-doctor-profile .form-group{
+        display: none;
+    }
+    .mr-module-doctor-profile .singledropdown .ui.fluid.dropdown>.dropdown.icon {
+        padding: 8px 11px !important;
+    }
+    .mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .txt{
+        padding-top: 4.65em !important;
+    }
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 630px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 90px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 90px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 90px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 630px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 90px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+      .totalcallpopup{
+        position: absolute;
+        left:26%;
+    }
+    .totalcallpopup::after{
+        left: calc(50% - 53%);
+        bottom:42%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .totalcallpopup{
+        position: absolute;
+        left:23%;
+    }
+    .totalcallpopup::after{
+        left: calc(50% - 53%);
+        bottom:46%;
+    }
+    .mr-module-doctor-profile .doctor-name{
+        width: 15% !important;
+    }
+    .mr-module-doctor-profile .chemist-name{
+        width: 20% !important;
+    }
+    .mr-module-doctor-profile .stockist-name{
+        width: 20% !important;
+    }
+    .mr-module-doctor-profile .hospital-name{
+        width: 20% !important;
+    }
+    .mr-module-doctor-profile .others{
+        width: 10% !important;
+    }
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 686px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 98px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 110px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 98px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 98px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 98px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 686px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 98px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 110px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 98px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 665px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 95px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 95px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 95px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 665px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 100px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 95px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media (min-width:1200px) and (max-width:1299px){
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 770px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 155px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 155px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 110px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 110px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 110px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 770px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 155px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 155px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 110px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media (min-width: 1300px) and (max-width: 1499px) {
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 840px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 160px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 160px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 120px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 120px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 120px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 840px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 160px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 160px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 120px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 1015px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 190px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 190px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 145px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 145px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 145px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 1015px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 190px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 190px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 145px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media (min-width: 1600px) and (max-width: 1910px) {
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 1050px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 1050px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 150px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}
+@media screen and (min-width: 1920px) {
+    .mr-calender .tour-plan .calender-container{
+        width: 70%;
+        min-width: 1050px;
+    }
+    .mr-calender .tour-plan .patches{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .week-details{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .calender-container table thead tr td{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .calender-container .blank-boxes{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .calender-container .date-container{
+        min-width: 150px;
+    }
+    .mr-calender .tour-plan .meetings-total-list{
+        width: 70%;
+        min-width: 1050px;
+    }
+    .mr-calender .tour-plan .meetings-total-heading{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .meetings-grand-total{
+        width: 15%;
+        min-width: 210px;
+    }
+    .mr-calender .tour-plan .meetings-total-list li{
+        width: 14.28%;
+        min-width: 150px;
+    }
+    .showShortName{
+        display:none !important;
+      }
+}

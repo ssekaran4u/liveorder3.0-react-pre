@@ -1,0 +1,11 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+   .ctable-1{
+   	overflow-x:scroll;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+   .table2 .table thead th{
+    min-width: 15em !important;
+}
+}

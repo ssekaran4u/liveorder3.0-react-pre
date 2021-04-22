@@ -1,0 +1,98 @@
+.sfa-common-datatable-card{
+    border-radius: 6px;
+    box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.06);
+    border: none;
+}
+.sfa-common-datatable .form-group{
+    margin-bottom: 1em;
+}
+.sfa-common-datatable .sfa-table-order-row{
+    padding: 1.375em 2em 0.2em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sfa-common-datatable .table-pagination .form-group{
+    font-family: 'OpenSans-Regular';
+    color: #343a40;
+    letter-spacing: 0.06em;
+    font-size: 1em;
+    padding-right: 0.75em;
+}
+.sfa-common-datatable .table-pagination .form-group .form-control{
+    margin: 0 0.75em;
+    border-radius: 0.5em;
+    width: 5em;
+    height: 2.5em;
+}
+.sfa-common-datatable .form-group .form-control:focus{
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+.sfa-common-datatable .search-bar .form-group .form-control{
+    height: 2.5em;
+    border-radius: 0.5em;
+    color: #343a40;
+    font-family: 'OpenSans-Regular';
+}
+.sfa-common-datatable .search-bar .form-group .form-control::placeholder{
+    color: #343a40;
+    font-size: 0.875em;
+}
+.sfa-common-datatable .search-bar{
+    width: 15em;
+}
+.sfa-common-datatable .search-bar .input-group-btn{
+    display: none;
+}
+.sfa-common-datatable .datatable .table thead th{
+    font-family: 'OpenSans-Bold';
+    border-bottom: solid 1px #f1f1f1;
+    border-color: #f1f1f1;
+    font-size: .875em;
+    padding: 1em 0em 1em 2.28em;
+    background-color: #f8f9fa;
+    white-space: nowrap;
+    position: sticky;
+    top: -1px;
+    vertical-align: bottom;
+    text-transform: capitalize !important;
+}
+.sfa-common-datatable .datatable .table td{
+    font-size: .875em;
+    color: #6c757d;
+    font-family: 'OpenSans-SemiBold';
+    padding: 1.28em 0em 1.28em 2.28em;
+    white-space: nowrap;
+    text-transform: none !important;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-transform: capitalize !important;
+}
+.sfa-common-datatable .common-table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    max-height: 38em;
+}
+.sfa-common-datatable .datatable .table{
+    margin: 0;
+    font-size: 1em;
+    color: #343a40;
+}
+.sfa-common-datatable .table-buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sfa-common-datatable .datatable-heading{
+    padding: 2em 2em 0.4em 1.5em;
+    color: #343a40;
+    letter-spacing: 0.05em;
+    font-family: 'OpenSans-Bold';
+    display: flex;
+    justify-content: space-between;
+}
+.sfa-common-datatable .fullScreen-image img{
+    width: 1em;
+    height: 1em;
+}

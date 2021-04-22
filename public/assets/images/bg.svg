@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+    <defs>
+        <style>
+            .cls-1{fill:url(#radial-gradient)}
+        </style>
+        <radialGradient id="radial-gradient" cx=".394" cy=".622" r="1.381" gradientTransform="matrix(.585 .352 -.101 .429 .226 .216)">
+            <stop offset="0" stop-color="#1515af"/>
+            <stop offset="1" stop-color="#3f73f8"/>
+        </radialGradient>
+    </defs>
+    <path id="bg" d="M0 0h1280v800H0z" class="cls-1"/>
+</svg>

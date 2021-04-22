@@ -1,0 +1,168 @@
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+/* Extra Small Devices, Phones */
+
+@media screen and (max-width: 575px) {
+    .disCovred{
+        margin-top:10px;
+    }
+    .kcovragelabel{
+        font-size:12px;
+    }
+    .lastMonthTitle{
+        padding:0;
+    }
+    .kamg .admin_leastfocus_graph{
+        margin-top: 1.68em;
+    }
+    .coverMobile{
+        font-size:12px;
+    }
+    .KamClaimTable .other-ops .form-group input{
+        height:2.9em !important;
+        margin-left:1.5em;
+    }
+    .inventoryScroll{
+        overflow-x:scroll;
+    }
+    .kmb10{
+        margin-bottom:0.625em;
+        margin-left:10px;
+    }
+    .shoppingcartpad{
+        padding-left:1.625em;
+        padding-bottom:0.625em;
+    }
+    .mobilecatpad{
+        padding-bottom:0.625em;
+    }
+    .kamMarginLeft20{
+        margin-left:1.625em;
+    }
+    .pullTop{
+        margin-top:-14px !important;
+    }
+    .brandResponsive{
+        margin-left:0.625em;
+    }
+    .claimresponsive{
+        margin-left:1.625em;
+    }
+    .monthsummry1{
+        margin-right:0 !important;
+    }
+    .mt15{
+        margin-top:0 !important;
+    }
+    .topdistResponsivepad{
+        margin-bottom:0.625em;
+        margin-left:1.625em;
+    }
+    .kam-stockiest-profile .fullScreen-image{
+        align-items: flex-start !important;
+        padding-top: .5em;
+    }
+    .kam-stockiest-profile .menu-dots{
+        align-items: flex-start !important;
+        padding-top: 1em;
+    }
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 100% !important;
+        padding: .625em 1em !important;
+    }
+    .kam-user-hierarchy .user-heirarchy-button{
+        width: 20% !important;
+        padding: .625em 1em !important;
+    }
+    .kam-user-hierarchy .error-user-heirarchy-button{
+        width: 20% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 75% !important;
+        padding: .625em 1em !important;
+    }
+    
+}
+/*small devices*/
+@media (min-width: 576px) and (max-width: 767px) {
+    /* .kam-stockiest-profile .fullScreen-image{
+        align-items: flex-start !important;
+        padding-top: .5em;
+    }
+    .kam-stockiest-profile .menu-dots{
+        align-items: flex-start !important;
+        padding-top: 1em;
+    } */
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 40% !important;
+    }
+    .kam-user-hierarchy .user-heirarchy-button{
+        width: 15% !important;
+    }
+    .kam-user-hierarchy .error-user-heirarchy-button{
+        width: 15% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 40% !important;
+    }
+}
+
+/*Medium Devices, */
+@media (min-width: 768px) and (max-width: 991px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 45% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 45% !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 30% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 30% !important;
+    }
+}
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 30% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 30% !important;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1499px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 28% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 28% !important;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 25% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 25% !important;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1910px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 20% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 20% !important;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .kam-user-hierarchy .user-heirarchy-field-containers{
+        width: 20% !important;
+    }
+    .kam-distributor-mapping .distributor-mapping-field-containers{
+        width: 20% !important;
+    }
+}

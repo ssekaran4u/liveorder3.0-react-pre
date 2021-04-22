@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.233" height="25.999" viewBox="0 0 30.233 25.999">
+    <defs>
+        <style>
+            .cls-1{fill:#b51f2e}
+        </style>
+    </defs>
+    <g id="danger" transform="translate(0 -35.857)">
+        <g id="Group_790" data-name="Group 790" transform="translate(0 35.857)">
+            <g id="Group_789" data-name="Group 789">
+                <path id="Path_2592" d="M29.844 57.738l-12.4-20.567a2.716 2.716 0 0 0-4.652 0L.389 57.738a2.716 2.716 0 0 0 2.326 4.119h24.8a2.716 2.716 0 0 0 2.326-4.119zm-1.675 1.77a.749.749 0 0 1-.651.38H2.715a.748.748 0 0 1-.64-1.134l12.4-20.567a.748.748 0 0 1 1.281 0l12.4 20.567a.749.749 0 0 1 .013.754z" class="cls-1" data-name="Path 2592" transform="translate(0 -35.857)"/>
+            </g>
+        </g>
+        <g id="Group_792" data-name="Group 792" transform="translate(13.791 43.949)">
+            <g id="Group_791" data-name="Group 791">
+                <path id="Path_2593" d="M234.913 173.005c-.75 0-1.335.4-1.335 1.116 0 2.176.256 5.3.256 7.48 0 .567.494.8 1.079.8.439 0 1.061-.238 1.061-.8 0-2.176.256-5.3.256-7.48a1.175 1.175 0 0 0-1.317-1.116z" class="cls-1" data-name="Path 2593" transform="translate(-233.578 -173.005)"/>
+            </g>
+        </g>
+        <g id="Group_794" data-name="Group 794" transform="translate(13.736 54.599)">
+            <g id="Group_793" data-name="Group 793">
+                <path id="Path_2594" d="M234.059 353.306a1.408 1.408 0 1 0 0 2.816 1.408 1.408 0 0 0 0-2.816z" class="cls-1" data-name="Path 2594" transform="translate(-232.651 -353.306)"/>
+            </g>
+        </g>
+    </g>
+</svg>

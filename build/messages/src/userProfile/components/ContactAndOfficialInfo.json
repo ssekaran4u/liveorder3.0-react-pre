@@ -1,0 +1,30 @@
+[
+  {
+    "id": "user_profile.container.oficialinfo",
+    "defaultMessage": "CONTACT & OFFICIAL INFO"
+  },
+  {
+    "id": "user_profile.container.oficialmobile",
+    "defaultMessage": "Mobile Number"
+  },
+  {
+    "id": "user_profile.container.oficialemail",
+    "defaultMessage": "E-mail Address"
+  },
+  {
+    "id": "user_profile.container.reportingmanager",
+    "defaultMessage": "Reporting Manager"
+  },
+  {
+    "id": "user_profile.container.department",
+    "defaultMessage": "Department"
+  },
+  {
+    "id": "user_profile.container.employeetype",
+    "defaultMessage": "Employee Type"
+  },
+  {
+    "id": "user_profile.container.officialfax",
+    "defaultMessage": "FAX Number"
+  }
+]

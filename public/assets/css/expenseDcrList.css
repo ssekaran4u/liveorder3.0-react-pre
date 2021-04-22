@@ -1,0 +1,198 @@
+.expense_dcr_list .expense_dcr_list_card{
+    border: none;
+    border-radius: 0.4em;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+.expense_dcr_list .expense_dcr_table_heading{
+    color: #343a40;
+    font-family: "OpenSans-Bold";
+    letter-spacing: 0.1em;
+    padding: 1.5em;
+}
+.expense_dcr_list .expense_dcr_list_table{
+    width: 100%;
+    overflow-x: auto;
+}
+.expense_dcr_list .expense_dcr_list_table table{
+    width: 100%;
+}
+.expense_dcr_list table thead{
+    width: 100%;
+}
+.expense_dcr_list table thead tr{
+    background: #f8f9fa;
+}
+.expense_dcr_list table thead th{
+    padding: 0.85em 1.5em;
+    font-family: "OpenSans-Bold";
+    color: #343a40;
+}
+.expense_dcr_list table thead th .header-txt{
+    font-size: 0.875em;
+}
+.expense_dcr_list table tbody tr td{
+    padding: 0.85em 1.5em;
+    font-family: "OpenSans-SemiBold";
+    color: #6c757d;
+}
+.expense_dcr_list table tbody tr{
+    border-bottom: solid 0.5px #6c757d66;
+    border-top: solid 0.5px #6c757d66;
+}
+.expense_dcr_list table tbody tr .body_txt{
+    font-size: 0.85em;
+}
+.expense_dcr_list table .action_head{
+    width: 4em;
+}
+.expense_dcr_list table .dcr_head{
+    min-width: 7em;
+}
+.expense_dcr_list table .place_head{
+    min-width: 9.5em;
+}
+.expense_dcr_list table .worked_head{
+    min-width: 9em;
+}
+.expense_dcr_list .stay_head{
+    min-width: 9em;
+}
+.expense_dcr_list .type_head{
+    min-width: 8em;
+}
+.expense_dcr_list .remarks_head{
+    min-width: 7em;
+}
+.expense_dcr_list .reason_head{
+    min-width: 7em;
+}
+.expense_dcr_list .plus_img{
+    width: 1.15em;
+    height: 1.15em;
+}
+.expense_dcr_list .center_aligned{
+    text-align: center;
+}
+.expense_dcr_list .name_list_container{
+    background-color: #dfdfdf1C;
+    border-radius: 0.35em;
+    padding: 1em;
+    width: 100%;
+    min-height: fit-content;
+    height: 100%;
+}
+.expense_dcr_list .doc-list-container{
+    display: flex;
+    align-items: center;
+    color: #f49917;
+    font-family: "OpenSans-SemiBold";
+}
+.expense_dcr_list .doc-list-container.che{
+    color: #dc3545;
+}
+.expense_dcr_list .doc-list-container.stk{
+    color: #00b7b7;
+}
+.expense_dcr_list .doc-list-container img{
+    padding-right: 0.5em;
+    align-items: center;
+}
+.expense_dcr_list .doc_name{
+    display: flex;
+    align-items: center;
+    margin: 1em 1em 0 0;
+    color: #343a40;
+    font-family: "OpenSans-SemiBold";
+    min-width: 15em;
+}
+.expense_dcr_list .yellow_circle{
+    background-color: #f49917;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+.expense_dcr_list .yellow_circle.red{
+    background-color: #dc3545;
+}
+.expense_dcr_list .yellow_circle.green{
+    background-color: #00b7b7;
+}
+.expense_dcr_list .doc_name .doc_name_txt{
+    font-size: 0.85em;
+}
+.expense_dcr_list .list_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link_list{
+    color: #007bff;
+}
+.link_list{
+    color: #007bff;
+}
+.link_list.hover{
+    color: #007bff;
+    cursor: pointer;
+}
+.link_list.hover:hover{
+    color: #4183c4;
+}
+.expense_dcr_list .sub_row{
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

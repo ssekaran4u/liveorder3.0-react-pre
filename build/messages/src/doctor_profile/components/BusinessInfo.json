@@ -1,0 +1,50 @@
+[
+  {
+    "id": "doctor_profile.container.bussinfo",
+    "defaultMessage": "BUSINEES  INFO"
+  },
+  {
+    "id": "doctor_profile.container.noofpatient",
+    "defaultMessage": "No. of patient per day"
+  },
+  {
+    "id": "doctor_profile.container.currentbusinees",
+    "defaultMessage": "Current Businees"
+  },
+  {
+    "id": "doctor_profile.container.busineespotential",
+    "defaultMessage": "Business Potential"
+  },
+  {
+    "id": "doctor_profile.container.prescribing",
+    "defaultMessage": "Doctor Prescribing"
+  },
+  {
+    "id": "doctor_profile.container.purchasing",
+    "defaultMessage": "Doctor Purchasing"
+  },
+  {
+    "id": "doctor_profile.container.clinicaddressheading",
+    "defaultMessage": "CLINIC ADDRESS"
+  },
+  {
+    "id": "doctor_profile.container.clinicname",
+    "defaultMessage": "Clinic/Hospital Name"
+  },
+  {
+    "id": "doctor_profile.container.clinicarea",
+    "defaultMessage": "Clinic Area"
+  },
+  {
+    "id": "doctor_profile.container.clinicsubarea",
+    "defaultMessage": "Clinic Subarea"
+  },
+  {
+    "id": "doctor_profile.container.clinicfullarea",
+    "defaultMessage": "Address"
+  },
+  {
+    "id": "doctor_profile.container.cpincode",
+    "defaultMessage": "Pin Code"
+  }
+]

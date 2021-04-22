@@ -1,0 +1,666 @@
+.no-detail-button:disabled {
+  display: flex;
+  border-radius: 250px;
+  background-image: linear-gradient(to right, #1b84e7, #6f42c1 99%);
+  opacity: 1;
+  border: none;
+  margin-right: 1.25em;
+  font-size: 0.93em;
+  font-family: 'OpenSans-SemiBold';
+  letter-spacing: .7px;
+  min-width: 9em;
+  height: 2.9em;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-label input{
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 1.8px;
+}
+.checkbox-label .checkbox-custom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+}
+.checkbox-label .checkbox-custom::after{
+  position: absolute;
+  content: '';
+  top: 1.5em;
+  left: 1.5em;
+  height: 0;
+  width: 0;
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  border-width: 0 3px 3px 0;
+  opacity: 1;
+  -webkit-transform: rotate(0deg)scale(0);
+  -ms-transform: rotate(0deg)scale(0);
+  transform: rotate(0deg)scale(0);
+}
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  clear: both;
+}
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: transparent;
+  border-radius: 3px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 1px solid #FFFFFF;
+}
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 1px 1px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.mr-module-page .main-heading .sub-content span{
+  color: #1b84e7;
+}
+.daywise-template .date-wise-template-card{
+  margin-top: 0.25em;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+  padding: 1.25em;
+}
+.daywise-template .headings{
+  font-size: 0.8em;
+  font-family: 'OpenSans-SemiBold';
+  color: #6c757d;
+  letter-spacing: 0.01em;
+  padding-bottom: 0.55em;
+}
+.daywise-template .date-wise-template-card .mb-3{
+  font-family: 'OpenSans-Regular';
+  letter-spacing: 0.01em;
+}
+.daywise-template .date-wise-template-card .mb-3 input::placeholder{
+  font-size: 0.8em;
+  color: #6c757d99;
+}
+.daywise-template .btn-outline-secondary{
+  border: solid 0.5px #6c757d66;
+  border-left-style: none;
+}
+.daywise-template .form-control:focus{
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+.daywise-template .input-group-append:focus{
+  outline: none;
+}
+.daywise-template .btn-outline-secondary:not(:disabled):not(.disabled):active{
+  background-color: transparent;
+  border: solid 0.5px #6c757d66;
+}
+.daywise-template .btn-outline-secondary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+.daywise-template .btn-outline-secondary:hover{
+  background-color: transparent;
+}
+.daywise-template .btn-outline-secondary:focus {
+  box-shadow: none;
+}
+.daywise-template .button-column{
+  display: flex;
+  align-items: center;
+}
+.daywise-template .submit-button{
+  height: calc(1.5em + .75rem + 2px);
+  margin-top: 0.55em;
+  width: 7em;
+  border-radius: 4px;
+  border: solid 0.5px #1b84e7;
+  background-color: #1b84e7;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'OpenSans-SemiBold';
+}
+.daywise-template .submit-button .text{
+  font-size: 0.85em;
+  letter-spacing: .06em;
+}
+.daywise-template button:focus{
+  outline: none;
+}
+.mr-module-doctor-profile .doctor-profile-container{
+  border: none;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  margin-top: 0.25em;
+  padding-left: 2em;
+  background: #ffffff;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+.mr-module-doctor-profile .li-link{
+  font-family: 'OpenSans-Regular';
+  color: #343a40;
+  letter-spacing: .05em;
+  padding: 0.8em 0;
+  border-bottom: solid 3px transparent;
+}
+.mr-module-doctor-profile .active-li-link{
+  color: #1b84e7;
+  font-family: 'OpenSans-SemiBold';
+  border-bottom: solid 3px #1b84e7;
+  padding: 0.8em 0;
+  letter-spacing: .09em;
+}
+.mr-module-doctor-profile .doctor-name{
+  display: flex;
+  justify-content: center;
+  width: 13%;
+}
+.mr-module-doctor-profile .chemist-name{
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+.mr-module-doctor-profile .stockist-name{
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+.mr-module-doctor-profile .hospital-name{
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+.mr-module-doctor-profile .others{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+.mr-module-doctor-profile .ul-link{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mr-module-doctor-profile .doctors-details{
+  background-color: #fff;
+  margin-top: 26px;
+  border: 1px solid rgba(108, 117, 125,0.1);
+  border-radius: 8px;
+  box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.table-checkbox-label input, .header-checkbox-label input{
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 1.8px;
+}
+.table-checkbox-label .table-checkbox-custom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid 1px #6c757d;
+}
+.table-checkbox-label .table-checkbox-custom::after{
+  position: absolute;
+  content: '';
+  top: 1.25em;
+  left: 1.25em;
+  height: 0;
+  width: 0;
+  border-radius: 3px;
+  border: solid 1px #6c757d;
+  border-width: 0 3px 3px 0;
+  opacity: 1;
+  -webkit-transform: rotate(0deg)scale(0);
+  -ms-transform: rotate(0deg)scale(0);
+  transform: rotate(0deg)scale(0);
+}
+.table-checkbox-label {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1.5em;
+  height: 1.25em;
+  width: 1.25em;
+  clear: both;
+}
+.table-checkbox-label input:checked ~ .table-checkbox-custom {
+  background-color: #1b84e7;
+  border-radius: 3px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: solid 1px #1b84e7;
+}
+.table-checkbox-label input:checked ~ .table-checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid 1px #ffffff;
+  border-width: 0 1px 1px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.header-checkbox-label .header-checkbox-custom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid 1px #6c757d;
+}
+.header-checkbox-label .header-checkbox-custom::after{
+  position: absolute;
+  content: '';
+  top: 1.25em;
+  left: 1.25em;
+  height: 0;
+  width: 0;
+  border-radius: 3px;
+  border: solid 1px #6c757d;
+  border-width: 0 3px 3px 0;
+  opacity: 1;
+  -webkit-transform: rotate(0deg)scale(0);
+  -ms-transform: rotate(0deg)scale(0);
+  transform: rotate(0deg)scale(0);
+}
+.header-checkbox-label {
+  display: inline-block;
+  position: relative;
+  margin: 0 !important;
+  /* margin-right: 1em; */
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1.25em;
+  height: 1.25em;
+  width: 1.25em;
+  clear: both;
+}
+.header-checkbox-label input:checked ~ .header-checkbox-custom {
+  background-color: #1b84e7;
+  border-radius: 3px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: solid 1px #1b84e7;
+}
+.header-checkbox-label input:checked ~ .header-checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid 1px #ffffff;
+  border-width: 0 1px 1px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.mr-module-doctor-profile .completed-button{
+  width: 6.5em;
+  height: 1.8em;
+  border-radius: 3px;
+  border: solid 1px #00b7b7;
+  background-color: #00b7b7;
+  color: #ffffff;
+  font-family: 'OpenSans-Regular';
+  font-size: 1em;
+}
+.mr-module-doctor-profile .excess-button{
+  width: 6.5em;
+  height: 1.8em;
+  border-radius: 3px;
+  border: solid 1px #dc3545;
+  background-color: #dc3545;
+  color: #ffffff;
+  font-family: 'OpenSans-Regular';
+  font-size: 1em;
+}
+.mr-module-doctor-profile .nextPlan-button{
+  width: 6.5em;
+  height: 1.8em;
+  border-radius: 3px;
+  border: solid 1px #f49917;
+  background-color: #f49917;
+  color: #ffffff;
+  font-family: 'OpenSans-Regular';
+  font-size: 1em;
+}
+.mr-module-doctor-profile .datatable .table thead th {
+  z-index: 2;
+  text-transform: lowercase;
+}
+.mr-module-doctor-profile .datatable .table thead th::first-line{
+  
+  text-transform: capitalize;
+}
+.mr-module-doctor-profile .time{
+  text-transform: uppercase;
+}
+.mr-module-doctor-profile .mr-module-doctor-profile-text{
+  color: #343a40;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  padding-right: 1.5em;
+}
+.mr-module-doctor-profile .mr-module-doctor-profile-heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1.5em 1.8em 1.5em;
+}
+.mr-module-doctor-profile .mr-module-pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 2em 1.5em;
+}
+.mr-module-doctor-profile-pagination{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.mr-module-doctor-profile .form-group{
+  font-family: 'OpenSans-Regular';
+}
+.mr-module-doctor-profile .pagination-diff .form-control{
+  margin: 0 0.9em;
+}
+.mr-module-doctor-profile .mr-module-doctor-profile-pagination button{
+  border-radius: 8px;
+  background-color: #00b7b7;
+  height: 2.5em;
+  width: 9em;
+  box-shadow: none;
+  border: none;
+  font-family: 'OpenSans-SemiBold';
+  color: #ffffff;
+  margin-right: 1.5em;
+}
+.mr-module-doctor-profile .mr-module-doctor-profile-pagination button:focus{
+  outline: none;
+}
+.mr-module-doctor-profile .mr-module-doctor-profile-pagination button .btn-txt{
+  font-size: 0.85em;
+  letter-spacing: .09em;
+}
+.mr-module-doctor-profile-pagination .search-field{
+  padding-right: 1.5em;
+  border-left: none;
+  width: 14em;
+}
+.mr-module-doctor-profile-pagination .search-field .mb-3{
+  margin: 0 !important;
+}
+.mr-module-doctor-profile .search-field .input-group-text {
+  background-color: transparent;
+  padding-right: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.mr-module-doctor-profile .search-field .form-control{
+  border-left: 0;
+}
+.mr-module-doctor-profile .chemist-details{
+  background-color: #fff;
+  margin-top: 26px;
+  border: 1px solid rgba(108, 117, 125,0.1);
+  border-radius: 8px;
+  box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.mr-module-doctor-profile .datatable .table td {
+  text-transform: capitalize;
+}
+.mr-module-doctor-profile .singledropdown .ui.fluid.dropdown>.dropdown.icon {
+  padding: 10px;
+}
+.mr-module-doctor-profile .ui.selection.dropdown {
+  padding: 0 0 0 1em!important;
+  display: flex;
+  align-items: center;
+}
+.mr-module-doctor-profile .mr-module-margin25{
+  margin-top: 0 !important;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs{
+  border: none;
+  background: #ffffff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 2px 1px 20px 0 rgba(0, 0, 0, 0.06);
+  padding-left: 0.85em;
+}
+.mr-module-doctor-profile .otherMeetingHeading{
+  background-color: #f8f9fa80;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active img{
+  display: none;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .txt{
+  font-size: 0.8em;
+  padding-top: .47em;
+  text-align: center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link:focus{
+  border: none;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link:hover{
+  border: none;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link{
+  font-family: 'OpenSans-SemiBold';
+  color: #6c757d;
+  border: none;
+  padding: 1.08em;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .meeting-data{
+  background-image: url("../../../../public/assets/images/meeting-blue.svg");
+  height: 5em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .txt{
+  padding-top: 3.7em;
+  text-align: center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .admin-data{
+  background-image: url("../../../../public/assets/images/admin-blue.svg");
+  height: 5em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .campaign-data{
+  background-image: url("../../../../public/assets/images/campaign-blue.svg");
+  height: 5em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .camp-data{
+  background-image: url("../../../../public/assets/images/camp_blue.svg");
+  height: 5em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link.active .others-data{
+  background-image: url("../../../../public/assets/images/others-blue.svg");
+  height: 5em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .meeting-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 4em;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .admin-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 4em;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .campaign-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 4em;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .camp-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 4em;
+}
+.mr-module-doctor-profile .others-tab .nav-tabs .nav-link .others-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 4em;
+}
+.mr-module-delete-popup .modal-content{
+  margin: 3.5em;
+  font-family: 'OpenSans-SemiBold';
+}
+.mr-module-delete-popup .alertText{
+  padding-top: 1em;
+}
+.mr-module-delete-popup .alertSubTextDelete{
+  padding: 0.865em 4.385em;
+  line-height: 1.6em;
+}
+.mr-module-delete-popup .alertBtns{
+  padding-top: 1.75em;
+}
+.mr-module-delete-popup .cancelDelete{
+  width: 6em;
+  height: 2.5em;
+  opacity: 0.95;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #df5a4b 0%, #dc3545 100%);;
+  border: none;
+  margin: 0 0.375em;
+}
+.mr-module-delete-popup .okDelete{
+  width: 6em;
+  height: 2.5em;
+  opacity: 0.95;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #1b84e7 0%, #1515af 100%);
+  border: none;
+  margin: 0 0.375em;
+}
+.mr-module-delete-popup .alertImgPad img{
+  width: 5.2em;
+  height: 4.5em;
+}
+.mr-module-delete-popup .txt-btn{
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+}
+.mr-module-delete-popup .successImgPad img{
+  width: 7.2em;
+  height: 7.2em;
+}
+.mr-module-delete-popup .successImgPad{
+  padding-top: 3em;
+}
+.mr-module-delete-popup .successText{
+  color: #1caf9a;
+  font-size: 0.875em;
+  padding-top: 2.86em;
+  font-family: 'OpenSans-SemiBold';
+}
+.mr-module-delete-popup .successSubText{
+  padding-top: 1.25em;
+  padding-bottom: 2.5em;
+  font-family: 'OpenSans-Regular';
+  letter-spacing: 0.08em;
+}
+.mr-module-delete-popup .successTxt{
+  color: #343a40;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+.mr-module-delete-popup .success-text{
+  color: #6c757d;
+  font-size: 0.75em;
+}
+.mr-module-delete-popup .done-btn{
+  opacity: 1;
+  height: 3.7em;
+  width: 20em;
+}
+.mr-module-delete-popup .done-btn .txt-btn{
+  font-family: 'Roboto-Bold';
+  font-size: 1em;
+}
+.mr-module-page .mr-module-doctor-profile .doctor-profile-container  .nav-link.active{
+  color: #1b84e7;
+  font-family: 'OpenSans-SemiBold';
+  border-bottom: .25em solid #1b84e7;
+}
+.mr-module-page .mr-module-doctor-profile .nav-tabs .nav-link{
+  background: transparent;
+  border: none;
+  padding: 0.875em 0;
+  margin-right: 2.5em;
+  letter-spacing: 0.08em;
+  color: #343a40;
+  font-family: 'OpenSans-Regular';
+  text-align: center;
+}
+.mr-module-page .next-plan-days{
+  min-width: 288px;
+  position: absolute;
+  left: 57em;
+}
+.mr-module-page .next-plan-days .weekdays{
+  display: flex;
+}
+.mr-module-page .next-plan-days .weekdays-name{
+  display: flex;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="prefix__CLOSE" transform="translate(-1200 -68)">
+        <g id="prefix__Rectangle_722" data-name="Rectangle 722" transform="translate(1200 68)" style="fill:#dc3545;stroke:#dc3545">
+            <rect width="24" height="24" rx="4" style="stroke:none"/>
+            <rect width="23" height="23" x=".5" y=".5" rx="3.5" style="fill:none"/>
+        </g>
+        <path id="prefix__cancel" d="M4.541 4L7.886.654a.384.384 0 1 0-.543-.542L4 3.456.654.112a.384.384 0 1 0-.542.543L3.456 4 .112 7.343a.383.383 0 1 0 .542.542L4 4.541l3.343 3.344a.383.383 0 1 0 .542-.542z" transform="translate(1208.039 76.04)" style="fill:#f8f9fa;stroke:#f8f9fa;stroke-width:.5px;fill-rule:evenodd"/>
+    </g>
+</svg>

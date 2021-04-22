@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17.077" viewBox="0 0 17 17.077">
+    <defs>
+        <style>
+            .cls-1{fill:#6c757d;stroke:#6c757d;fill-rule:evenodd}
+        </style>
+    </defs>
+    <path id="cancel" d="M9.084 8l6.69-6.69A.767.767 0 0 0 14.689.224L8 6.914 1.309.225A.767.767 0 0 0 .224 1.31L6.914 8 .225 14.689a.767.767 0 1 0 1.084 1.085L8 9.084l6.69 6.69a.767.767 0 0 0 1.084-1.085z" class="cls-1" transform="translate(.501 .578)"/>
+</svg>

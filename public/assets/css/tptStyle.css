@@ -1,0 +1,880 @@
+.targetHeader {
+    background-color: #fff;
+    margin-top: 26px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+.targetHeader1{
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+.hide-tablehead-btn10 {
+    font-size: .875em;
+    font-family: "OpenSans-Regular";
+    background-image: linear-gradient(to right, #1b84e7, #00b7b7);
+    color: #fff;
+    padding: .4em .91em;
+    border: 0;
+    border-radius: 6px;
+    margin: 0 2.28em 0 0em;
+    width: 157px;
+    text-align: center;
+}
+
+.targetPlannedList {
+    background-color: #fff;
+    /* border: 1px solid rgba(108, 117, 125,0.1); */
+    border-radius: 8px;
+}
+
+.touplanhead {
+    color: #1b84e7;
+    font-weight: 600;
+    font-family: 'OpenSans-semiBold';
+    font-size: 16px;
+    padding: 2em 1em 2em 2em;
+    letter-spacing: 0.96px;
+    margin:0 ;
+}
+/* ====================================================================================================== */
+.calanderTable td {
+    width: 100px;
+    height: 110px;
+    box-sizing: border-box;
+  }
+  
+  .week {
+    color: #1b84e7;
+    /* background-color: #f8f9fa; */
+    text-align: center;
+    font-weight: 600;
+    font-family: opensans-semibold;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .calanderTable th {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size:0.875em;
+  }
+   
+  .areaLinks {
+    list-style-type: none;
+    font-size: 14px;
+    /* font-weight: 600; */
+    padding: 1em 0em;
+    overflow: hidden;
+    /* text-align: center; */
+    font-family: opensans-semibold;
+    padding-left:0.625em;
+  }
+
+  .areaLink {
+      color: #6c757d;
+      cursor: pointer;
+    }  
+    .areaLink:hover{
+      /* background-color:rgb(27, 132, 231,0.1); */
+      color:#1b84e7;
+      border-radius:5px;
+      /* margin:0 5px; */
+    }  
+
+  .calanderWeeklyDetail{
+    display: flex;
+    flex-wrap: wrap;
+    /* width:70px; */
+    justify-content: flex-end;
+    flex-direction: row;
+    vertical-align: bottom;
+
+  }
+
+  .calanderWeeklyDetail .doctorYellow {
+    border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 14px 16px 5px;
+    font-weight: 600;
+    color: #f49917;
+    border: 1px solid #f49917;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    /* margin-right:3px; */
+    margin: 3px 0px 0px 5px;
+   
+  }
+
+  .calanderWeeklyDetail .stockistGreen {
+    border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 14px 16px 5px;
+    font-weight: 600;
+    color: #00b7b7;
+    border: 1px solid #00b7b7;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 3px 0px 0px 5px;
+  }
+
+  .calanderWeeklyDetail .chemistRed {
+    /* border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 16px 16px 3px;
+    font-weight: 600;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 3px; */
+
+    border-radius: 50%;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 14px 16px 5px;
+    font-weight: 600;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 3px 0px 0px 5px;
+    z-index:-1 !important;
+
+    
+  }
+
+  .calanderWeeklyDetail .hospitalPurple {
+    /* border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 14px 16px 5px;
+    font-weight: 600;
+    color: #1515af;
+    border: 1px solid #1515af;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer; */
+    /* margin-top: 3px; */
+
+    border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding:3px 14px 16px 5px;
+    font-weight: 600;
+    color: #1515af;
+    border: 1px solid #1515af;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 3px 0px 0px 5px;
+    z-index:-1;
+  }
+
+  .calanderWeeklyDetail .otherBlue {
+    /* border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 16px 16px 3px;
+    font-weight: 600;
+    color: #1b84e7;
+    border: 1px solid #1b84e7;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 3px 3px; */
+
+    border-radius: 50px;
+    width: 18px;
+    height: 18px; 
+    padding: 3px 14px 16px 5px;
+    font-weight: 600;
+    color:rgb(111,66,193,0.5);
+    /* color: #1b84e7; */
+    /* border: 1px solid #1b84e7; */
+    border:1px solid rgb(111,66,193,0.5);
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 3px 0px 0px 5px;
+    
+  }
+
+   .callPlannedDetails {
+    padding: 20px 0px 20px 32px;
+    font-size: 13px;
+  }
+
+  .iconDenotion {
+    padding: 20px 32px 20px 0px;
+    line-height: 1;
+    letter-spacing: 1.68px;
+    text-align: left;
+    /* font-weight: 600; */
+    color: #414141;
+    font-size: 14px;
+  }
+
+  .DenotionIcon {
+    padding-right: 10px;
+  }
+
+  /* ================================================================================================================ */
+
+  .doctorNameList {
+    background-color: #fff;
+    margin-top: 26px;
+    border-radius: 8px;
+  }
+
+  .customCheckBox {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: solid 1px #6c757d;
+  }
+
+  .headingTitle {
+    width: 342px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0.69;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #343a40;
+  }
+
+.submitPlanButton {
+    border: 1px solid #00b7b7 !important;
+    border-radius: 8px;
+    height: 2.85em;
+    /* background-color: transparent !important; */
+    font-size: .875em;
+    padding: .375em .91em;
+    margin-left: .625em;
+    margin-right: 0;
+    margin-bottom: .625em;
+    color: #fff;
+    font-weight: 600;
+    background-color: #00b7b7;
+    font-family:"OpenSans-Semibold" ;
+  }
+
+  .nextPlanModal {
+    width: 250px;
+    /* height: 108px; */
+    border-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    border: solid 0.5px #dfdfdf;
+    background-color: var(--white);
+
+    position: relative;
+    margin-left:-170px;
+    z-index:999;
+    overflow: visible;
+   
+    /* cursor: pointer; */
+  }
+  
+  .nextPlanModal .nextPlanHeading {
+    width: 48px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: #6c757d;
+    padding: 10px 130px 0px 130px;
+  }
+  
+  
+   .nextPlanModal .nextPlanWeek {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .nextPlanModal .nextPlanWeek .weeksIn {
+    width: 20px;
+    height: 19px;
+    font-size: 14px;
+    padding: 15px 23px;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6c757d;
+    cursor: pointer;
+  }
+  
+  .nextPlanModal .nextPlanWeek .weeksIn:hover{
+    color: #1b84e7;
+  }
+
+  .partiallyActiveTextYellow10 {
+    background-color: #f49917;
+    color: white;
+    padding: 0.187em .5em;
+    /* font-size: 14px; */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================================================================================= */
+
+.totalWeeksDetails {
+  width: 251px;
+  height: 203px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--white);
+  border-top: 2px solid #6c757d;
+}
+
+.totalWeeksDetails .totalCalls {
+  /* width: 76px; */
+  height: 17px;
+  font-size: 12px;
+  line-height: 0.83;
+  text-align: left;
+  color: #343a40;
+  font-weight: 600;
+  padding-top: 17px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.totalWeeksDetails .meetingUsersTow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.totalWeeksDetails .meetingUsersTow span {
+    font-weight: 100;
+}
+
+.totalWeeksDetails .meetingUsersTow .meetPersonIcon {
+  padding-right: 12px;
+}
+
+.endUserDetails {
+  width: 240px;
+  min-height: 140px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  /* border-top: 2px solid #dc3545; */
+  z-index:1000 !important;
+  position: relative;
+    left: 25px;
+    top: -50px; 
+    direction: ltr;
+    /* margin-top:-50px;
+    margin-left:20px; */
+  
+}
+.endUserDetails::before{
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 128px);
+  border-right: 8px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  /* margin-left:-8px;
+  margin-top:30px; */
+}
+
+.endUserDetails .totalCalls {
+  /* width: 76px; */
+  height: 17px;
+  font-size: 12px;
+  line-height: 0.83;
+  text-align: left;
+  color: #343a40;
+  font-weight: 600;
+  font-family: opensans-semibold;
+  padding:1em 0em 1em 1em;
+}
+
+.endUserDetails .meetingUsersTow {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 10px 25px; */
+  padding:1em 0em 1em 1em;
+}
+
+.endUserDetails .meetingUsersTow span {
+  width: 121px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.56px;
+  text-align: left;
+  color: #495057;
+}
+
+/* ======================================================================== */
+
+.noDetailList {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.noDetailList button {
+    margin-top: 26px;
+}
+
+.myFormSearch{
+    margin-right: 20px;
+}
+
+.otherMeeting {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+.otherMeetingHeading {
+    padding: 17px 0px 17px 24px;
+    color: #1b84e7;
+    border-bottom: 2px solid #1b84e7;
+    text-transform: capitalize;
+    background-color: #f8f9fa;
+}
+
+.otherMeetingForm {
+
+  padding: 44px 81.5px 44px 26.5px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #6c757d;
+
+}
+
+.tourP{
+  padding:0.625em 1.25em;
+  color:#fff !important;
+  border-radius:  981px;
+  background-image: linear-gradient(to right, #1b84e7, #6f42c1);
+  font-size: 14px;
+  margin-right: 20px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 0.79;
+  margin-top: -2px;
+  cursor: pointer;
+}
+.tourP .custom-control-label{
+  color:#fff;
+  padding-top:0.187em;
+  font-size: .75em;
+  letter-spacing: 1.44px;
+  font-family: "OpenSans-Regular";
+  line-height: 2
+}
+.weekheadCheck .custom-control{
+    padding-top:0.937em;
+}
+.docttable .datatable .table td{
+  padding: 1em 0em 0.625em 2.28em;
+}
+.docttable .table thead th{
+  vertical-align: middle;
+}
+.docttable .datatable .table thead th{
+  padding:0px 0px 0px 2.28em;
+  z-index:1000;
+}
+.pb24{
+  padding-bottom: 24px;
+}
+.docttable .tbody-default{
+  background-color: #fff;
+}
+.docheader{
+  background-color: #fff;
+}
+.wekkbottom{
+  /* margin-top:10px; */
+  border-top: 1px solid gray;
+}
+.addto{
+  text-align: center;
+  padding:10px 0px 10px 0px;
+}
+.addto::first-letter{
+  text-transform: uppercase;
+}
+.weekspan{
+  padding:0px 10px;
+  
+}
+.weekpad{
+  padding-left:1em;
+  font-size: 14px;
+  line-height: 1.79;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.borderspan{
+  padding-bottom:5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.16);;
+}
+.padtop8{
+  padding-top:0.5em;
+  padding-bottom:0.625em;
+}
+.firtDay{
+  text-transform: capitalize;
+}
+
+.toursubarea{
+  max-height:526px;
+  overflow-y:scroll ;
+  scrollbar-width: none;
+}
+.toursubarea::-webkit-scrollbar { 
+  display: none;
+}
+.serachPatch{
+  position: relative;
+    bottom: 2.0625em;
+    left:0.5em;
+}
+.patchInput::placeholder{
+  color: #343a40;
+  font-size:14px;
+  line-height: 1.36;
+  /* padding-left:1em; */
+}
+.patchInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  line-height: 2.7;
+}
+.patchInput::-moz-placeholder { /* Firefox 19+ */
+  line-height: 2.7;
+}
+.patchInput:-ms-input-placeholder { /* IE 10+ */
+  line-height: 2.7;
+}
+.patchInput:-moz-placeholder { /* Firefox 18- */
+  line-height: 2.7;
+}
+.mt24{
+  margin-top:1.5em;
+}
+.patchInput{
+    border: 1px solid #6c757d50;
+    height: 3.33em;
+    letter-spacing: .6px;
+    padding: 0 0em 0em 3em;
+    border-radius: 4px;
+    color: #6c757d;
+    font-size: .75em;
+    /* width: 200px; */
+}
+.calTable .table-bordered{
+  border:none;
+  /* box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.16); */
+}
+.tableShadow{
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+.stptab.nav-tabs .nav-link{
+  text-transform: capitalize;;
+}
+.userDetailsPanel{
+  display: hidden;;
+}
+.chemistRed:hover{
+  /* display: inline-block; */
+}
+.endpopup{
+  position: relative;
+  /* top:-50px;
+  left:30px; */
+}
+.endpopup::after{
+  content: "";
+    display: block;
+    position: absolute;
+    top:30px;
+    left: calc(50% - 8px);
+    border-right:8px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+.usepic{
+  /* padding-right:.625em; */
+  border:2px solid yellow;
+  border-radius:50%;
+}
+.boldhead{
+  font-weight: bold;
+}
+.bottomtoTop{
+  position: relative;
+  top:70px;
+}
+.calTable .table td, .table th{
+  padding: .75rem 0.25em;
+  position: relative;
+}
+.totalpopup{
+  position: absolute;
+  /* left: 324px;
+  bottom: 51px; */
+}
+.totalpopup:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 138px;
+  left: calc(50% - 134px);
+  border-right:8px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.totalcallspan{
+  cursor: pointer;
+}
+/* .toursubarea li { background: green; } */
+.toursubarea li:nth-child(odd) { background: #f8f9fa; }
+.activeWeek{
+  color:#1b84e7
+}
+.greenBorder{
+  border-top:2px solid #1caf9a;
+}
+.yellowBorder{
+  border-top:2px solid #f49917;
+}
+.purpleBorder{
+  border-top:2px solid #1515af;
+}
+.redBorder{
+  border-top:2px solid #dc3545;
+}
+.blueBorder{
+  border-top:2px solid #1b84e7;
+}
+.greenPicBorder{
+  border:2px solid #1caf9a;
+  border-radius:50%;
+}
+.yellowPicBorder{
+  border:2px solid #f49917;
+  border-radius:50%;
+}
+.purplePicBorder{
+  border:2px solid #1515af;
+  border-radius:50%;
+}
+.redPicBorder{
+  border:2px solid #dc3545;
+  border-radius:50%;
+}
+.bluePicBorder{
+  /* border:2px solid #1b84e7; */
+  border:2px solid rgb(111,66,193,0.5);
+  border-radius:50%;
+}
+.activeSubArealink{
+  color:#1b84e7 !important;
+  background-color: rgb(27,132,231,0.1) !important;
+  border-radius: 5px;
+}
+.tourP .custom-control-input:checked~.custom-control-label::before{
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
+.tourP .custom-control-label::bef1b84e7ore{
+  background-color: transparent;
+  border: #fff solid 2px;
+}
+.nodetail .customized-label{
+  text-transform: lowercase;
+}
+.nodetail .customized-label::first-letter{
+  text-transform: capitalize;
+}
+.tptUserName{
+  text-transform: lowercase;
+  font-size:14px;
+  /* padding-left:0.625em; */
+  color: #495057;
+  letter-spacing: 0.56px;
+  font-weight: normal;
+  /* padding-top:5px; */
+  /* width:300px;  */
+   display: inline-block;
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding-left:0.625em;
+  padding-top:6px;
+  /* border:1px solid red; */
+  text-align: left;
+}
+.fullnameView{
+  /* display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis; */
+}
+.tptUserName::first-letter{
+  text-transform: capitalize;
+}
+.boldV{
+  font-weight: bold;
+  font-family: 'OpenSans-Bold';
+  color:#343a40;
+}
+.calTable table tr td{
+  position:relative;
+  
+}
+.userNameCircle{
+    width:30px;
+    height:30px;
+    padding-top:6px;
+}
+.chemistPicBorder{
+  border-radius: 50%;
+  border:1px solid #dc3545
+}
+.calldetails{
+  width: 240px;
+  min-height: 140px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  /* border-top: 2px solid #dc3545; */
+  z-index:1000 !important;
+  position: absolute;
+    left: 120px;
+    top: -130px; 
+  border-top:2px solid #6c757d;
+}
+.calldetails::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top:140px;
+  left: calc(50% - 128px);
+  border-right:8px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.totalCallsHeading{
+  font-size: 12px;;
+  color: #343a40;
+  padding:18px 0px 10px 24px;
+  text-align: left;
+}
+.callsCircle{
+  margin:10px;
+  border-radius:50%;
+  padding:7px;
+  margin:5px 0px 10px 18px;
+}
+.circOrgColor{
+  border:1px solid rgb(244,153,23,0.5);
+  /* opacity: 0.5;  */
+}
+.circBlueColor{
+  border:1px solid rgb(21,21,175,0.5);
+  /* opacity: 0.5;  */
+}
+.circGreenColor{
+  border:1px solid #1caf9a;
+  /* opacity: 0.5;  */
+}
+.circSkyBlueColor{
+  border:1px solid rgb(28,175,154,0.5);
+  /* opacity: 0.5;  */
+}
+.circSkyRedColor{
+  border:1px solid rgb(220,53,69,0.5)
+  /* opacity: 0.5;  */
+}
+.noOfcalls{
+  padding:15px 0px 0px 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.mt20{
+  margin-top:20px;
+}
+.marginPullTop{
+  margin-top:-1.25em;
+}
+.mr20{
+  margin-right:1.25em;
+}
+.errorPad{
+  padding:0.625em;
+}
+.patchWidth{
+  width:250px;
+  padding:10px;
+  
+}
+.OtherTab .dcrworkPanel .nav-link.active .otherTypeCamp{
+  /* padding-right:17px; */
+}
+.OtherTab .otherWorkCampImg{
+  /* padding-right:10px; */
+}
+.OtherTab .dcrWork.nav-tabs .nav-link{
+  width:85px;
+}
+.OtherTab .otherTypeCamp{
+  text-transform: lowercase;
+}
+.OtherTab .otherTypeCamp::first-letter{
+  text-transform: capitalize;
+}
+.tptSave .savedcrBtn{
+  background-color:#1b84e7;
+}
+.OtherTab .nav-tabs .nav-link{
+  padding:15px 0px 0px 20px !important;
+}
+.workType{
+  width: 0.85em;
+  height: 0.85em;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: #6f42c1;
+  margin: 0 .5em;
+}
+.sweta{
+  background-color:rgba(244,153,23,0.3);
+}

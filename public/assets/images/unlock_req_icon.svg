@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#dc3545}.cls-1{opacity:.1}
+        </style>
+    </defs>
+    <g id="unlock_req_icon" data-name="unlock req icon" transform="translate(-789 -168)">
+        <circle id="Ellipse_322" cx="32" cy="32" r="32" class="cls-1" data-name="Ellipse 322" transform="translate(789 168)"/>
+        <g id="padlock_1_" data-name="padlock (1)" transform="translate(738.891 184)">
+            <g id="Group_1100" data-name="Group 1100" transform="translate(78.623 17.619)">
+                <g id="Group_1099" data-name="Group 1099">
+                    <path id="Path_3002" d="M208.3 276.673a3.106 3.106 0 0 0-2.136 5.359v2.8a2.136 2.136 0 1 0 4.272 0v-2.8a3.106 3.106 0 0 0-2.136-5.359zm1.1 4.271a1.48 1.48 0 0 0-.466 1.071v2.821a.632.632 0 1 1-1.264 0v-2.821a1.479 1.479 0 0 0-.466-1.071 1.6 1.6 0 1 1 2.2 0z" class="cls-2" data-name="Path 3002" transform="translate(-205.19 -276.673)"/>
+                </g>
+            </g>
+            <g id="Group_1102" data-name="Group 1102" transform="translate(70.11)">
+                <g id="Group_1101" data-name="Group 1101">
+                    <path id="Path_3003" d="M91.039 13.117H76.262V7a5.466 5.466 0 1 1 10.933 0v2.771a.769.769 0 1 0 1.538 0V7a7 7 0 1 0-14.009 0v6.113h-2.307a2.31 2.31 0 0 0-2.307 2.307v14.273A2.31 2.31 0 0 0 72.417 32h18.622a2.31 2.31 0 0 0 2.307-2.307V15.424a2.31 2.31 0 0 0-2.307-2.307zm.769 16.576a.77.77 0 0 1-.769.769H72.417a.77.77 0 0 1-.769-.769V15.424a.77.77 0 0 1 .769-.769h18.622a.77.77 0 0 1 .769.769v14.269z" class="cls-2" data-name="Path 3003" transform="translate(-70.11)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

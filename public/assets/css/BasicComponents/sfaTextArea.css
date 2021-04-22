@@ -1,0 +1,41 @@
+.sfa360-textarea .textarea-label{
+    font-family: 'OpenSans-SemiBold';
+    color: #6c757d;
+    font-size: .75em;
+    letter-spacing: .6px;
+    padding-bottom: .5em;
+}
+.sfa360-textarea .textarea-label span{
+    color: #dc3545;
+}
+.sfa360-textarea .sfa-text-area:disabled{
+    background: transparent;
+}
+.sfa360-textarea .sfa-text-area{
+    min-height: 2.585em !important;
+    border-radius: 0.47em;
+    border: solid 1px #dfdfdf;
+    resize: none;
+    line-height: 1.5em;
+    padding: 0.5em;
+    color: #343a40;
+    font-family: 'OpenSans-SemiBold';
+    width: 100% !important;
+}
+.sfa360-textarea .sfa-text-area:focus{
+    outline: none;
+}
+.sfa360-textarea .plac_holder{
+    color: #6c757d;
+    opacity: 0.6;
+    font-size: 0.9em;
+    padding: 0.65em;
+}
+.sfa360-textarea .err-message{
+    color: #dc3545;
+    margin-top: .5em;
+    font-size: .8em;
+    font-family: "OpenSans-SemiBold";
+    letter-spacing: 0.03em;
+    margin-left: 0;
+}

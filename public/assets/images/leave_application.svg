@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24.8" viewBox="0 0 16.8 24.8">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3{fill:#fff}.cls-1,.cls-3{stroke:#fff}.cls-1{stroke-width:.8px}.cls-2{stroke:#f49917}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="leave_approval" data-name="leave approval" transform="translate(.067 1.841)">
+        <path id="Path_3173" d="M13.647 6.4h-2.823V2h.941a.44.44 0 0 0 .471-.4V.4a.44.44 0 0 0-.471-.4h-7.53a.44.44 0 0 0-.471.4v1.2a.44.44 0 0 0 .471.4h.941v4.4H2.353A2.2 2.2 0 0 0 0 8.4v12.4a2.2 2.2 0 0 0 2.353 2v.8a.44.44 0 0 0 .471.4h1.882a.44.44 0 0 0 .471-.4v-.8h5.647v.8a.44.44 0 0 0 .471.4h1.882a.44.44 0 0 0 .471-.4v-.8a2.2 2.2 0 0 0 2.352-2V8.4a2.2 2.2 0 0 0-2.353-2zM4.706.8h6.588v.4H4.706zM6.118 2h3.764v4.4H6.118zM4.235 23.2h-.941v-.4h.941zm8.471 0h-.941v-.4h.941zm2.353-2.4a1.319 1.319 0 0 1-1.412 1.2H2.353a1.319 1.319 0 0 1-1.412-1.2V8.4a1.319 1.319 0 0 1 1.412-1.2h11.294a1.319 1.319 0 0 1 1.412 1.2zm0 0" class="cls-1" data-name="Path 3173" transform="translate(.333 -1.441)"/>
+        <g id="Rectangle_1353" class="cls-2" data-name="Rectangle 1353" transform="translate(3.333 10.059)">
+            <rect width="2" height="7" class="cls-4" rx="1"/>
+            <rect width="1" height="6" x=".5" y=".5" class="cls-5" rx=".5"/>
+        </g>
+        <g id="Rectangle_1355" class="cls-2" data-name="Rectangle 1355" transform="translate(11.333 10.059)">
+            <rect width="2" height="7" class="cls-4" rx="1"/>
+            <rect width="1" height="6" x=".5" y=".5" class="cls-5" rx=".5"/>
+        </g>
+        <g id="Rectangle_1354" class="cls-3" data-name="Rectangle 1354" transform="translate(7.333 9.059)">
+            <rect width="2" height="9" class="cls-4" rx="1"/>
+            <rect width="1" height="8" x=".5" y=".5" class="cls-5" rx=".5"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6.059" height="11.471" viewBox="0 0 6.059 11.471">
+    <defs>
+        <style>
+            .cls-1{fill:#343a40}
+        </style>
+    </defs>
+    <g id="Group_1693" data-name="Group 1693" transform="translate(-204.941 -906.501)">
+        <path id="play-button" d="M4.409 2.91L.226.025A.144.144 0 0 0 0 .144v5.77a.144.144 0 0 0 .226.119l4.183-2.885a.144.144 0 0 0 0-.237z" class="cls-1" transform="rotate(90 -351.25 562.25)"/>
+        <path id="play-button-2" d="M4.409 2.91L.226.025A.144.144 0 0 0 0 .144v5.77a.144.144 0 0 0 .226.119l4.183-2.885a.144.144 0 0 0 0-.237z" class="cls-1" data-name="play-button" transform="rotate(-90 557.957 353.016)"/>
+    </g>
+</svg>

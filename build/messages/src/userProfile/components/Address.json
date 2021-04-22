@@ -1,0 +1,14 @@
+[
+  {
+    "id": "user_profile.container.addresstitle",
+    "defaultMessage": "ADDRESSES"
+  },
+  {
+    "id": "user_profile.container.hqadress",
+    "defaultMessage": "HQ Address"
+  },
+  {
+    "id": "user_profile.container.personaladress",
+    "defaultMessage": "Personal Address"
+  }
+]

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="calendar" width="15.471" height="15.471" viewBox="0 0 15.471 15.471">
+    <defs>
+        <style>
+            .cls-1{fill:#343a40}
+        </style>
+    </defs>
+    <g id="Group_464" data-name="Group 464">
+        <g id="Group_463" data-name="Group 463">
+            <circle id="Ellipse_107" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 107" transform="translate(11.06 5.741)"/>
+            <path id="Path_2345" d="M13.054 1.209h-.786V.6a.6.6 0 1 0-1.208 0v.6H8.31V.6A.6.6 0 0 0 7.1.6v.6H4.382V.6a.6.6 0 0 0-1.209 0v.6h-.756A2.42 2.42 0 0 0 0 3.626v9.428a2.42 2.42 0 0 0 2.417 2.417h4.624a.6.6 0 1 0 0-1.209H2.417a1.21 1.21 0 0 1-1.209-1.209V3.626a1.21 1.21 0 0 1 1.209-1.209h.755v.6a.6.6 0 1 0 1.209 0v-.6H7.1v.6a.6.6 0 1 0 1.209 0v-.6h2.75v.6a.6.6 0 1 0 1.209 0v-.6h.786a1.21 1.21 0 0 1 1.209 1.209v3.445a.6.6 0 0 0 1.209 0V3.626a2.42 2.42 0 0 0-2.418-2.417z" class="cls-1" data-name="Path 2345"/>
+            <path id="Path_2346" d="M14.2 10.547a3.656 3.656 0 1 0 3.66 3.653 3.66 3.66 0 0 0-3.66-3.653zm0 6.1a2.448 2.448 0 1 1 2.451-2.447 2.45 2.45 0 0 1-2.451 2.451z" class="cls-1" data-name="Path 2346" transform="translate(-2.388 -2.388)"/>
+            <path id="Path_2347" d="M15.973 14.13H15.7v-.635a.6.6 0 1 0-1.209 0v1.239a.6.6 0 0 0 .6.6h.876a.6.6 0 1 0 0-1.209z" class="cls-1" data-name="Path 2347" transform="translate(-3.281 -2.919)"/>
+            <circle id="Ellipse_108" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 108" transform="translate(8.431 5.741)"/>
+            <circle id="Ellipse_109" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 109" transform="translate(5.802 8.37)"/>
+            <circle id="Ellipse_110" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 110" transform="translate(3.173 5.741)"/>
+            <circle id="Ellipse_111" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 111" transform="translate(3.173 8.37)"/>
+            <circle id="Ellipse_112" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 112" transform="translate(3.173 10.999)"/>
+            <circle id="Ellipse_113" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 113" transform="translate(5.802 10.999)"/>
+            <circle id="Ellipse_114" cx=".604" cy=".604" r=".604" class="cls-1" data-name="Ellipse 114" transform="translate(5.802 5.741)"/>
+        </g>
+    </g>
+</svg>

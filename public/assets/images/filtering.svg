@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <defs>
+        <style>
+            .cls-1{fill:#6c757d}
+        </style>
+    </defs>
+    <path id="Path_2650" d="M0 9.333v1.333h4V9.333zm0-8v1.334h6.667V1.333zM6.667 12v-1.333H12V9.333H6.667V8H5.333v4zm-4-8v1.333H0v1.334h2.667V8H4V4zM12 6.667V5.333H5.333v1.334zM8 4h1.333V2.667H12V1.333H9.333V0H8z" class="cls-1" data-name="Path 2650" transform="rotate(90 6 6)"/>
+</svg>

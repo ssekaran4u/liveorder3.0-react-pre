@@ -1,0 +1,154 @@
+.cal-row {
+    display: flex;
+    width: 100%;
+}
+.calendar {
+    background: #ffffff;
+    text-align: center;
+    padding: 12px 32px 0 32px;
+}
+.fullscreenView .calendar {
+    max-width: 400px;
+    /* margin: 0 auto; */
+}
+.calendar .cal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.calendar .cal-header .month-display {
+    align-items: center;
+    margin-bottom: 1em;
+}
+.calendar .cal-header .month-label {
+    flex: 1;
+    font-size: 1em;
+    font-family: "OpenSans-Semibold";
+}
+.calendar .cal-header .arrow {
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    font-size: 1.4em;
+}
+.calendar .day-names {
+    color: #6c757d;
+    font-family: "OpenSans-Bold";
+    font-size: 0.81em;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+.calendar .day-names .day {
+    cursor: default;
+    width: 24px;
+}
+.calendar .day-names .day:hover {
+    background: inherit;
+}
+.calendar .week {
+    justify-content: space-between;
+}
+.calendar .week .cal-day {
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: "Roboto-Medium";
+    font-size: 0.75em;
+}
+.calendar .week .cal-date {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: transparent;
+}
+.calendar .cal-date:hover {
+    background: #eee;
+    border: 1px solid #eee;
+}
+.calendar .today .cal-date,
+.calendar .today .cal-date:hover,
+.calendar .today .cal-date:active,
+.calendar .today .cal-date:focus {
+    /* border:1px solid #2875C7;
+    background: transparent;
+    background-image: url(../../../public/assets/images/date-bg.svg);
+    height: 27px;
+    width: 27px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left 1px; */
+    color: #1b84e7;
+    /* border: 1px solid transparent; */
+}
+.calendar .selected .cal-date,
+.calendar .selected .cal-date:hover,
+.calendar .selected .cal-date:active,
+.calendar .selected .cal-date:focus {
+    /* border:1px solid #2875C7; */
+    background: transparent;
+    background-image: url(../../../public/assets/images/date-bg.svg);
+    height: 27px;
+    width: 27px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left 1px;
+    color: #fff;
+    /* background: transparent; */
+    border: 1px solid transparent;
+}
+.calendar .cal-date:hover,
+.calendar .cal-date:focus,
+.calendar .cal-date:active {
+    outline: none;
+    border: 0;
+}
+.calendar .cal-day.different-month {
+    color: #c0c0c0;
+}
+.calendar .week .cal-day .block {
+    display: block;
+}
+.calendar .week .cal-day .none {
+    display: none;
+}
+.event {
+    height: 5px;
+    margin-top: 2px;
+}
+.dcr-filled {
+    height: 5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #6f42c1;
+}
+.dcr-missed {
+    height: 5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #dc3545;
+}
+.holiday {
+    height: 5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #f49917;
+}

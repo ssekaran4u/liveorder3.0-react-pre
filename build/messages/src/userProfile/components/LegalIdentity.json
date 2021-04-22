@@ -1,0 +1,30 @@
+[
+  {
+    "id": "user_profile.container.legaltitle",
+    "defaultMessage": "LEGAL IDENTITIES"
+  },
+  {
+    "id": "user_profile.container.pannumber",
+    "defaultMessage": "PAN Number"
+  },
+  {
+    "id": "user_profile.container.adharnumber",
+    "defaultMessage": "Aadhar Number"
+  },
+  {
+    "id": "user_profile.container.accountnumber",
+    "defaultMessage": "Account Number"
+  },
+  {
+    "id": "user_profile.container.branchname",
+    "defaultMessage": "Branch Name"
+  },
+  {
+    "id": "user_profile.container.esinumber",
+    "defaultMessage": "ESI Number"
+  },
+  {
+    "id": "user_profile.container.rtgsnumber",
+    "defaultMessage": "RTGS Number"
+  }
+]

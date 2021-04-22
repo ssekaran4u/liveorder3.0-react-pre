@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="72.926" viewBox="0 0 76 72.926">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#6c757d;stroke:#fff;stroke-width:.6px}
+        </style>
+    </defs>
+    <g id="prefix__Group_2366" data-name="Group 2366" transform="translate(-341 -251.074)">
+        <text id="prefix__add_files" data-name="add files" transform="translate(341 320)" style="font-size:13px;font-family:OpenSans-SemiBold,Open Sans;font-weight:600;letter-spacing:.12em;fill:#6c757d">
+            <tspan x="0" y="0">ADD FILES</tspan>
+        </text>
+        <g id="prefix__plus_2_" data-name="plus (2)" transform="translate(359 251.374)">
+            <path id="prefix__Path_3375" d="M20 0a20 20 0 1 0 20 20A20.023 20.023 0 0 0 20 0zm0 38.462A18.462 18.462 0 1 1 38.462 20 18.483 18.483 0 0 1 20 38.462z" class="prefix__cls-2" data-name="Path 3375"/>
+            <path id="prefix__Path_3376" d="M32.017 22.472h-8.633v-8.683a.752.752 0 1 0-1.5 0v8.682h-8.633a.79.79 0 0 0 0 1.579h8.632v9.472a.752.752 0 1 0 1.5 0V24.05h8.632a.79.79 0 0 0 0-1.579z" class="prefix__cls-2" data-name="Path 3376" transform="translate(-2.634 -3.282)"/>
+        </g>
+    </g>
+</svg>

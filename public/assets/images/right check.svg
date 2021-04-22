@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.594" height="8.7" viewBox="0 0 11.594 8.7">
+    <defs>
+        <style>
+            .cls-1{fill:#343a40;stroke:#343a40;stroke-width:.7px}
+        </style>
+    </defs>
+    <path id="right_check" d="M10.733 68.157a.545.545 0 0 0-.77 0l-6.525 6.526-2.509-2.509a.545.545 0 0 0-.77.77l2.893 2.893a.545.545 0 0 0 .77 0l6.911-6.911a.545.545 0 0 0 0-.769z" class="cls-1" data-name="right check" transform="translate(.35 -67.647)"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="1" viewBox="0 0 8 1">
+    <defs>
+        <style>
+            .cls-1{fill:#1b84e7;stroke:#1b84e7}.cls-2{stroke:none}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="SUBTRACTION" class="cls-1">
+        <rect width="8" height="1" class="cls-2" rx=".5"/>
+        <rect width="7" x=".5" y=".5" class="cls-3"/>
+    </g>
+</svg>

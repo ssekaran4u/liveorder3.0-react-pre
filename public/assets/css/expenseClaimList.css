@@ -1,0 +1,465 @@
+.expense-claim-list .claimlist-main-card{
+    margin-top: 1.25em;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    border-radius: 0;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border: none;
+}
+.expense-claim-list .claimlist-main-card .heading{
+    font-size: 1em;
+    font-family: 'OpenSans-SemiBold';
+    color: #1b84e7;
+    letter-spacing: 0.06em;
+    margin: 0;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    border-bottom: solid 0.125em #1b84e7;
+}
+.expense-claim-list .claimlist-main-card .emp-details{
+    display: flex;
+    padding: 1em 0 0 1.5em;
+    flex-wrap: wrap;
+}
+.expense-claim-list .claimlist-main-card .emp-details .col-details{
+    min-width: 35%;
+    padding-right: 2em;
+}
+.expense-claim-list .claimlist-main-card .emp-details .row-details{
+    width: 100%;
+    display: flex;
+    letter-spacing: .0525em;
+    font-size: 0.875em;
+    padding-bottom: 1em;
+}
+.expense-claim-list .claimlist-main-card .emp-details .row-details .main-text{
+    color: #343a40;
+    font-family: 'OpenSans-Regular';
+    width: 9em;
+}
+.expense-claim-list .claimlist-main-card .emp-details .row-details .sub-text{
+    color: #343a40;
+    font-family: 'OpenSans-SemiBold';
+    text-transform: capitalize;
+}
+.expense-claim-list .new-entry-card{
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    border-radius: 0;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    padding: 1.25em 1.25em 0 1.25em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+}
+.expense-claim-list .new-entry-card .claim-list-dropdown{
+    width: 26.15em;
+    min-width: 35%;
+    margin: 0 2em 1em 0;
+}
+.expense-claim-list .claimlist-button{
+    min-width: 10%;
+    width: 7.5em;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.5em;
+}
+.expense-claim-list .claimlist_btn{
+    margin-bottom: 2.75em;
+}
+.expense-claim-list .claimlist-button .claimlist-btn{
+    width: 100%;
+    height: 2.5em;
+    border-radius: 4px;
+    border: solid 0.5px #1b84e7;
+    background-color: #1b84e7;
+}
+.expense-claim-list .claimlist-button .claimlist-btn .btn-text{
+    font-family: 'OpenSans-SemiBold';
+    font-size: 0.8125em;
+    letter-spacing: 0.0975em;
+}
+.claim-list-tabs-container .claim-list-tabs{
+    border: none;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    margin: 1.25em 0;
+    padding-left: 2em;
+    background: #ffffff;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.claim-list-tabs-container .li-link{
+    font-family: 'OpenSans-Regular';
+    color: #343a40;
+    letter-spacing: .05em;
+    padding: 0.8em 0;
+    border-bottom: solid 3px transparent;
+}
+.claim-list-tabs .active-li-link{
+    color: #1b84e7;
+    font-family: 'OpenSans-SemiBold';
+    border-bottom: solid 3px #1b84e7;
+    padding: 0.8em 0;
+    letter-spacing: .09em;
+}
+.claim-list-tabs-container .claim-list-tabs  .nav-link.active{
+    color: #1b84e7;
+    font-family: 'OpenSans-SemiBold';
+    border-bottom: .25em solid #1b84e7;
+}
+.claim-list-tabs-container .nav-tabs .nav-link{
+    background: transparent;
+    border: none;
+    padding: 0.875em 0;
+    margin-right: 2.5em;
+    letter-spacing: 0.08em;
+    color: #343a40;
+    font-family: 'OpenSans-Regular';
+    text-align: center;
+}
+.expense-claim-list .claimlist-datatable-container{
+    margin-top: 1.25em;
+}
+.expense-claim-list .filter-option .filter-button{
+    background: transparent;
+    border: solid 1px #dfdfdf;
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343a40;
+    font-family: 'OpenSans-Regular';
+    height: 100%;
+    min-width: 8.13em;
+}
+.expense-claim-list .filter-option{
+    height: 2.5em;
+    margin: 0 .75em 1em 0;
+}
+.expense-claim-list .filter-option .filter-button .button-text{
+    font-size: .875em;
+}
+.expense-claim-list .filter-option .filter-button img{
+    padding-right: .5em;
+}
+.expense-claim-list .filter-option .filter-button:active:focus, .expense-claim-list .filter-option .filter-button:hover{
+    border: solid 1px #1b84e7;
+    background-color: #1b84e71A;
+    color: #343a40;
+    font-family: 'OpenSans-SemiBold';
+}
+.expense-claim-list .sfa-month-picker .date-heading{
+    font-family: 'OpenSans-SemiBold';
+    color: #6c757d;
+    font-size: .75em;
+    letter-spacing: .6px;
+    padding-bottom: .5em;
+}
+.expense-claim-list .sfa-month-picker .date-heading span{
+    color: #dc3545;
+}
+.expense-claim-list .sfa-month-picker .month-picker-container{
+    display: flex;
+    width: 100%;
+}
+.expense-claim-list .sfa-month-picker .ui.month-selection.dropdown{
+    margin-right: 2em;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.dropdown{
+    height: 2.5em;
+    min-height: 2.5em !important;
+    padding: .78571429em 2.6em .78571429em 1em !important;
+    border-color: #6c757d64 !important;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.active.dropdown {
+    box-shadow: none;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.dropdown .menu{
+    margin-top: 0.025em;
+    border-radius: 6px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #dfdfdf;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.active.dropdown .menu{
+    border: solid 0.5px #dfdfdf !important;
+}
+.expense-claim-list .sfa-month-picker img{
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    top: .78571429em;
+    right: 1em;
+    z-index: 3;
+    margin: -.78571429em;
+    padding: 1em;
+    border-left: solid 0.5px #6c757d96;
+}
+.expense-claim-list .sfa-month-picker .ui.search.selection.dropdown>input.search {
+    line-height: 1em;
+    padding: .657em 3.2em .657em 1em;
+}
+.expense-claim-list .sfa-month-picker .ui.dropdown>.text{
+    line-height: 1.15em;
+    display: flex;
+    color: rgba(0,0,0,.87);
+    font-size: .85em;
+    letter-spacing: .4px;
+    font-family: 'OpenSans-Regular';
+    align-items: center;
+    text-transform: capitalize;
+}
+.expense-claim-list .sfa-month-picker .ui.initial-value.dropdown>.text{
+    color: #6c757d96;  
+    font-size: 0.75em;
+    font-family: 'OpenSans-Regular';
+    text-transform: capitalize;
+}
+.expense-claim-list .sfa-month-picker .ui.error.dropdown>.text{
+    color: #6c757d96;  
+    font-size: 0.75em;
+    font-family: 'OpenSans-Regular';
+    text-transform: capitalize;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.dropdown.error{
+    background: transparent;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.dropdown .menu>.item{
+    color: #6c757d;
+    font-size: 0.9em;
+    font-family: 'OpenSans-SemiBold';
+    text-transform: capitalize;
+    border-bottom: solid 0.5px #dfdfdf99;
+}
+.expense-claim-list .sfa-month-picker .ui.selection.dropdown .menu>.item:hover{
+    color: #1b84e7 !important;
+    font-family: 'OpenSans-SemiBold';
+}
+.expense-claim-list .sfa-month-picker .ui.dropdown .menu .selected.item{
+    color: #1b84e7;
+}
+.expense-claim-list .sfa-month-picker .err-message{
+    color: #dc3545;
+    margin-top: .5em;
+    font-size: .8em;
+}
+.expense-claim-list .btn-primary:not(:disabled):not(.disabled):active{
+    color: #ffffff;
+    border: solid 0.5px #1b84e799;
+    background-color: #1b84e799;
+}
+.emp-de.claimlist-main-card{
+    margin-top: 0em;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.075);
+    border-radius: 0.4em;
+}
+.emp-de .emp-details{
+    padding-bottom: 0.5em !important;
+}
+.claimlist-main-card .admin-row{
+    padding: 1.5em 1.5em 0 1.5em ;
+}
+.claimlist-main-card .admin-row .admin-col{
+    padding: 0 1.15em 1.5em 1.15em !important;
+}
+.claimlist-main-card .admin-row .admin-col .claimlist-button{
+    width: 10em;
+    height: 100%;
+    margin-top: -0.5em;
+}
+.claimlist-main-card .admin-row .admin-col .claimlist_btn{
+    margin-top: -1.7em;
+}
+.claimlist-datatable-container .sfa-common-datatable .datatable .table thead th{
+    min-width: 10em !important;
+}
+.beneficiary-modal-container .benf-heading{
+    background-color: #f8f9fa;
+    padding: 1em 1.5em 2em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1b84e7;
+    font-family: "OpenSans-Bold";
+    letter-spacing: 0.03em;
+    border-top-left-radius: 0.9em;
+    border-top-right-radius: 0.9em;
+    border-bottom: solid 1px #f1f1f1;;
+}
+.beneficiary-modal-container .benf-footer{
+    background-color: #f8f9fa;
+    padding: 1em 1.5em 1em 1.5em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    border-bottom-left-radius: 0.9em;
+    border-bottom-right-radius: 0.9em;
+    border-top: solid 1px #f1f1f1;;
+}
+.beneficiary-modal-container .benf-footer .ben_save_btn{
+    background: linear-gradient(to right, #1b84e7, #1515af);
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    color: #ffffff;
+    font-family: 'Roboto-Medium';
+    letter-spacing: 0.05em;
+    border: none;
+}
+.beneficiary-modal-container .benf-footer .ben_cancel_btn{
+    background: linear-gradient(to right, #df5a4b, #dc3545);
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    color: #ffffff;
+    font-family: 'Roboto-Medium';
+    letter-spacing: 0.05em;
+    border: none;
+}
+.beneficiary-modal-container .ben-cancel{
+    width: 1em;
+    height: 1em;
+    margin-left: 1em;
+}
+.beneficiary-modal-container .ben-first-row{
+    padding: 1em 1.5em 1em 1.5em;
+}
+.beneficiary-modal-container .ben-second-row{
+    margin-left: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.beneficiary-modal-container .ben-cheq-no{
+    padding: 0 1.5em 1em 0 ;
+    min-width: 15em;
+}
+.beneficiary-modal-container .ben-chq-no{
+    margin: 0 1.5em 1em 0;
+    min-width: 15em;
+}
+.beneficiary-modal-container .ben-third-row{
+    padding: 0 1.5em 1em 1.5em;
+}
+.beneficiary-modal-container .ben-fourth-row{
+    padding: 0 1.5em 1em 1.5em;
+}
+.img-center-aligned{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-center-aligned img{
+    height: 1.25em;
+    width: 1.25em;
+}
+.expense-claim-list .report-link{
+    color: #1b84e7 !important;
+    cursor: pointer;
+}
+.dcr-missing-dates-modal-container .dcr-missing-heading{
+    background-color: #f8f9fa;
+    padding: 1.3em 2.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #343a40;
+    font-family: "OpenSans-Bold";
+    letter-spacing: 0.03em;
+    border-top-left-radius: 0.9em;
+    border-top-right-radius: 0.9em;
+    border-bottom: solid 1px #f1f1f1;;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-footer{
+    background-color: #f8f9fa;
+    padding: 1.3em 2.25em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    border-bottom-left-radius: 0.9em;
+    border-bottom-right-radius: 0.9em;
+    border-top: solid 1px #f1f1f1;;
+}
+.dcr-missing-dates-modal-container .dcr-list-cancel{
+    width: 1em;
+    height: 1em;
+    margin-left: 1em;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-footer .dcr_save_btn{
+    background: linear-gradient(to right, #1b84e7, #1515af);
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    color: #ffffff;
+    font-family: 'Roboto-Medium';
+    letter-spacing: 0.05em;
+    border: none;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-footer .dcr_cancel_btn{
+    background: linear-gradient(to right, #df5a4b, #dc3545);
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    color: #ffffff;
+    font-family: 'Roboto-Medium';
+    letter-spacing: 0.05em;
+    border: none;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .dcr-missing-dates-body-heading{
+    color: #6c757d;
+    font-size: 0.9em;
+    font-family: "OpenSans-SemiBold";
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .dcr-missing-dates-body-footer{
+    font-family: "OpenSans-SemiBold";
+    color: #343a40;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .dcr-missing-dates-body-heading span{
+    color: #1b84e7;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body{
+    padding: 1em 2.25em;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .date_col{
+    border: solid 0.5px #a3a3a3;
+    margin: 0 1em 1em 0;
+    width: 6em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .date-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em 0 0.5em 0;
+}
+.dcr-missing-dates-modal-container .dcr-missing-dates-body .date_txt{
+    color: #343a40;
+    font-family: "Roboto-Regular";
+    font-size: 0.9em;
+}
+
+  

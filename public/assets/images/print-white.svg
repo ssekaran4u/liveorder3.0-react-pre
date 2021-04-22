@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_557" fill="#fff" stroke="#343a40" d="M0 0H18V18H0z" data-name="Rectangle 557"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="Mask_Group_47" clip-path="url(#clip-path)" data-name="Mask Group 47">
+        <g id="print" transform="translate(2.4 2.4)">
+            <g id="Group_516" data-name="Group 516">
+                <path id="Path_2367" d="M4.2.825h6.6v1.65h.825V.825A.825.825 0 0 0 10.8 0H4.2a.826.826 0 0 0-.825.825v1.65H4.2z" class="cls-3" data-name="Path 2367" transform="translate(-.9)"/>
+                <path id="Path_2368" d="M12.374 4.5H.825A.826.826 0 0 0 0 5.325V9.45a.825.825 0 0 0 .825.825h1.65v3.3a.825.825 0 0 0 .825.825h6.6a.824.824 0 0 0 .825-.825v-3.3h1.65a.824.824 0 0 0 .825-.825V5.325a.825.825 0 0 0-.826-.825zM9.9 13.574H3.3V7.8h6.6zm1.65-6.6a.825.825 0 1 1 .825-.825.824.824 0 0 1-.826.826z" class="cls-3" data-name="Path 2368" transform="translate(0 -1.2)"/>
+                <path id="Rectangle_554" d="M0 0H3.3V0.825H0z" class="cls-3" data-name="Rectangle 554" transform="translate(4.125 7.425)"/>
+                <path id="Rectangle_555" d="M0 0H4.95V0.825H0z" class="cls-3" data-name="Rectangle 555" transform="translate(4.125 9.074)"/>
+                <path id="Rectangle_556" d="M0 0H4.95V0.825H0z" class="cls-3" data-name="Rectangle 556" transform="translate(4.125 10.724)"/>
+            </g>
+        </g>
+    </g>
+</svg>

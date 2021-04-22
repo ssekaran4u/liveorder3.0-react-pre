@@ -1,0 +1,22 @@
+[
+  {
+    "id": "doctor_profile.container.resaddress",
+    "defaultMessage": "RESIDENTIAL ADDRESS"
+  },
+  {
+    "id": "doctor_profile.container.housename",
+    "defaultMessage": "House/Building Name"
+  },
+  {
+    "id": "doctor_profile.container.docarea",
+    "defaultMessage": "Clinic Area"
+  },
+  {
+    "id": "doctor_profile.container.docfulladd",
+    "defaultMessage": "Address"
+  },
+  {
+    "id": "doctor_profile.container.docrespincode",
+    "defaultMessage": "Code PIN"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "user_profile.container.medrepat",
+    "defaultMessage": "Medical Representative at"
+  },
+  {
+    "id": "user_profile.container.employeecode",
+    "defaultMessage": "Emp Code"
+  }
+]

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.483" height="7" viewBox="0 0 9.483 7">
+    <defs>
+        <style>
+            .cls-1{fill:#343a40}
+        </style>
+    </defs>
+    <path id="play-button" d="M12.4 4.556L5.854.04A.226.226 0 0 0 5.5.226v9.032a.226.226 0 0 0 .354.186L12.4 4.928a.226.226 0 0 0 0-.372z" class="cls-1" transform="rotate(90 7.492 1.992)"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.154" height="24" viewBox="0 0 22.154 24">
+    <defs>
+        <style>
+            .cls-1,.cls-5{fill:none}.cls-1{stroke:#fff;stroke-width:2px}.cls-2,.cls-3{fill:#fff}.cls-3{stroke:#f49917;stroke-width:1.5px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="mtp_icon" data-name="mtp icon" transform="translate(-103 -434)">
+        <g id="Rectangle_692" class="cls-1" data-name="Rectangle 692" transform="translate(103 436)">
+            <rect width="22.154" height="22" class="cls-4" rx="3"/>
+            <rect width="20.154" height="20" x="1" y="1" class="cls-5" rx="2"/>
+        </g>
+        <path id="Rectangle_693" d="M0 0h22.154v2H0z" class="cls-2" data-name="Rectangle 693" transform="translate(103 442.231)"/>
+        <g id="Rectangle_694" class="cls-3" data-name="Rectangle 694" transform="translate(107.538 434)">
+            <rect width="4" height="6" class="cls-4" rx="1"/>
+            <rect width="2.5" height="4.5" x=".75" y=".75" class="cls-5" rx=".25"/>
+        </g>
+        <g id="Rectangle_695" class="cls-3" data-name="Rectangle 695" transform="translate(116.615 434)">
+            <rect width="4" height="6" class="cls-4" rx="1"/>
+            <rect width="2.5" height="4.5" x=".75" y=".75" class="cls-5" rx=".25"/>
+        </g>
+    </g>
+</svg>

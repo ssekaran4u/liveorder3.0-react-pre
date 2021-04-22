@@ -1,0 +1,21 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .missedcard:after{
+    display: none !important;
+}
+.missedcard {
+  width: 303px !important;
+  /* height: 300px; */
+  /* padding: 13px 17.2px 39px 24px; */
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dfdfdf;
+  background-color: var(--white);
+  margin: -370px -75px 66px 1px !important;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  /* margin: 0; */
+  position: relative;
+}
+.ulscrollbarcol{
+  margin-right: calc(100% - 170px) !important;
+}
+}

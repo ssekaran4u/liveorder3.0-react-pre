@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.882" height="16.3" viewBox="0 0 11.882 16.3">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#6c757d}.cls-2{stroke:#6c757d;stroke-width:.3px}
+        </style>
+    </defs>
+    <g id="assign_a_task_to_downline" data-name="assign a task to downline" transform="translate(7736.15 -7117.849)">
+        <g id="assignment" transform="translate(-7733.758 7121.293)">
+            <path id="Path_2954" d="M152.3 40.078h.751v.7h-.751zm0 0" class="cls-1" data-name="Path 2954" transform="translate(-152.297 -40.078)"/>
+            <path id="Path_2955" d="M184.359 40.078h.751v.7h-.751zm0 0" class="cls-1" data-name="Path 2955" transform="translate(-182.857 -40.078)"/>
+            <path id="Path_2956" d="M216.422 40.078h.751v.7h-.751zm0 0" class="cls-1" data-name="Path 2956" transform="translate(-213.418 -40.078)"/>
+            <path id="Path_2957" d="M154.5 210.988v-2.581h-2.2v2.581h.7v-.751h.8v.751zm-1.5-1.455v-.422h.8v.422zm0 0" class="cls-1" data-name="Path 2957" transform="translate(-152.297 -200.209)"/>
+            <path id="Path_2958" d="M152.3 72.141h4.13v.7h-4.13zm0 0" class="cls-1" data-name="Path 2958" transform="translate(-152.297 -70.639)"/>
+            <path id="Path_2959" d="M152.3 104.2h6.758v.7H152.3zm0 0" class="cls-1" data-name="Path 2959" transform="translate(-152.297 -101.103)"/>
+            <path id="Path_2960" d="M152.3 136.266h6.758v.7H152.3zm0 0" class="cls-1" data-name="Path 2960" transform="translate(-152.297 -131.616)"/>
+            <path id="Path_2961" d="M256.5 248.484h1.877v.7H256.5zm0 0" class="cls-1" data-name="Path 2961" transform="translate(-251.619 -238.409)"/>
+            <path id="Path_2962" d="M272.531 216.422h1.126v.7h-1.126zm0 0" class="cls-1" data-name="Path 2962" transform="translate(-266.899 -207.849)"/>
+        </g>
+        <path id="Path_2963" d="M82.172 3.17L79.1.1a.333.333 0 0 0-.236-.1h-7.136a1.042 1.042 0 0 0-1.04 1.04v13.92a1.042 1.042 0 0 0 1.04 1.04h9.5a1.042 1.042 0 0 0 1.04-1.04V3.405a.333.333 0 0 0-.096-.235zm-1.04-.1H79.2V1.138zm.468 11.89a.374.374 0 0 1-.374.374h-9.5a.374.374 0 0 1-.374-.374V1.04a.374.374 0 0 1 .374-.374h6.8v2.739a.333.333 0 0 0 .333.333H81.6z" class="cls-2" data-name="Path 2963" transform="translate(-7806.688 7117.999)"/>
+    </g>
+</svg>

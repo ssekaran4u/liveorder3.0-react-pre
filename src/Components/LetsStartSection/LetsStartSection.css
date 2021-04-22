@@ -11,12 +11,21 @@
 }
 
 .btn.demo-card-btn {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #674cf3;
   margin: 0 auto;
   width: 168px;
   height: 48px;
-  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.1);
-  background-image: linear-gradient(111deg, #ef2b4a -5%, #ff7b20 113%);
+  background-color: #ffffff;
+  transition: all 0.5s;
 }
+
+/* .btn.demo-card-btn:hover {
+  background-color: #674cf3;
+  color: #ffffff;
+} */
 
 .purple-blob2 {
   width: 200px;
@@ -36,6 +45,7 @@
   top: -90px;
   right: 120px;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .green-circle {
@@ -46,6 +56,7 @@
   bottom: -90px;
   right: 0px;
   border-radius: 50%;
+  z-index: -1;
 }
 
 

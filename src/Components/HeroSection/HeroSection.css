@@ -1,5 +1,6 @@
 .HeroSection {
   padding: 64px 0 196px 0;
+  margin-top: 96px;
   font-family: 'Quicksand', sans-serif;
   background: url('../../Images/hero_bg.png') no-repeat center/cover;
 }
@@ -33,6 +34,7 @@ h5.h5.HeroSubTitle {
   letter-spacing: normal;
   color: #5b636a;
   border-color: transparent;
+  outline: none;
 }
 
 .search-container i {

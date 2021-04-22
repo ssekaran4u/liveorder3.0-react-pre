@@ -47,8 +47,8 @@ class WhyLiveSection extends Component {
               <div className="CardIconHolder ReconciliatonImg d-flex align-items-center justify-content-center mb-4">
                 <img src={ReconciliationImg} alt="Bill To Bill Reconciliation" />
               </div>
-              <h6 className="h6 CardSubtitle mb-4 text-white">Bill To Bill Reconciliation</h6>
-              <p className="body-copy text-white">Invoice reconciliation is important for keeping accounting records updated & avoid fraud</p>
+              <h6 className="h6 CardSubtitle mb-4">Bill To Bill Reconciliation</h6>
+              <p className="body-copy">Invoice reconciliation is important for keeping accounting records updated & avoid fraud</p>
             </div>
           </div>
           <div className="card">

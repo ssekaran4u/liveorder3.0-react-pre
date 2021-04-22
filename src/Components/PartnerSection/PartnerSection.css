@@ -3,7 +3,7 @@
 }
 
 .DataCount {
-  margin-right: 0;
+  margin-right: 16px;
 }
 
 .DataCount:last-child {
@@ -13,6 +13,10 @@
 .PartnerLogoContainer {
   display: flex;
   justify-content: center;
+}
+
+.mobile-break-section {
+  margin-right: 16px;
 }
 
 .PartnerLogoBox {
@@ -64,7 +68,9 @@
   .DataCount {
     margin-right: 48px;
   }
-
+  .mobile-break-section {
+    margin-right: 48px;
+  }
   .PartnerLogoBox {
     width: 196px;
     height: 120px;
@@ -85,5 +91,8 @@
   }
   .PartnerLogoContainer {
     display: inline-block;
+  }
+  .mobile-break-section {
+    margin-right: 88px;
   }
 }

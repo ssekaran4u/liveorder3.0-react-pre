@@ -6,9 +6,27 @@
   object-fit: contain;
 }
 
+.NavbarContainer {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+/* .NavbarItems {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+} */
+
 .MainContainer.NavbarItems {
   font-family: 'Quicksand', sans-serif;
-  margin: 38px auto;
+  margin: 0 auto;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +35,7 @@
 .NavbarItems ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .NavbarItems ul li {
@@ -53,12 +71,18 @@
 
 
 .btn.schedule-btn {
-  background-image: linear-gradient(to right, #674cf3, #8039db);
   transition: all 0.5s;
 }
 
-.btn.schedule-btn:hover {
-  background-image: none;
+.btn.btn-outline-primary {
+  color: #674cf3;
+  border-color: #674cf3;
+}
+
+.btn.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #674cf3;
+  border-color: #674cf3;
 }
 
 .btn.login-btn {
@@ -74,6 +98,9 @@
 @media only screen and (min-width: 769px) {
   .NavbarItems ul li {
     margin-right: 48px;
+  }
+  .MainContainer.NavbarItems {
+    padding: 27px 0;
   }
 }
 

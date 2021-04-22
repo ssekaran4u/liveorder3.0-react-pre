@@ -17,17 +17,17 @@ class PartnerSection extends Component {
         <h2 className="h2 mb-4">Join the Digital Ordering Revolution</h2>
         <div className="DataCountsContainer mb-5 d-flex justify-content-center flex-column flex-md-row">
           <div className="mobile-break-section d-flex justify-content-center mb-4 mb-md-0">
-            <div className="DataCount mr-4">
+            <div className="DataCount">
               <h4 className="h4 mb-2">10K+</h4>
               <h6 className="h6-small">Trusted Customers</h6>
             </div>
-            <div className="DataCount mr-0 mr-md-4">
+            <div className="DataCount">
               <h4 className="h4 mb-2">4Lakh+</h4>
               <h6 className="h6-small">Products</h6>
             </div>
           </div>
           <div className="mobile-break-section d-flex justify-content-center">
-            <div className="DataCount mr-4">
+            <div className="DataCount">
               <h4 className="h4 mb-2">1k+</h4>
               <h6 className="h6-small">Sellers</h6>
             </div>

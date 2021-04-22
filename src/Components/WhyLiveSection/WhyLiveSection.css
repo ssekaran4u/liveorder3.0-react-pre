@@ -8,7 +8,6 @@
   opacity: 0.9;
   border: none;
   box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.1);
-  background-image: linear-gradient(111deg, #00d3b4 -5%, #674cf3 113%);
 }
 
 .WhyLiveSection .card {
@@ -25,9 +24,8 @@
   border-radius: 14px;
 }
 
-.card.GradientCard {
+.card.GradientCard {  
   margin-top: 90px;
-  background-image: linear-gradient(111deg, rgb(0 211 180 / 80%) -5%, rgb(103 76 243 / 80%) 113%);
 }
 
 .CardIconHolder.SellerImg {
@@ -39,7 +37,7 @@
 }
 
 .CardIconHolder.ReconciliatonImg {
-  background-color: rgb(255 255 255 / 50%);
+  background-color: rgba(103, 76, 243, 0.2);
 }
 
 .CardIconHolder.ManageTeamImg {

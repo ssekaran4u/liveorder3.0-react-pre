@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eecf6130.chunk.css",
+    "main.js": "/static/js/main.e9d40595.chunk.js",
+    "main.js.map": "/static/js/main.e9d40595.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4040132b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4040132b.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.69b9190f.chunk.js": "/static/js/2.69b9190f.chunk.js",
+    "static/js/2.69b9190f.chunk.js.map": "/static/js/2.69b9190f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.eecf6130.chunk.css.map": "/static/css/main.eecf6130.chunk.css.map",
+    "static/js/2.69b9190f.chunk.js.LICENSE.txt": "/static/js/2.69b9190f.chunk.js.LICENSE.txt",
+    "static/media/AlkemImg.e7e60c72.png": "/static/media/AlkemImg.e7e60c72.png",
+    "static/media/LetsStartSection.css": "/static/media/LetsStartBG.3089656b.png",
+    "static/media/GSKImg.b8cd07ac.png": "/static/media/GSKImg.b8cd07ac.png",
+    "static/media/PartnerSection.css": "/static/media/JoinBg.642c5355.png",
+    "static/media/KnowMoreVideo.c9f04e3f.mp4": "/static/media/KnowMoreVideo.c9f04e3f.mp4",
+    "static/media/Logo@3x.0926ae29.png": "/static/media/Logo@3x.0926ae29.png",
+    "static/media/VideoSection.css": "/static/media/blob.69e2f035.png",
+    "static/media/HeroSection.css": "/static/media/hero_bg.a39d2178.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4040132b.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.69b9190f.chunk.js",
+    "static/css/main.eecf6130.chunk.css",
+    "static/js/main.e9d40595.chunk.js"
+  ]
+}

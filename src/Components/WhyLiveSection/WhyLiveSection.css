@@ -1,0 +1,47 @@
+.btn.demo-btn {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 7px 18px;
+  opacity: 0.9;
+  border: none;
+  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.1);
+  background-image: linear-gradient(111deg, #00d3b4 -5%, #674cf3 113%);
+}
+
+.WhyLiveSection .card {
+  border: none;
+  padding: 24px 24px 28px 24px;
+  border-radius: 14px;
+  box-shadow: -20.8px 12px 79px 0 rgba(16, 66, 97, 0.1);
+  background-color: #ffffff;
+}
+
+.CardIconHolder {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+.card.GradientCard {
+  margin-top: 90px;
+  background-image: linear-gradient(111deg, rgb(0 211 180 / 80%) -5%, rgb(103 76 243 / 80%) 113%);
+}
+
+.CardIconHolder.SellerImg {
+  background-color: rgb(255 115 0 / 10%);
+}
+
+.CardIconHolder.TrackingImg {
+  background-color: rgb(76 123 255 / 10%);
+}
+
+.CardIconHolder.ReconciliatonImg {
+  background-color: rgb(255 255 255 / 50%);
+}
+
+.CardIconHolder.ManageTeamImg {
+  background-color: rgb(255 190 11 / 10%);
+}

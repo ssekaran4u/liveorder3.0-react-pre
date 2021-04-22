@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
-    <defs>
-        <style>
-            .cls-1{fill:#dc3545}
-        </style>
-    </defs>
-    <path id="Arrow" d="M7 14l5-5 5 5z" class="cls-1" transform="translate(-7 -9)"/>
-</svg>

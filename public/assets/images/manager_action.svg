@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 12 3">
-    <defs>
-        <style>
-            .cls-1{fill:#343a40;opacity:.4}
-        </style>
-    </defs>
-    <path id="action" d="M1.5 153a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm9 0a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zM6 153a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 6 153z" class="cls-1" transform="translate(0 -153)"/>
-</svg>

@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.MainContainer {
+  max-width: calc(100vw - 32px);
+  margin: 0 auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Font */
+
+h1.h1,
+h2.h2 {
+  font-size: 33px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2e3e6a;
+}
+
+h3.h3 {
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  color: #2e3e6a;
+}
+
+h4.h4 {
+  font-size: 23px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+h5.h5{
+  font-size: 23px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #93a4b8;
+}
+
+h6.h6 {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.3;
+  color: #2e3e6a;
+}
+
+h6.h6-small {
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #93a4b8;
+}
+
+p.body-copy {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #93a4b8;
+}
+
+h4.grey-subtitle {
+  color: #93a4b8;
+}
+
+/* ================== Responsive designs ====================== */
+
+@media only screen and (min-width: 769px) {
+  .MainContainer {
+    max-width: 960px;
+  }
+  h1.h1,
+  h2.h2 {
+    font-size: 39px;
+  }
+
+  h3.h3 {
+    font-size: 33px;
+  }
+
+  h4.h4 {
+    font-size: 27px;
+  }
+
+}

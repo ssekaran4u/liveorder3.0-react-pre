@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="6.76" height="12.3" viewBox="0 0 6.76 12.3">
-    <defs>
-        <style>
-            .cls-1{fill:#fff;stroke:#fff;stroke-width:.3px}
-        </style>
-    </defs>
-    <path id="right_arrow" d="M34.124 18.376a.425.425 0 0 1-.6 0 .425.425 0 0 1 0-.6L38.8 12.5l-5.276-5.276a.424.424 0 1 1 .6-.6L39.7 12.2a.425.425 0 0 1 0 .6z" class="cls-1" data-name="right arrow" transform="translate(-33.215 -6.35)"/>
-</svg>

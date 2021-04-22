@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: liveorder-ui
+  name: liveorder-ui-deployment
+spec:
+  selector:
+    matchLabels:
+      app: liveorder-ui
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%    
+  template:
+    metadata:
+      labels:
+        app: liveorder-ui      
+    spec:
+      containers:
+      - name: liveorder-ui
+        image: mslodocker.azurecr.io/liveorder-ui:#{Build.BuildId}#  
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80       
+          initialDelaySeconds: 600
+          periodSeconds: 60
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80   
+          initialDelaySeconds: 600
+          periodSeconds: 60       
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 0.5     
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: liveorder-ui
+  namespace: liveorder-ui
+  name: liveorder-ui-service
+#  annotations: 
+#    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  type: LoadBalancer
+#  loadBalancerIP: 10.55.0.35
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: liveorder-ui
+---
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: liveorder-ui-hpa
+  namespace: liveorder-ui
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: liveorder-ui-deployment
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 60

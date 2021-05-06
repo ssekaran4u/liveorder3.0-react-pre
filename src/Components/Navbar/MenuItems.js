@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: 'Why Live Order?',
-    url: '#',
+    url: '#whyLive',
     cName: 'nav-links'
   },
   {

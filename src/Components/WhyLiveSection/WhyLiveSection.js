@@ -10,7 +10,7 @@ import './WhyLiveSection.css'
 class WhyLiveSection extends Component {
   render() {
     return (
-      <div className="WhyLiveSection d-lg-flex MainContainer py-4">
+      <div className="WhyLiveSection d-lg-flex MainContainer py-4" id="whyLive">
         <div className="d-flex align-items-center">
           <div className="whyLiveSectionTitle mr-0 mr-lg-4 mb-4 mb-lg-0">
             <img src={QMarkImg} alt="Why Live Order"className="mb-3" />

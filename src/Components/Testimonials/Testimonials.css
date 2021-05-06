@@ -1,0 +1,84 @@
+.Testimonials {
+  padding: 40px 0;
+}
+
+.TestimonialBg {
+  position: relative;
+  min-height: 415px;
+  background: url("../../Images/pattern.png") no-repeat center/cover;
+}
+
+.TestimonialContent p {
+  font-size: 19px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  color: #2e3e6a;
+}
+
+.TestimonialContent {
+  position: relative;
+  z-index: 9;
+  min-width: 120px;
+}
+
+.TestimonialContent::before {
+  content: "";
+  width: 100px;
+  height: 222px;
+  position: absolute;
+  top: -78px;
+  left: 0;
+  content: "";
+  display: block;
+  background: url("../../Images/double_quote.png") no-repeat center/cover;
+}
+
+.clientLogos {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: -20.8px 12px 79px 0 rgb(16 66 97 / 10%);
+}
+
+.WellNessLogo {
+  bottom: 0;
+  left: 8px;
+}
+
+.MahaveerLogo {
+  top: 24%;
+  left: 10%;
+}
+
+.NetmedsLogo {
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.FrankRosslogo {
+  top: 8%;
+  right: 8px;
+}
+
+.ParasLogo {
+  bottom: 32%;
+  right: 8%;
+}
+
+.ZenwickLogo {
+  bottom: 8%;
+  right: 20%;
+}
+
+.RajsonsLogo {
+  top: 8px;
+  right: 16%;
+} 
+
+.TesmedLogo {
+  top: 8px;
+  left: 8%;
+}

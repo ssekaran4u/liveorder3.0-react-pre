@@ -55,7 +55,7 @@
 
 .NavbarItems ul li a:hover {
   text-decoration: none;
-  color: #020408;
+  color: #674cf3;
 }
 
 .btn.login-btn,
@@ -72,6 +72,7 @@
 
 .btn.schedule-btn {
   transition: all 0.5s;
+  margin-right: 12px;
 }
 
 .btn.btn-outline-primary {
@@ -97,7 +98,7 @@
 
 @media only screen and (min-width: 769px) {
   .NavbarItems ul li {
-    margin-right: 48px;
+    margin-right: 40px;
   }
   .MainContainer.NavbarItems {
     padding: 27px 0;

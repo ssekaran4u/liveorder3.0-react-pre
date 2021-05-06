@@ -15,7 +15,7 @@ class HeroSection extends Component {
                   <i className="fa fa-search mr-2"></i>
                   <input type="text" placeholder="Search for products, Molecules , Sellers" name="search" />
                 </div>
-                <button type="submit" className="btn search-btn text-white">Search</button>
+                <button type="submit" className="btn btn-primary search-btn text-white">Search</button>
               </div>
             </form>
           </div>

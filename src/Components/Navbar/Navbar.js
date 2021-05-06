@@ -21,7 +21,7 @@ class Navbar extends Component {
               })}
             </ul>
             <div className="NavBtnContainer d-flex">
-              <button type="button" className="btn btn-outline-primary schedule-btn mr-3"><span className="d-none d-lg-inline-block">Schedule A&nbsp;</span>Demo</button>
+              <button type="button" className="btn btn-outline-primary schedule-btn"><span className="d-none d-lg-inline-block">Schedule A&nbsp;</span>Demo</button>
               <button type="button" className="btn btn-outline-secondary login-btn">Login</button>
             </div>
           </div>

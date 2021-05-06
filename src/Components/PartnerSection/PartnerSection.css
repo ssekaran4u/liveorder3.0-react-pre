@@ -1,5 +1,6 @@
 .PartnerSection {
   background: url('../../Images/JoinBg.png') no-repeat center/cover;
+  background-size: 100% 100%;
 }
 
 .DataCount {
@@ -64,6 +65,10 @@
   background: rgb(255 115 0 / 5%);
 }
 
+.PartnerLogoRow {
+  padding-bottom: 132px;
+}
+
 @media only screen and (min-width: 576px) {
   .DataCount {
     margin-right: 48px;
@@ -82,10 +87,6 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .PartnerLogoBox {
-    height: 144px;
-    width: 160px;
-  }
   .DataCount {
     margin-right: 88px;
   }

@@ -7,7 +7,7 @@
   margin: 136px auto 148px;
   border-radius: 14px;
   box-shadow: -35.5px 20.5px 79px 0 rgba(103, 76, 243, 0.3);
-  background: url('../../Images/LetsStartBG.png') no-repeat center/cover;
+  background: #6c19d8 url('../../Images/LetsStartBG.png') no-repeat center/cover;
 }
 
 .btn.demo-card-btn {

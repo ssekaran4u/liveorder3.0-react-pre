@@ -2,7 +2,7 @@
   padding: 64px 0 196px 0;
   margin-top: 96px;
   font-family: 'Quicksand', sans-serif;
-  background: url('../../Images/hero_bg.png') no-repeat center/cover;
+  background: url('../../Images/hero_bg@3x.png') no-repeat center/cover;
   background-size: 100% 100%;
 }
 

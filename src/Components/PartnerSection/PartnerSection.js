@@ -26,7 +26,7 @@ class PartnerSection extends Component {
               <h6 className="h6-small">Products</h6>
             </div>
           </div>
-          <div className="mobile-break-section d-flex justify-content-center">
+          <div className="mobile-break-section d-flex justify-content-center mr-0">
             <div className="DataCount">
               <h4 className="h4 mb-2">1k+</h4>
               <h6 className="h6-small">Sellers</h6>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import QMarkImg from '../../Images/QMarkImg.png'
-import SellerImg from '../../Images/SellerImg.png'
-import TrackingImg from '../../Images/TrackingImg.png'
-import ReconciliationImg from '../../Images/ReconciliationImg.png'
-import ManageTeamImg from '../../Images/ManageTeamImg.png'
+import SellerImg from '../../Images/SellerImg.svg'
+import TrackingImg from '../../Images/TrackingImg.svg'
+import ReconciliationImg from '../../Images/ReconciliationImg.svg'
+import ManageTeamImg from '../../Images/ManageTeamImg.svg'
 import './WhyLiveSection.css'
 
 
@@ -31,7 +31,7 @@ class WhyLiveSection extends Component {
               <p className="body-copy">We help Buyers find the right Sellers offering the best prices, within their geography</p>
             </div>
           </div>
-          <div className="card">
+          <div className="card mb-4 mb-lg-0">
             <div className="card-body p-0">
               <div className="CardIconHolder TrackingImg d-flex align-items-center justify-content-center mb-4">
                 <img src={TrackingImg} alt="Centralised Tracking" />

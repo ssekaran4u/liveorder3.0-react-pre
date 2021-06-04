@@ -1,0 +1,58 @@
+{
+  "general": [
+    { "question": "What Is Live Order?", "body": "" },
+    { "question": "How does Live Order work?", "body": "" },
+    { "question": "How do I join live Order? ", "body": "" },
+    { "question": "How do I contact customer support?", "body": "" },
+    { "question": "Will my data be safe?", "body": "" },
+    { "question": "Who is the provider for this service?", "body": "" },
+    { "question": "Who can buy & sell Products here?", "body": "" }
+  ],
+  "buyer": [
+    { "question": "How I can register as a buyer?", "body": "" },
+    {
+      "question": "What are the documents required to register as a buyer on Live Order?",
+      "body": ""
+    },
+    {
+      "question": "Is credit available & what will be credit limit?",
+      "body": ""
+    },
+    { "question": "How I can add a seller?", "body": "" },
+    { "question": "Can I see availability, price, schemes?", "body": "" },
+    {
+      "question": "Can I see Full details & description of a product?",
+      "body": ""
+    },
+    { "question": "Can I see the order status?", "body": "" },
+    { "question": "Is alert is there for products?", "body": "" },
+    { "question": "Is tracking system is available on order?", "body": "" },
+    {
+      "question": "Can I give order to multiple seller at a same time?",
+      "body": ""
+    }
+  ],
+  "seller": [
+    { "question": "How I can register as a Seller?", "body": "" },
+    {
+      "question": "What are the documents required to register as a seller on Live Order?",
+      "body": ""
+    },
+    { "question": "How I can give credit to buyers?", "body": "" },
+    { "question": "How I can add a buyer?", "body": "" },
+    { "question": "How I can upload schema?", "body": "" },
+    {
+      "question": "Can I see Full details & description of a product?",
+      "body": ""
+    },
+    { "question": "What products can I sell on Live Order?", "body": "" },
+    {
+      "question": "I don’t have a website, can I still sell on Live Order?",
+      "body": ""
+    },
+    { "question": "How do I list my products on Live Order?", "body": "" },
+    { "question": "How do I manage my orders on Live Order?", "body": "" },
+    { "question": "Are there requirements for my category?", "body": "" },
+    { "question": "How can I grow my business on Live Order?", "body": "" }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.196" height="11.447" viewBox="0 0 16.196 11.447">
+    <defs>
+        <style>
+            .cls-1{fill:#dbdbdb;stroke:#dbdbdb;stroke-width:.2px}
+        </style>
+    </defs>
+    <g id="zip-code" transform="translate(.1 -75.9)">
+        <g id="Group_1596" transform="translate(0 76)">
+            <g id="Group_1595">
+                <circle id="Ellipse_1270" cx=".781" cy=".781" r=".781" class="cls-1" transform="translate(8.31 6.014)"/>
+                <circle id="Ellipse_1271" cx=".781" cy=".781" r=".781" class="cls-1" transform="translate(10.497 6.014)"/>
+                <circle id="Ellipse_1272" cx=".781" cy=".781" r=".781" class="cls-1" transform="translate(6.123 6.014)"/>
+                <circle id="Ellipse_1273" cx=".781" cy=".781" r=".781" class="cls-1" transform="translate(3.936 6.014)"/>
+                <path id="Path_3779" d="M15.371 76H.625a.625.625 0 0 0-.625.625v10a.625.625 0 0 0 .625.625h14.746a.625.625 0 0 0 .629-.628v-10a.625.625 0 0 0-.629-.622zm-.625 10H1.25v-8.75h13.5z" class="cls-1" transform="translate(0 -76)"/>
+                <path id="Path_3780" d="M131.625 174.75h6.561a.625.625 0 0 0 0-1.25h-6.561a.625.625 0 0 0 0 1.25z" class="cls-1" transform="translate(-126.907 -170.454)"/>
+            </g>
+        </g>
+    </g>
+</svg>

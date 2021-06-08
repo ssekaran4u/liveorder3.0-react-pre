@@ -3,8 +3,49 @@ import "./Navbar.css";
 
 import { MenuItems } from "./MenuItems";
 import logo from "../../Images/Logo@3x.png";
+import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSchedulerModal: false,
+      schedulerData: {
+        firmName: "",
+        ownerName: "",
+        phone: "",
+        pinCode: "",
+        description: "",
+        isSeller: false,
+      },
+    };
+    this.scheduleDemoHandler = this.scheduleDemoHandler.bind(this);
+    this.scheduleDataHandler = this.scheduleDataHandler.bind(this);
+  }
+
+  scheduleDemoHandler() {
+    this.setState((prev) => ({
+      showSchedulerModal: !prev.showSchedulerModal,
+      schedulerData: {
+        firmName: "",
+        ownerName: "",
+        phone: "",
+        pinCode: "",
+        description: "",
+        isSeller: false,
+      },
+    }));
+  }
+
+  scheduleDataHandler(data) {
+    this.setState(
+      {
+        schedulerData: data,
+      },
+      () => console.log(this.state.schedulerData)
+    );
+  }
+
   render() {
     return (
       <div className="NavbarContainer">
@@ -28,6 +69,7 @@ class Navbar extends Component {
               <button
                 type="button"
                 className="btn btn-outline-primary schedule-btn"
+                onClick={this.scheduleDemoHandler}
               >
                 <span className="d-none d-lg-inline-block">
                   Schedule A&nbsp;
@@ -56,6 +98,12 @@ class Navbar extends Component {
             })}
           </ul>
         </nav>
+        {this.state.showSchedulerModal && (
+          <ScheduleADemo
+            scheduleDemoHandler={this.scheduleDemoHandler}
+            scheduleDataHandler={this.scheduleDataHandler}
+          />
+        )}
       </div>
     );
   }

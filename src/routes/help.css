@@ -14,12 +14,27 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 288px;
+  /* margin-right: 0 !important; */
+  /* margin-left: 0 !important; */
+  margin-right: 0 !important;
+  margin-left: -27px !important;
+}
+
+.help-heading {
+  font-weight: 600 !important;
+}
+
+.help-faq-container {
+  padding-left: 2.5rem !important;
+  padding-right: 3rem !important;
 }
 
 .help-faq-row {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  border-bottom: 1px dotted rgba(219, 219, 219, 0.5);
 }
 
 .help-faq-row > div {
@@ -50,10 +65,16 @@
 
 .help-card {
   cursor: pointer;
+  border: none !important;
+}
+
+.help-card {
+  border-bottom: 1px dotted rgba(219, 219, 219, 0.7) !important;
 }
 
 .help-card-header {
   display: flex;
+  padding: 0.75rem 0rem !important;
   align-items: baseline;
   justify-content: space-between;
   background-color: white !important;

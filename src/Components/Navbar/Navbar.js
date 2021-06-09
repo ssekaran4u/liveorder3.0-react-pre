@@ -76,10 +76,7 @@ class Navbar extends Component {
                 </span>
                 Demo
               </button>
-              <button
-                type="button"
-                className="btn btn-outline-primary login-btn"
-              >
+              <button type="button" className="btn login-btn">
                 Login
               </button>
             </div>

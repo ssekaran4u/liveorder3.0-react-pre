@@ -34,7 +34,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  border-bottom: 1px dotted rgba(219, 219, 219, 0.5);
+  /* border-bottom: 1px dotted rgba(219, 219, 219, 0.7); */
+  border-bottom: 3px dotted rgba(219, 219, 219, 0.5) !important;
 }
 
 .help-faq-row > div {
@@ -69,12 +70,13 @@
 }
 
 .help-card {
-  border-bottom: 1px dotted rgba(219, 219, 219, 0.7) !important;
+  border-bottom: 3px dotted rgba(219, 219, 219, 0.7) !important;
+  transition: 1.5s ease-in-out;
 }
 
 .help-card-header {
   display: flex;
-  padding: 0.75rem 0rem !important;
+  padding: 32px 0rem !important;
   align-items: baseline;
   justify-content: space-between;
   background-color: white !important;

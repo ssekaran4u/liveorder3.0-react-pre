@@ -5,6 +5,10 @@
   object-fit: contain;
 }
 
+.navbar-highlight {
+  color: #674cf3 !important;
+}
+
 .NavbarContainer {
   position: fixed;
   width: 100vw;
@@ -91,9 +95,10 @@
 }
 
 .btn.login-btn:hover {
-  /* box-shadow: 0 1px 20px 0 #c3cde4; */
+  /* box-shadow: 0 1px 10px 0 #c3cde4; */
+  box-shadow: 0 6px 12px rgb(0 0 0 / 5%);
   color: #674cf3;
-  border-color: #674cf3;
+  /* border-color: #674cf3; */
 }
 
 .btn.login-btn:focus,

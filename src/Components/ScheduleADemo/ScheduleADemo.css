@@ -5,6 +5,7 @@
 .schedule-demo-modal > .modal-content {
   border-radius: 14px;
   width: 640px !important;
+  border: none !important;
 }
 
 .schedule-modal-body {
@@ -71,6 +72,32 @@
   background-color: #674cf3;
 }
 
+.schedule-input-group {
+  border-radius: 6px;
+  border: 1px solid rgb(195, 205, 228);
+  width: 255.5px;
+  height: 44px;
+  border-radius: 6px;
+}
+
+.schedule-input-group > input {
+  margin: 0 !important;
+  height: 42px;
+}
+
+.schedule-input-group > input {
+  outline-width: none !important;
+}
+
+.schedule-input-group .input-group-text,
+.schedule-input-group input {
+  border: none !important;
+}
+
+.schedule-input-group input:focus {
+  border: none !important;
+}
+
 .schedule-form-checkbox label {
   margin-left: 1rem;
   font-size: 10px;
@@ -88,4 +115,24 @@
   letter-spacing: normal !important;
   text-align: left !important;
   color: #2e3e6a !important;
+}
+
+.description-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.description-row-header label {
+  color: #0d1321;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.span-required-red {
+  color: #ef2b4a !important;
+}
+
+.span-blue-green {
+  color: #2ec4b6 !important;
 }

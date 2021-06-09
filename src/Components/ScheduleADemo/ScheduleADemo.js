@@ -4,11 +4,12 @@ import {
   Form,
   FormControl,
   InputGroup,
-  Modal,
+  // Modal,
   Row,
 } from "react-bootstrap";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import React, { useState } from "react";
-import DemoBGC2 from "../../Images/bg Of demo c2.svg";
+import DemoBGC2 from "../../Images/bg Of demo c2@3x.png";
 import ShopSVG from "../../Images/shop.svg";
 import SmartphoneSVG from "../../Images/smartphone (1).svg";
 import ZipcodeSVG from "../../Images/zip-code.svg";
@@ -37,8 +38,13 @@ function ScheduleADemo(props) {
   }
 
   return (
-    <Modal.Dialog className="schedule-demo-modal">
-      <Modal.Body
+    <Modal
+      className="schedule-demo-modal"
+      isOpen={props.isOpen}
+      centered
+      size="xl"
+    >
+      <ModalBody
         className="schedule-modal-body"
         style={{ padding: "0", borderRadius: "14px" }}
       >
@@ -52,12 +58,13 @@ function ScheduleADemo(props) {
         <Form>
           {/* Firm Name and Owner Name */}
           <Row className="align-items-center justify-content-center my-auto mx-5">
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6">
               <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Firm Name
               </Form.Label>
+
               <InputGroup
-                className="mb-2"
+                className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
                 <InputGroup.Text style={{ backgroundColor: "#f6f8fd" }}>
@@ -77,12 +84,12 @@ function ScheduleADemo(props) {
                 />
               </InputGroup>
             </Col>
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6">
               <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Owner Name
               </Form.Label>
               <InputGroup
-                className="mb-2"
+                className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
                 <InputGroup.Text style={{ backgroundColor: "#f6f8fd" }}>
@@ -106,12 +113,12 @@ function ScheduleADemo(props) {
 
           {/* Phone Number and Pin Code */}
           <Row className="align-items-center justify-content-center my-auto mx-5">
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6">
               <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Phone Number/Landline
               </Form.Label>
               <InputGroup
-                className="mb-2"
+                className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
                 <InputGroup.Text style={{ backgroundColor: "#f6f8fd" }}>
@@ -132,12 +139,12 @@ function ScheduleADemo(props) {
                 />
               </InputGroup>
             </Col>
-            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6">
               <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Pincode
               </Form.Label>
               <InputGroup
-                className="mb-2"
+                className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
                 <InputGroup.Text style={{ backgroundColor: "#f6f8fd" }}>
@@ -162,19 +169,32 @@ function ScheduleADemo(props) {
 
           <Row className="my-auto mx-5">
             <Col xs="12" sm="12" md="12" lg="12" xl="12">
-              <Form.Label
-                htmlFor="inlineFormInputGroup"
-                style={{ color: "#0d1321" }}
-              >
-                Description
-              </Form.Label>
+              <div className="description-row-header" style={{}}>
+                <Form.Label htmlFor="inlineFormInputGroup">
+                  Description<span className="span-required-red">*</span>
+                </Form.Label>
+                <label>
+                  Max <span className="span-blue-green">470</span> Characters
+                </label>
+              </div>
               <Form.Control
-                style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
+                style={{
+                  borderRadius: "6px",
+                  border: "solid 1px #c3cde4",
+                  resize: "none",
+                }}
                 id="inlineFormInputGroup"
                 className="schedule-form"
                 as="textarea"
                 rows={3}
-                value={description}
+                maxLength="470"
+                // aria-rowcount={3}
+
+                value={
+                  description.length === 0
+                    ? description
+                    : "Yes, I am interested in demo."
+                }
                 onChange={(e) => setDescription(e.target.value)}
               />
             </Col>
@@ -191,21 +211,21 @@ function ScheduleADemo(props) {
               />
             </Col>
           </Row>
-          <Row className="mx-3 mb-4 mt-auto justify-content-end row">
+          <Row className="mx-5 mb-4 mt-auto justify-content-end row">
             <div className="mr-3 close-btn">
               <Button variant="#c3cde4" onClick={props.scheduleDemoHandler}>
                 Close
               </Button>
             </div>
-            <div>
+            <div className="mr-3">
               <Button variant="primary" onClick={dataHandler}>
                 Schedule Demo
               </Button>
             </div>
           </Row>
         </Form>
-      </Modal.Body>
-    </Modal.Dialog>
+      </ModalBody>
+    </Modal>
   );
 }
 

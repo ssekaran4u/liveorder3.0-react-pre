@@ -55,13 +55,13 @@ function ScheduleADemo(props) {
           </h6>
           <p className="body-copy">Fill the form to proceed.</p>
         </div>
-        <Form>
+        <Form className="mt-4">
           {/* Firm Name and Owner Name */}
-          <Row className="align-items-center justify-content-center my-auto mx-5">
-            <Col xs="12" sm="12" md="12" lg="6" xl="6">
-              <Form.Label htmlFor="inlineFormInput" visuallyHidden>
+          <Row className="align-items-center justify-content-center mt-auto mb-2 mx-5">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
+              {/* <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Firm Name
-              </Form.Label>
+              </Form.Label> */}
 
               <InputGroup
                 className="mb-2 schedule-input-group"
@@ -84,10 +84,10 @@ function ScheduleADemo(props) {
                 />
               </InputGroup>
             </Col>
-            <Col xs="12" sm="12" md="12" lg="6" xl="6">
-              <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
+              {/* <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Owner Name
-              </Form.Label>
+              </Form.Label> */}
               <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
@@ -112,11 +112,11 @@ function ScheduleADemo(props) {
           </Row>
 
           {/* Phone Number and Pin Code */}
-          <Row className="align-items-center justify-content-center my-auto mx-5">
-            <Col xs="12" sm="12" md="12" lg="6" xl="6">
-              <Form.Label htmlFor="inlineFormInput" visuallyHidden>
+          <Row className="align-items-center justify-content-center mb-auto mt-2 mx-5">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
+              {/* <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Phone Number/Landline
-              </Form.Label>
+              </Form.Label> */}
               <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
@@ -139,10 +139,10 @@ function ScheduleADemo(props) {
                 />
               </InputGroup>
             </Col>
-            <Col xs="12" sm="12" md="12" lg="6" xl="6">
-              <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
+              {/* <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Pincode
-              </Form.Label>
+              </Form.Label> */}
               <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}

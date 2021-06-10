@@ -31,11 +31,20 @@
 }
 
 .help-faq-row {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   /* border-bottom: 1px dotted rgba(219, 219, 219, 0.7); */
-  border-bottom: 3px dotted rgba(219, 219, 219, 0.5) !important;
+  /* border-bottom: 3px dashed rgba(219, 219, 219, 0.5) !important; */
+}
+
+.help-faq-row-horizontal-line {
+  position: absolute;
+  z-index: -1;
+  bottom: 9px;
+  width: 100%;
+  border-bottom: 1.5px dashed rgba(219, 219, 219, 0.5) !important;
 }
 
 .help-faq-row > div {
@@ -70,14 +79,15 @@
 }
 
 .help-card {
-  border-bottom: 3px dotted rgba(219, 219, 219, 0.7) !important;
+  /* border-bottom: 3px dotted rgba(219, 219, 219, 0.7) !important; */
+  border-bottom: 1.5px dashed rgba(219, 219, 219, 0.7) !important;
   transition: 1.5s ease-in-out;
 }
 
 .help-card-header {
   display: flex;
   padding: 32px 0rem !important;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   background-color: white !important;
 }

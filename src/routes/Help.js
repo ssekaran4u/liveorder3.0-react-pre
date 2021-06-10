@@ -79,6 +79,7 @@ function Help() {
                 For Sellers
               </h4>
             </div>
+            <span className="help-faq-row-horizontal-line"></span>
           </Row>
           <Accordion className="px-5">
             {faqData[section].map((sec, secIndex) => {

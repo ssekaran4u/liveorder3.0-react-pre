@@ -56,6 +56,11 @@
   color: #5b636a !important;
 }
 
+.schedule-form:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px 1px #c3cde4 !important;
+}
+
 .schedule-form-checkbox {
   color: #0d1321;
   display: flex !important;
@@ -135,4 +140,54 @@
 
 .span-blue-green {
   color: #2ec4b6 !important;
+}
+
+.demo-2 {
+  position: relative;
+}
+
+.sample-input-img {
+  position: absolute;
+  top: 1px;
+  color: white;
+  border-right: 1px solid #c3cde4;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(246, 248, 253);
+  padding: 9px 11px;
+}
+
+.sample-input-img.shop,
+.sample-input-img.smartphone {
+  left: 16px;
+}
+
+.sample-input-img.user,
+.sample-input-img.pincode {
+  left: 9px;
+}
+
+.sample-input-text:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px 1px #c3cde4;
+}
+
+.sample-input-text {
+  height: 44px;
+  width: 100%;
+  padding: 14px 15px 14px 50px;
+  border-radius: 6px;
+  border: solid 1px #c3cde4;
+  background-color: white !important;
+
+  font-family: Quicksand;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.17 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: #5b636a !important;
 }

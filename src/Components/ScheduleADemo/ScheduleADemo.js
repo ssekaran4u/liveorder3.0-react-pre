@@ -57,13 +57,13 @@ function ScheduleADemo(props) {
         </div>
         <Form className="mt-4">
           {/* Firm Name and Owner Name */}
-          <Row className="align-items-center justify-content-center mt-auto mb-2 mx-5">
+          <Row className="align-items-center justify-content-center mt-auto mb-3 mx-5">
             <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
               {/* <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Firm Name
               </Form.Label> */}
 
-              <InputGroup
+              {/* <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
@@ -82,13 +82,30 @@ function ScheduleADemo(props) {
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
-              </InputGroup>
+              </InputGroup> */}
+
+              <div className="sample-input-img shop">
+                <img
+                  // className="sample-input-img"
+                  src={ShopSVG}
+                  width="16px"
+                  height="16px"
+                  alt="user-icon"
+                />
+              </div>
+              <input
+                className="sample-input-text"
+                type="text"
+                placeholder="Firm Name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
             </Col>
             <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
               {/* <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Owner Name
               </Form.Label> */}
-              <InputGroup
+              {/* <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
@@ -107,7 +124,23 @@ function ScheduleADemo(props) {
                   value={ownerName}
                   onChange={(e) => setOwnerName(e.target.value)}
                 />
-              </InputGroup>
+              </InputGroup> */}
+              <div className="sample-input-img user">
+                <img
+                  // className="sample-input-img"
+                  src={UserSVG}
+                  width="16px"
+                  height="16px"
+                  alt="user-icon"
+                />
+              </div>
+              <input
+                className="sample-input-text"
+                type="text"
+                placeholder="Owner Name"
+                value={ownerName}
+                onChange={(e) => setOwnerName(e.target.value)}
+              />
             </Col>
           </Row>
 
@@ -117,7 +150,7 @@ function ScheduleADemo(props) {
               {/* <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Phone Number/Landline
               </Form.Label> */}
-              <InputGroup
+              {/* <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
@@ -137,13 +170,29 @@ function ScheduleADemo(props) {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
-              </InputGroup>
+              </InputGroup> */}
+              <div className="sample-input-img smartphone">
+                <img
+                  // className="sample-input-img"
+                  src={SmartphoneSVG}
+                  width="16px"
+                  height="16px"
+                  alt="user-icon"
+                />
+              </div>
+              <input
+                className="sample-input-text"
+                type="text"
+                placeholder="Phone Number/Landline"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
             </Col>
             <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
               {/* <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
                 Pincode
               </Form.Label> */}
-              <InputGroup
+              {/* <InputGroup
                 className="mb-2 schedule-input-group"
                 style={{ borderRadius: "6px", border: "solid 1px #c3cde4" }}
               >
@@ -163,10 +212,39 @@ function ScheduleADemo(props) {
                   value={pinCode}
                   onChange={(e) => setPinCode(e.target.value)}
                 />
-              </InputGroup>
+              </InputGroup> */}
+              <div className="sample-input-img pincode">
+                <img
+                  // className="sample-input-img"
+                  src={ZipcodeSVG}
+                  width="16px"
+                  height="16px"
+                  alt="user-icon"
+                />
+              </div>
+              <input
+                className="sample-input-text"
+                type="text"
+                placeholder="Pincode"
+                value={pinCode}
+                onChange={(e) => setPinCode(e.target.value)}
+              />
             </Col>
           </Row>
-
+          {/* <Row className="align-items-center justify-content-center mt-auto mb-2 mx-5 demo-2">
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
+              <div className="sample-input-img">
+                <img
+                  // className="sample-input-img"
+                  src={UserSVG}
+                  width="16px"
+                  height="16px"
+                  alt="user-icon"
+                />
+              </div>
+              <input className="sample-input-text" type="text" placeholder="" value={} onChange={} />
+            </Col>
+          </Row> */}
           <Row className="my-auto mx-5">
             <Col xs="12" sm="12" md="12" lg="12" xl="12">
               <div className="description-row-header" style={{}}>
@@ -186,14 +264,12 @@ function ScheduleADemo(props) {
                 id="inlineFormInputGroup"
                 className="schedule-form"
                 as="textarea"
-                rows={3}
+                rows={4}
                 maxLength="470"
-                // aria-rowcount={3}
-
                 value={
-                  description.length === 0
+                  description.length > 0
                     ? description
-                    : "Yes, I am interested in demo."
+                    : "Yes, I am interested in a demo."
                 }
                 onChange={(e) => setDescription(e.target.value)}
               />

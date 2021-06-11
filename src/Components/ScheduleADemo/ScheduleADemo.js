@@ -145,7 +145,7 @@ function ScheduleADemo(props) {
           </Row>
 
           {/* Phone Number and Pin Code */}
-          <Row className="align-items-center justify-content-center mb-auto mt-2 mx-5">
+          <Row className="align-items-center justify-content-center mb-2 mt-2 mx-5">
             <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
               {/* <Form.Label htmlFor="inlineFormInput" visuallyHidden>
                 Phone Number/Landline
@@ -281,7 +281,7 @@ function ScheduleADemo(props) {
                 type="checkbox"
                 id="autoSizingCheck"
                 className="mb-2 schedule-form-checkbox"
-                label="Remember me"
+                label="Are you a seller"
                 checked={isSeller}
                 onChange={(e) => setIsSeller(!isSeller)}
               />

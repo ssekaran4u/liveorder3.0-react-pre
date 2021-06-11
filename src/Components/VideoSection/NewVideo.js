@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
+import PlayButtonSVG from "../../Images/Play icon.svg";
 import VideoPreview from "../../Images/Watch the Video.png";
 import "./NewVideoSection.css";
 
@@ -54,17 +55,18 @@ class NewVideo extends Component {
 
                     <div className="play-button-container">
                       <div className="play-button">
-                        <svg>
+                        <img src={PlayButtonSVG} alt="play button icon" />
+                        {/* <svg>
                           <title>Play Button</title>
                           <polygon points="10 33 10 1 34 17"></polygon>
-                        </svg>
+                        </svg> */}
                       </div>
                     </div>
                     <div className="image-container">
                       <img
                         className="card"
-                        width="512"
-                        height="340"
+                        width="640"
+                        height="384"
                         alt="Watch The Video"
                         src={VideoPreview}
                         // src="https://www.elegantthemes.com/images/home/divi-video-cover.jpg"

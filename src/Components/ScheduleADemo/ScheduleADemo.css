@@ -66,6 +66,7 @@
   display: flex !important;
   align-items: center;
   margin-top: 1rem;
+  font-weight: 600;
 }
 
 .schedule-form-checkbox input {

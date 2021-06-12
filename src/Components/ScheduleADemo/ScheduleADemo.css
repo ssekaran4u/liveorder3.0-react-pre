@@ -61,21 +61,84 @@
   box-shadow: 0 0 3px 1px #c3cde4 !important;
 }
 
-.schedule-form-checkbox {
-  color: #0d1321;
-  display: flex !important;
-  align-items: center;
-  margin-top: 1rem;
+.schedule-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-family: Quicksand;
+  font-size: 10px;
   font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d1321;
 }
 
-.schedule-form-checkbox input {
-  width: 24px;
+/* Hide the browser's default checkbox */
+.schedule-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-radius: 30px !important;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -6px;
+  left: 0;
   height: 24px;
-  opacity: 0.49;
-  border: solid 1px #5b636a;
-  border-radius: 6px !important;
+  width: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(91, 99, 106, 0.49);
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.schedule-checkbox-container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.schedule-checkbox-container input:checked ~ .checkmark {
   background-color: #674cf3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.schedule-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.schedule-checkbox-container .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .schedule-input-group {
@@ -127,6 +190,14 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  font-family: Quicksand;
+  /* font-size: 12px; */
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .description-row-header label {
@@ -143,6 +214,14 @@
   color: #2ec4b6 !important;
 }
 
+.span-yellow {
+  color: #ffbe0b !important;
+}
+
+.span-red {
+  color: #ef2b4a !important;
+}
+
 .demo-2 {
   position: relative;
 }
@@ -150,13 +229,14 @@
 .sample-input-img {
   position: absolute;
   top: 1px;
+  width: 44px;
   color: white;
   border-right: 1px solid #c3cde4;
   border-radius: 6px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: rgb(246, 248, 253);
-  padding: 9px 11px;
+  padding: 9px 14px;
 }
 
 .sample-input-img.shop,
@@ -181,7 +261,7 @@
   border-radius: 6px;
   border: solid 1px #c3cde4;
   background-color: white !important;
-
+  /* color: rgba(91, 99, 106, 0.5) !important; */
   font-family: Quicksand;
   font-size: 12px !important;
   font-weight: 500 !important;
@@ -190,5 +270,12 @@
   line-height: 1.17 !important;
   letter-spacing: normal !important;
   text-align: left !important;
-  color: #5b636a !important;
+}
+
+.sample-input-text::placeholder {
+  color: rgba(91, 99, 106, 0.5);
+}
+
+.sample-input-text:not(:placeholder-shown) {
+  color: rgba(91, 99, 106, 1);
 }

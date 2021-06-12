@@ -109,8 +109,8 @@
     rgba(255, 255, 255, 0.2) 100%
   ); */
   box-shadow: 0 24px 72px 0 rgb(0 0 0 / 50%);
-  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .play-button-container .play-button {
@@ -126,8 +126,8 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,13 +141,20 @@
 }
 
 .play-button-container:hover .play-button {
-  width: 73px;
+  width: 74px;
   height: 74px;
 }
 
 .play-button-container .play-button img {
   width: 34px;
   height: 34px;
+  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.play-button-container:hover .play-button img {
+  width: 36px;
+  height: 36px;
 }
 
 .featured-video .video-btn.video-popup .image-container {
@@ -165,8 +172,8 @@
   max-width: 100%;
   align-self: center;
   border: none;
-  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
   visibility: visible;
   opacity: 1;
 }
@@ -175,8 +182,8 @@ img.card {
   padding: 0;
   border-radius: 8px;
   background-color: #fff;
-  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 8px 60px 0 rgb(103 151 255 / 11%),
     0 12px 90px 0 rgb(103 151 255 / 11%);
 }

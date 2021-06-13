@@ -1,8 +1,8 @@
 .HeroSection {
   padding: 64px 0 196px 0;
   margin-top: 96px;
-  font-family: 'Quicksand', sans-serif;
-  background: url('../../Images/hero_bg@3x.png') no-repeat center/cover;
+  font-family: "Quicksand", sans-serif;
+  background: url("../../Images/hero_bg@3x.png") no-repeat center/cover;
   background-size: 100% 100%;
 }
 
@@ -14,7 +14,8 @@ h5.h5.HeroSubTitle {
   color: #00d3b4;
 }
 
-.search-container  {
+.search-container {
+  position: relative;
   width: calc(100vw - 32px);
   height: 54px;
   margin: 54px auto;
@@ -24,10 +25,11 @@ h5.h5.HeroSubTitle {
   background-color: #f6f8fd;
 }
 
-.search-container input  {
+.search-container input {
   background-color: #f6f8fd;
   width: 100%;
   opacity: 0.5;
+  margin: auto 8px auto 12px;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -36,6 +38,10 @@ h5.h5.HeroSubTitle {
   color: #5b636a;
   border-color: transparent;
   outline: none;
+}
+
+.search-container input:not(:placeholder-shown) {
+  opacity: 1;
 }
 
 .search-container i {
@@ -51,10 +57,42 @@ h5.h5.HeroSubTitle {
 
 .btn.search-btn:hover {
   background-image: none;
+  background-color: #8039db;
+  border-color: #8039db;
 }
 
 @media only screen and (min-width: 769px) {
   .search-container {
     width: 580px;
   }
+}
+
+.search-container .search-results {
+  position: absolute;
+  width: 100%;
+  padding: 8px 8px 8px 16px;
+  top: 56px;
+  left: 0;
+  text-align: left;
+  border-radius: 14px;
+  border: solid 1px #c3cde4;
+  background-color: #f6f8fd;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 0.88;
+  letter-spacing: normal;
+  color: #5b636a;
+}
+
+.search-results li {
+  list-style: none;
+  margin: 2px auto;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-results li:hover {
+  background-color: #eee !important;
+  border-radius: 2px;
 }

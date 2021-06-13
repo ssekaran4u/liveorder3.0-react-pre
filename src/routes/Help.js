@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Accordion, Card, Container, Row } from "react-bootstrap";
+import { Accordion, Card, Row } from "react-bootstrap";
+import { Container } from "reactstrap";
 import faqData from "./helpdata.json";
 import "./help.css";
 import PatternHelp from "../Images/pattern help.svg";

@@ -1,14 +1,6 @@
-import {
-  Button,
-  Col,
-  Form,
-  FormControl,
-  InputGroup,
-  // Modal,
-  Row,
-} from "react-bootstrap";
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Button, Col, Form, Row } from "react-bootstrap";
+import { Modal, ModalBody } from "reactstrap";
 import DemoBGC2 from "../../Images/bg Of demo c2@3x.png";
 import ShopSVG from "../../Images/shop.svg";
 import SmartphoneSVG from "../../Images/smartphone (1).svg";
@@ -17,16 +9,21 @@ import UserSVG from "../../Images/user.svg";
 import "./ScheduleADemo.css";
 
 function ScheduleADemo(props) {
+  const [modal, setModal] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [ownerName, setOwnerName] = useState("");
   const [phone, setPhone] = useState("");
-  const [inValidPhone, setInvalidPhone] = useState(false);
-  const [inValidPincode, setInvalidPincode] = useState(false);
+  // const [inValidPhone, setInvalidPhone] = useState(false);
+  // const [inValidPincode, setInvalidPincode] = useState(false);
   const [pinCode, setPinCode] = useState("");
   const [description, setDescription] = useState(
     "Yes, I am interested in a demo."
   );
   const [isSeller, setIsSeller] = useState(false);
+
+  useEffect(() => {
+    setModal(props.isOpen);
+  }, [props.isOpen]);
 
   function dataHandler() {
     let data = {
@@ -38,6 +35,7 @@ function ScheduleADemo(props) {
       isSeller,
     };
     props.scheduleDataHandler(data);
+    setModal(false);
     props.scheduleDemoHandler();
   }
 
@@ -76,12 +74,7 @@ function ScheduleADemo(props) {
   };
 
   return (
-    <Modal
-      className="schedule-demo-modal"
-      isOpen={props.isOpen}
-      centered
-      size="xl"
-    >
+    <Modal className="schedule-demo-modal" isOpen={modal} centered size="xl">
       <ModalBody
         className="schedule-modal-body"
         style={{ padding: "0", borderRadius: "14px" }}

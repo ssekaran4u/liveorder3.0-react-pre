@@ -102,13 +102,12 @@ class Navbar extends Component {
             })}
           </ul>
         </nav>
-        {this.state.showSchedulerModal && (
-          <ScheduleADemo
-            scheduleDemoHandler={this.scheduleDemoHandler}
-            scheduleDataHandler={this.scheduleDataHandler}
-            isOpen={this.state.showSchedulerModal}
-          />
-        )}
+
+        <ScheduleADemo
+          scheduleDemoHandler={this.scheduleDemoHandler}
+          scheduleDataHandler={this.scheduleDataHandler}
+          isOpen={this.state.showSchedulerModal}
+        />
       </div>
     );
   }

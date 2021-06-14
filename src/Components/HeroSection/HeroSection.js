@@ -29,10 +29,9 @@ class HeroSection extends Component {
             your Business Future-Ready
           </h5>
           <div className="search-container d-flex align-items-center">
-            <form className="w-100">
+            <form className="w-100" autoComplete="off">
               <div className="d-flex justify-content-between">
                 <div className="d-flex justify-content-center align-items-center w-100">
-                  {/* <i className="fa fa-search mr-2"></i> */}
                   <img
                     src={SearchIconSVG}
                     alt="search icon"
@@ -56,10 +55,26 @@ class HeroSection extends Component {
             </form>
             {this.state.searchTerm !== "" && (
               <div className="search-results">
-                <li>Search 1</li>
-                <li>Search 2</li>
-                <li>Search 3</li>
-                <li>Search 4</li>
+                <div className="search-result-card">
+                  <div className="details-div">
+                    <p className="heading">Dolo 650</p>
+                    <p className="sub-heading">Micro Pharma India Pvt Ltd.</p>
+                  </div>
+                  <div className="inventory">
+                    <p className="pack-size">Pack Size: 15 tablets</p>
+                    <p className="price">&#8377; 44.50</p>
+                  </div>
+                </div>
+                <div className="search-result-card">
+                  <div className="details-div">
+                    <p className="heading">Vicks Action 500</p>
+                    <p className="sub-heading">Micro Pharma India Pvt Ltd.</p>
+                  </div>
+                  <div className="inventory">
+                    <p className="pack-size">Pack Size: 30 tablets</p>
+                    <p className="price">&#8377; 80.00</p>
+                  </div>
+                </div>
               </div>
             )}
           </div>

@@ -50,7 +50,7 @@
   font-weight: 500 !important;
   font-stretch: normal !important;
   font-style: normal !important;
-  line-height: 1.17 !important;
+  line-height: 16px !important;
   letter-spacing: normal !important;
   text-align: left !important;
   color: #5b636a !important;
@@ -74,7 +74,7 @@
   user-select: none;
 
   font-family: Quicksand;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -130,15 +130,16 @@
 
 /* Style the checkmark/indicator */
 .schedule-checkbox-container .checkmark:after {
-  left: 8px;
-  top: 3px;
-  width: 6px;
-  height: 13px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
+  left: 5.5px;
+  top: 6.5px;
+  width: 12.3px;
+  height: 9.6px;
+  /* border: solid white;
+  border-width: 0 3px 3px 0; */
+  /* -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg); */
+  background: url("../../Images/Right\ Sign.svg") no-repeat;
 }
 
 .schedule-input-group {
@@ -257,7 +258,7 @@
 .sample-input-text {
   height: 44px;
   width: 100%;
-  padding: 14px 15px 14px 50px;
+  padding: 14px 15px 14px 57px;
   border-radius: 6px;
   border: solid 1px #c3cde4;
   background-color: white !important;
@@ -278,4 +279,5 @@
 
 .sample-input-text:not(:placeholder-shown) {
   color: rgba(91, 99, 106, 1);
+  font-size: 13px !important;
 }

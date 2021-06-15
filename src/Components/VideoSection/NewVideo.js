@@ -54,13 +54,18 @@ class NewVideo extends Component {
                     </svg>
 
                     <div className="play-button-container">
-                      <div className="play-button">
-                        <img src={PlayButtonSVG} alt="play button icon" />
-                        {/* <svg>
+                      <img
+                        className="play-button-img"
+                        src={PlayButtonSVG}
+                        alt="play button icon"
+                      />
+                      {/* <div className="play-button">
+                        <img src={PlayButtonSVG} alt="play button icon" /> */}
+                      {/* <svg>
                           <title>Play Button</title>
                           <polygon points="10 33 10 1 34 17"></polygon>
                         </svg> */}
-                      </div>
+                      {/* </div> */}
                     </div>
                     <div className="image-container">
                       <img
@@ -72,7 +77,7 @@ class NewVideo extends Component {
                         // src="https://www.elegantthemes.com/images/home/divi-video-cover.jpg"
                         // data-src="https://www.elegantthemes.com/images/home/divi-video-cover.jpg"
                         //  data-srcset="https://www.elegantthemes.com/images/home/divi-video-cover-large.jpg 1592w, https://www.elegantthemes.com/images/home/divi-video-cover.jpg 796w, https://www.elegantthemes.com/images/home/divi-video-cover-small.jpg 384w"
-                        //  sizes="(max-width: 520px) 100vw, 796px"
+                        sizes="(max-width: 520px) 100vw, 796px"
                         //  srcset="https://www.elegantthemes.com/images/home/divi-video-cover-large.jpg 1592w, https://www.elegantthemes.com/images/home/divi-video-cover.jpg 796w, https://www.elegantthemes.com/images/home/divi-video-cover-small.jpg 384w"
                       />
                       {/* <img className="card" width="512" height="340" alt="Watch The Video" src="https://www.elegantthemes.com/images/home/divi-video-cover.jpg" data-src="https://www.elegantthemes.com/images/home/divi-video-cover.jpg" data-srcset="https://www.elegantthemes.com/images/home/divi-video-cover-large.jpg 1592w, https://www.elegantthemes.com/images/home/divi-video-cover.jpg 796w, https://www.elegantthemes.com/images/home/divi-video-cover-small.jpg 384w" sizes="(max-width: 520px) 100vw, 796px" srcset="https://www.elegantthemes.com/images/home/divi-video-cover-large.jpg 1592w, https://www.elegantthemes.com/images/home/divi-video-cover.jpg 796w, https://www.elegantthemes.com/images/home/divi-video-cover-small.jpg 384w" /> */}

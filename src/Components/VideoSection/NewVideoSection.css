@@ -80,8 +80,8 @@
 }
 
 .play-button-container {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -97,7 +97,44 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  background-color: rgba(128, 57, 219, 0.3);
+  background-color: none;
+  /* background-color: rgba(128, 57, 219, 0.3); */
+  /* background: -webkit-linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  ); */
+  /* box-shadow: 0 24px 72px 0 rgb(0 0 0 / 50%); */
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+.play-button-container::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  z-index: 2;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  --webkit-backdrop-filter: blur(5px);
+  /* background-color: rgba(128, 57, 219, 0.3); */
   /* background: -webkit-linear-gradient(
     330deg,
     rgba(255, 255, 255, 0) 0%,
@@ -109,15 +146,17 @@
     rgba(255, 255, 255, 0.2) 100%
   ); */
   box-shadow: 0 24px 72px 0 rgb(0 0 0 / 50%);
-  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.play-button-container .play-button {
+.play-button-container::before {
+  content: "";
+  position: absolute;
   cursor: pointer;
-  z-index: 2;
-  width: 72px;
-  height: 72px;
+  z-index: 3;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   background: #fff;
   display: -webkit-box;
@@ -126,8 +165,8 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,27 +174,34 @@
   padding: 17px 16.2px 16px 24px;
 }
 
-.play-button-container:hover {
+.play-button-container .play-button-img {
+  z-index: 4;
+  margin-left: 6px;
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.play-button-container:hover::after {
+  width: 112px;
+  height: 112px;
+}
+
+.play-button-container:hover::before {
   width: 88px;
   height: 88px;
 }
 
-.play-button-container:hover .play-button {
-  width: 74px;
-  height: 74px;
-}
-
-.play-button-container .play-button img {
+/* .play-button-container .play-button img {
   width: 34px;
   height: 34px;
-  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .play-button-container:hover .play-button img {
   width: 36px;
   height: 36px;
-}
+} */
 
 .featured-video .video-btn.video-popup .image-container {
   position: relative;
@@ -172,8 +218,8 @@
   max-width: 100%;
   align-self: center;
   border: none;
-  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   visibility: visible;
   opacity: 1;
 }
@@ -182,8 +228,8 @@ img.card {
   padding: 0;
   border-radius: 8px;
   background-color: #fff;
-  -webkit-transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 125ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 8px 60px 0 rgb(103 151 255 / 11%),
     0 12px 90px 0 rgb(103 151 255 / 11%);
 }

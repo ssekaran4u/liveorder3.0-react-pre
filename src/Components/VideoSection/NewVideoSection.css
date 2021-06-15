@@ -74,7 +74,7 @@
 .featured-video .video-btn.video-popup > svg {
   bottom: -28%;
   /* left: -32%; */
-  left: -23%;
+  left: -19%;
   position: absolute;
   z-index: -1;
 }

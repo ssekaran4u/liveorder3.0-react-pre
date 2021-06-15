@@ -94,7 +94,14 @@ class Navbar extends Component {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.url} className={item.cName}>
+                  <a
+                    href={item.url}
+                    className={
+                      window.location.pathname === `/${item.url}`
+                        ? `navbar-highlight ${item.cName}`
+                        : item.cName
+                    }
+                  >
                     {item.title}
                   </a>
                 </li>

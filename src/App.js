@@ -9,6 +9,7 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import NewVideo from "./Components/VideoSection/NewVideo";
 import "../node_modules/react-modal-video/css/modal-video.min.css";
 import Help from "./routes/Help";
+import FooterPage from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Help />
         </>
       )}
+      <FooterPage />
     </>
   );
 }

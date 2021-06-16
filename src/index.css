@@ -4,13 +4,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 #root {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .MainContainer {
@@ -27,7 +31,6 @@ a:hover {
   background-color: #674cf3;
   border-color: #674cf3;
 }
-
 
 /* Font */
 
@@ -58,7 +61,7 @@ h4.h4 {
   letter-spacing: normal;
 }
 
-h5.h5{
+h5.h5 {
   font-size: 23px;
   font-weight: 500;
   font-style: normal;
@@ -114,5 +117,4 @@ h4.grey-subtitle {
   h4.h4 {
     font-size: 27px;
   }
-
 }

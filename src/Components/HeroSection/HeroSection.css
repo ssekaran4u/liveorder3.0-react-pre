@@ -17,12 +17,13 @@ h5.h5.HeroSubTitle {
 .search-container {
   position: relative;
   width: calc(100vw - 32px);
-  height: 54px;
+  height: 56px;
   margin: 54px auto;
   padding: 8px 8px 8px 16px;
   border-radius: 14px;
   border: solid 1px #c3cde4;
   background-color: #f6f8fd;
+  transition: 300ms;
 }
 
 .search-container input {
@@ -40,6 +41,11 @@ h5.h5.HeroSubTitle {
   outline: none;
 }
 
+.search-container input:focus .search-container,
+.search-container:hover {
+  box-shadow: 0 0 12px 5px rgb(0 0 0 / 5%);
+}
+
 .search-container input:not(:placeholder-shown) {
   opacity: 1;
 }
@@ -53,6 +59,7 @@ h5.h5.HeroSubTitle {
   border-radius: 14px;
   background-color: #674cf3;
   transition: all 0.5s;
+  padding: 7px 19px !important;
 }
 
 .btn.search-btn:hover {

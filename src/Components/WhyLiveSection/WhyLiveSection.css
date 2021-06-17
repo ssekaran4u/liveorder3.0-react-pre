@@ -24,7 +24,7 @@
   border-radius: 14px;
 }
 
-.card.GradientCard {  
+.card.GradientCard {
   margin-top: 90px;
 }
 
@@ -43,3 +43,36 @@
 .CardIconHolder.ManageTeamImg {
   background-color: rgb(255 190 11 / 10%);
 }
+
+.SellerTrackingCardSection.section-2 {
+  margin-top: 111px;
+}
+
+.SellerTrackingCardSection .card {
+  margin-bottom: 32px !important;
+}
+
+/* .section-1,
+.section-2 {
+  transition: 0.5s ease-in-out;
+}
+
+.card {
+  transition: 0.5s ease-in-out;
+}
+
+.SellerTrackingCardSection.section-1 .card:hover {
+  background-color: #ff7300 !important;
+  color: white !important;
+  transition: 0.5s ease-in-out linear;
+  transform: scale(1.1);
+}
+
+.SellerTrackingCardSection.section-1 .card:hover .CardIconHolder.SellerImg {
+  background-color: #fff;
+}
+
+.SellerTrackingCardSection.section-1 .card:hover .CardSubtitle,
+.SellerTrackingCardSection.section-1 .card:hover .body-copy {
+  color: #fff;
+} */

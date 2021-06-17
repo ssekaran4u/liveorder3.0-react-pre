@@ -24,7 +24,7 @@ class WhyLiveSection extends Component {
             </button>
           </div>
         </div>
-        <div className="SellerTrackingCardSection mr-0 mr-lg-4">
+        <div className="SellerTrackingCardSection section-1 mr-0 mr-lg-4">
           <div className="card mb-4">
             <div className="card-body p-0">
               <div className="CardIconHolder SellerImg d-flex align-items-center justify-content-center mb-4">
@@ -50,7 +50,7 @@ class WhyLiveSection extends Component {
             </div>
           </div>
         </div>
-        <div className="SellerTrackingCardSection">
+        <div className="SellerTrackingCardSection section-2">
           <div className="card mb-4 GradientCard">
             <div className="card-body p-0">
               <div className="CardIconHolder ReconciliatonImg d-flex align-items-center justify-content-center mb-4">

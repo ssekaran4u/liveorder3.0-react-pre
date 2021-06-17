@@ -44,6 +44,7 @@
 .footer-list li {
   line-height: 1;
   margin-bottom: 0.625em;
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer-list li a,
 .footer-list li a:hover,
@@ -55,7 +56,7 @@
   /* margin-bottom: 0.833em; */
 }
 .terms-text {
-  font-size: 0.825em;
+  font-size: 12px;
   font-family: "Quicksand";
   color: #fff;
   margin: 0;
@@ -247,7 +248,8 @@
 .footer-about-us-eachsec-right h4 {
   font-family: "Quicksand";
   font-size: 11px;
-  color: #ffffff;
+  color: #ccd5dc;
+  line-height: 16.5px;
   margin-top: 0;
   margin-bottom: 0;
 }

@@ -27,10 +27,10 @@
 .card.GradientCard {
   margin-top: 90px;
 }
-
+/* 
 .CardIconHolder.SellerImg {
   background-color: rgb(255 115 0 / 10%);
-}
+} */
 
 .CardIconHolder.TrackingImg {
   background-color: rgb(76 123 255 / 10%);
@@ -50,29 +50,144 @@
 
 .SellerTrackingCardSection .card {
   margin-bottom: 32px !important;
+  transition: 0.7s;
+  /* background: linear-gradient(90deg, #000 50%, #fff 50%); */
+
+  /* transition: all .7s ease-out; */
 }
 
-/* .section-1,
-.section-2 {
-  transition: 0.5s ease-in-out;
+.SellerTrackingCardSection .card.right-seller {
+  background: linear-gradient(
+    to right,
+    rgba(255, 115, 0, 0.9) 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: bottom right;
 }
 
-.card {
-  transition: 0.5s ease-in-out;
+.SellerTrackingCardSection .card.right-seller svg {
+  transition: 0.3s ease-in-out;
+  fill: rgba(255, 115, 0, 1);
 }
 
-.SellerTrackingCardSection.section-1 .card:hover {
-  background-color: #ff7300 !important;
-  color: white !important;
-  transition: 0.5s ease-in-out linear;
-  transform: scale(1.1);
+.SellerTrackingCardSection .card.right-seller:hover svg,
+.SellerTrackingCardSection .card.right-seller:hover svg g {
+  fill: #fff;
 }
 
-.SellerTrackingCardSection.section-1 .card:hover .CardIconHolder.SellerImg {
-  background-color: #fff;
+.SellerTrackingCardSection .card.right-seller .CardIconHolder.SellerImg {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(255 115 0 / 10%);
 }
 
-.SellerTrackingCardSection.section-1 .card:hover .CardSubtitle,
-.SellerTrackingCardSection.section-1 .card:hover .body-copy {
-  color: #fff;
-} */
+.SellerTrackingCardSection .card.right-seller:hover .CardIconHolder.SellerImg {
+  background-color: rgba(255, 115, 0, 0.1) !important;
+}
+
+/*  */
+
+.SellerTrackingCardSection .card.centralized-tracking {
+  background: linear-gradient(to right, rgba(76, 123, 255, 0.9) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+}
+
+.SellerTrackingCardSection .card.centralized-tracking svg {
+  transition: 0.3s ease-in-out;
+  fill: rgba(76, 123, 255, 1);
+}
+
+.SellerTrackingCardSection .card.centralized-tracking:hover svg g {
+  fill: #fff;
+}
+
+.SellerTrackingCardSection .card.right-seller .CardIconHolder.TrackingImg {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(255 115 0 / 10%);
+}
+
+.SellerTrackingCardSection
+  .card.right-seller:hover
+  .CardIconHolder.TrackingImg {
+  background-color: rgba(255, 115, 0, 0.1) !important;
+}
+
+/*  */
+.SellerTrackingCardSection .card.GradientCard {
+  background: linear-gradient(to right, rgba(103, 76, 243, 0.9) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+}
+
+.SellerTrackingCardSection .card.GradientCard svg {
+  transition: 0.3s ease-in-out;
+  fill: rgba(103, 76, 243, 1);
+}
+
+.SellerTrackingCardSection .card.GradientCard:hover svg g path {
+  fill: #fff;
+}
+
+.SellerTrackingCardSection .card.right-seller .CardIconHolder.ReconciliatonImg {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(255 115 0 / 10%);
+}
+
+.SellerTrackingCardSection
+  .card.right-seller:hover
+  .CardIconHolder.ReconciliatonImg {
+  background-color: rgba(255, 115, 0, 0.1) !important;
+}
+
+/*  */
+
+.SellerTrackingCardSection .card.manage-team {
+  background: linear-gradient(to right, rgba(255, 190, 11, 0.9) 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+}
+
+.SellerTrackingCardSection .card.manage-team svg {
+  transition: 0.3s ease-in-out;
+  fill: rgba(255, 190, 11, 1);
+}
+
+.SellerTrackingCardSection .card.manage-team:hover svg g path {
+  fill: #fff;
+}
+
+.SellerTrackingCardSection .card.right-seller .CardIconHolder.ManageTeamImg {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(255 115 0 / 10%);
+}
+
+.SellerTrackingCardSection
+  .card.right-seller:hover
+  .CardIconHolder.ManageTeamImg {
+  background-color: rgba(255, 115, 0, 0.1) !important;
+}
+
+/*  */
+
+.SellerTrackingCardSection .card:hover {
+  background-position: bottom left;
+  color: #fff !important;
+  box-shadow: -20.8px 12px 79px 0 rgba(16, 66, 97, 0.3);
+}
+
+.SellerTrackingCardSection .CardSubtitle,
+.SellerTrackingCardSection .body-copy {
+  transition: 0.3s ease-in-out;
+}
+
+.SellerTrackingCardSection .card:hover .CardSubtitle {
+  font-family: Quicksand;
+
+  color: #ffffff;
+}
+.SellerTrackingCardSection .card:hover .body-copy {
+  font-family: Quicksand;
+
+  color: #e8eef2;
+}

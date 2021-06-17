@@ -50,7 +50,8 @@
 .footer-list li a:hover,
 .footer-list li a:focus,
 .footer-list li a:active {
-  color: #fff;
+  /* color: #fff; */
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: unset;
   font-size: 0.75em;
   /* margin-bottom: 0.833em; */
@@ -235,7 +236,8 @@
   width: 50px;
 }
 .footer-about-us-eachsec-right {
-  width: calc(100% - 98px);
+  /* width: calc(100% - 98px); */
+  width: calc(100% - 92px);
   padding: 0 24px;
 }
 .footer-about-us-eachsec-right h3 {

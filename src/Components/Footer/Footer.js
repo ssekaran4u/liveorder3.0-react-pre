@@ -3,9 +3,9 @@ import "./Footer.css";
 import { Container, Row, Col } from "reactstrap";
 // import Grid from "@material-ui/core/Grid";
 // import { Link } from "react-router-dom";
-// import FooterImg1 from "../../../assets/images/footer-img1.svg";
-// import FooterImg2 from "../../../assets/images/footer-img2.svg";
-// import FooterImg3 from "../../../assets/images/footer-img3.svg";
+import FooterImg1 from "../../Images/Value driven.svg";
+import FooterImg2 from "../../Images/Cost-effective .svg";
+import FooterImg3 from "../../Images/Secure-Payments.svg";
 import siteLogoWhite from "../../Images/main logo footer.svg";
 
 // import Container from "@material-ui/core/Container";
@@ -115,7 +115,7 @@ function FooterPage(props) {
       <div className="footer">
         <Container fixed>
           <Row container className="top-bottom-space footer-top-row">
-            <Col item xs={4}>
+            <Col item xs={3}>
               <img src={siteLogoWhite} alt="site_img" className="footerImg" />
             </Col>
             {/* <Col item xs={9}> */}
@@ -123,16 +123,13 @@ function FooterPage(props) {
               <h3 className="footer-title">Know Us</h3>
               <ul className="footer-list">
                 <li>
-                  <a to="/">About Us</a>
+                  <a to="/">Why Live Order</a>
                 </li>
                 <li>
-                  <a to="/">Contact Us</a>
+                  <a to="/">Case Study</a>
                 </li>
                 <li>
-                  <a to="/">Our Team</a>
-                </li>
-                <li>
-                  <a to="/">Careers</a>
+                  <a to="/">Schedule A Demo</a>
                 </li>
               </ul>
             </Col>
@@ -146,7 +143,7 @@ function FooterPage(props) {
                   <a href="/terms-and-condition">Terms and Conditions</a>
                 </li>
                 <li>
-                  <a to="/">Lorem Ipsum</a>
+                  <a to="/">Cookies Policy</a>
                 </li>
               </ul>
             </Col>
@@ -154,13 +151,10 @@ function FooterPage(props) {
               <h3 className="footer-title"> Our Services</h3>
               <ul className="footer-list">
                 <li>
-                  <a to="/">Lorem Ipsum</a>
+                  <a to="/">Sell on Live Order</a>
                 </li>
                 <li>
-                  <a to="/">Lorem Ipsum</a>
-                </li>
-                <li>
-                  <a to="/">Lorem Ipsum</a>
+                  <a to="/">Help</a>
                 </li>
               </ul>
             </Col>
@@ -171,7 +165,7 @@ function FooterPage(props) {
                   <a to="/">Support@c2info.com</a>
                 </li>
                 <li>
-                  <a to="/">+91-9087656789</a>
+                  <a to="/">+91 908 765 6789</a>
                 </li>
               </ul>
             </Col>
@@ -185,7 +179,7 @@ function FooterPage(props) {
               <div>
                 <div className="footer-about-us-eachsec">
                   <div className="footer-about-us-eachsec-left">
-                    {/* <img src={FooterImg1} alt="FooterImg1" /> */}
+                    <img src={FooterImg1} alt="FooterImg1" />
                   </div>
                   <div className="footer-about-us-eachsec-right">
                     <h3>Values-Driven</h3>
@@ -199,7 +193,7 @@ function FooterPage(props) {
               <div>
                 <div className="footer-about-us-eachsec">
                   <div className="footer-about-us-eachsec-left">
-                    {/* <img src={FooterImg2} alt="FooterImg2" /> */}
+                    <img src={FooterImg2} alt="FooterImg2" />
                   </div>
                   <div className="footer-about-us-eachsec-right">
                     <h3>Cost-effective</h3>
@@ -213,7 +207,7 @@ function FooterPage(props) {
               <div>
                 <div className="footer-about-us-eachsec">
                   <div className="footer-about-us-eachsec-left">
-                    {/* <img src={FooterImg3} alt="FooterImg3" /> */}
+                    <img src={FooterImg3} alt="FooterImg3" />
                   </div>
                   <div className="footer-about-us-eachsec-right">
                     <h3>Secure-Payments</h3>

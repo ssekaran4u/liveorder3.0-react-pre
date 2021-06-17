@@ -7,7 +7,7 @@
 }
 
 .footer-top-row {
-  padding: 40px auto;
+  padding: 40px 0;
   margin: 0 auto;
 }
 
@@ -56,10 +56,11 @@
 }
 .terms-text {
   font-size: 0.825em;
-  font-family: "Quicksand-Regular";
+  font-family: "Quicksand";
   color: #fff;
   margin: 0;
   padding: 1.38em 0 2.46em 0;
+  letter-spacing: 1px;
   /* text-align: center; */
 }
 .footerImg {
@@ -129,7 +130,7 @@
   padding: 0.4em 1em;
   border-radius: 29px;
   color: #00d3b4;
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand";
   background-color: #fff;
   box-shadow: none;
   transition: 0.5s all linear;

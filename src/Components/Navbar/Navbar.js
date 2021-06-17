@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Navbar.css";
 
 import { MenuItems } from "./MenuItems";
-import logo from "../../Images/Logo@3x.png";
+import logo from "../../Images/Logo.svg";
 import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
 
 class Navbar extends Component {

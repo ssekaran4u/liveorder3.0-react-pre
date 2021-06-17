@@ -7,6 +7,7 @@
 
 .navbar-highlight {
   color: #674cf3 !important;
+  background-color: none;
 }
 
 .NavbarContainer {
@@ -54,11 +55,24 @@
   letter-spacing: normal;
   color: #2e3e6a;
   transition: all 0.5s;
+  background: radial-gradient(
+    circle at 100%,
+    /* #674cf3, */ #2e3e6a,
+    #2e3e6a 50%,
+    #674cf3 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
 }
 
 .NavbarItems ul li a:hover {
   text-decoration: none;
-  color: #674cf3;
+  background-position: 0 100%;
+  /* color: #674cf3; */
 }
 
 .btn.login-btn,

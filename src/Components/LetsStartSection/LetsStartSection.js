@@ -6,7 +6,7 @@ class LetsStartSection extends Component {
     return (
       <div className="LetsStartSection">
         <div className="LetsStartSectionCard position-relative text-center">
-          <h3 className="h3 text-white">Let’s Start Live Order</h3>
+          <h3 className="h3 text-white">Let’s begin the journey!</h3>
           <p className="body-copy mb-5 text-white">
             Live Order & you, the dynamic duo.
           </p>

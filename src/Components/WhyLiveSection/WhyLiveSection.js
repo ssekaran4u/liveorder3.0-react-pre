@@ -125,8 +125,8 @@ class WhyLiveSection extends Component {
               </div>
               <h6 className="h6 CardSubtitle mb-4">Centralised Tracking</h6>
               <p className="body-copy">
-                We provide end-to-end tracking starting from order placement to
-                delivery of product
+                End-to-end tracking starting from order placement to delivery of
+                product.
               </p>
             </div>
           </div>

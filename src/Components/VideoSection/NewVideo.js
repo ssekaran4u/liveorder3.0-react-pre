@@ -22,7 +22,7 @@ class NewVideo extends Component {
       <div className="VideoContainer MainContainer text-center pt-5">
         <h2 className="h2 mb-4">Want to know More ?</h2>
         <h4 className="h4 grey-subtitle">
-          Play the video &amp; get to know more in depth
+          Click on the video to get to know us better
         </h4>
         <div className="row-narrow">
           <div className="featured-video">

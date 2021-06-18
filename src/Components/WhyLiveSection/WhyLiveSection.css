@@ -62,7 +62,7 @@
     rgba(255, 115, 0, 0.9) 50%,
     #ffffff 50%
   );
-  background-size: 200% 100%;
+  background-size: 210% 100%;
   background-position: bottom right;
 }
 
@@ -89,7 +89,7 @@
 
 .SellerTrackingCardSection .card.centralized-tracking {
   background: linear-gradient(to right, rgba(76, 123, 255, 0.9) 50%, #fff 50%);
-  background-size: 200% 100%;
+  background-size: 210% 100%;
   background-position: bottom right;
 }
 
@@ -116,7 +116,7 @@
 /*  */
 .SellerTrackingCardSection .card.GradientCard {
   background: linear-gradient(to right, rgba(103, 76, 243, 0.9) 50%, #fff 50%);
-  background-size: 200% 100%;
+  background-size: 210% 100%;
   background-position: bottom right;
 }
 
@@ -144,7 +144,7 @@
 
 .SellerTrackingCardSection .card.manage-team {
   background: linear-gradient(to right, rgba(255, 190, 11, 0.9) 50%, #fff 50%);
-  background-size: 200% 100%;
+  background-size: 210% 100%;
   background-position: bottom right;
 }
 
@@ -181,13 +181,17 @@
   transition: 0.3s ease-in-out;
 }
 
+.WhyLiveSection .body-copy {
+  font-weight: 600 !important;
+}
+
 .SellerTrackingCardSection .card:hover .CardSubtitle {
   font-family: Quicksand;
-
+  /* font-weight: 600 !important; */
   color: #ffffff;
 }
 .SellerTrackingCardSection .card:hover .body-copy {
   font-family: Quicksand;
-
+  font-weight: 600 !important;
   color: #e8eef2;
 }

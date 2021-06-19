@@ -39,23 +39,38 @@
   /* border-bottom: 3px dashed rgba(219, 219, 219, 0.5) !important; */
 }
 
+.help-faq-row #marker {
+  position: absolute;
+  height: 4.5px;
+  /* left: 0; */
+  /* width: 100%; */
+  background-color: #002f4f;
+  border-radius: 4px;
+  /* 4.5px solid #002f4f */
+  bottom: -10px;
+  transition: 0.5s;
+}
+
 .help-faq-row-horizontal-line {
   position: absolute;
   z-index: -1;
   bottom: 9px;
   width: 100%;
   border-bottom: 1.5px dashed rgba(219, 219, 219, 0.5) !important;
+  /* border-bottom: 1.5px dashed black !important; */
 }
 
 .help-faq-row > div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: baseline !important;
+  margin-bottom: 17.5px;
 }
 .help-faq-row h4 {
   font-family: Quicksand;
   font-size: 27px;
-  padding-bottom: 16px;
+  transition: 0.5s;
+  /* padding-bottom: 16px; */
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -70,7 +85,7 @@
 
 .help-faq-row h4.active {
   opacity: 1;
-  border-bottom: 4.5px solid #002f4f;
+  /* border-bottom: 4.5px solid #002f4f; */
 }
 
 .help-card {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Accordion, Card, Row } from "react-bootstrap";
 import { Container } from "reactstrap";
 import faqData from "./helpdata.json";
@@ -10,6 +10,25 @@ import MinusSVG from "../Images/Minus .svg";
 function Help() {
   const [section, setSection] = useState("general");
   const [activeKey, setActiveKey] = useState(null);
+  const generalRef = useRef(null);
+
+  const moveSlider = (e, cb, cbv) => {
+    console.log(e, cb, cbv);
+    let marker = document.querySelector("#marker");
+
+    marker.style.left = e.target.offsetLeft + "px";
+    marker.style.width = e.target.offsetWidth + "px";
+
+    cb(cbv);
+  };
+
+  useEffect(() => {
+    console.log(generalRef);
+    let marker = document.querySelector("#marker");
+
+    marker.style.left = generalRef?.current?.offsetLeft + "px";
+    marker.style.width = generalRef?.current?.offsetWidth + "px";
+  }, []);
 
   return (
     <>
@@ -41,6 +60,7 @@ function Help() {
 
         <Container className="help-faq-container">
           <Row className="help-faq-row mx-5 my-1 ml-0 mb-3">
+            <div id="marker"></div>
             <div
               className="d-flex align-items-baseline justify-content-start"
               style={{
@@ -50,7 +70,9 @@ function Help() {
               }}
             >
               <h4
-                onClick={() => setSection("general")}
+                // onClick={(e) => setSection("general")}
+                onClick={(e) => moveSlider(e, setSection, "general")}
+                ref={generalRef}
                 className={
                   section === "general"
                     ? "cursor-pointer active"
@@ -60,7 +82,8 @@ function Help() {
                 General
               </h4>
               <h4
-                onClick={() => setSection("buyer")}
+                // onClick={() => setSection("buyer")}
+                onClick={(e) => moveSlider(e, setSection, "buyer")}
                 className={
                   section === "buyer"
                     ? "cursor-pointer active"
@@ -70,7 +93,8 @@ function Help() {
                 For Buyers
               </h4>
               <h4
-                onClick={() => setSection("seller")}
+                // onClick={() => setSection("seller")}
+                onClick={(e) => moveSlider(e, setSection, "seller")}
                 className={
                   section === "seller"
                     ? "cursor-pointer active"

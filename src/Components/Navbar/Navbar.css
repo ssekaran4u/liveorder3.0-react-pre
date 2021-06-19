@@ -7,7 +7,9 @@
 
 .navbar-highlight {
   color: #674cf3 !important;
-  background-color: none;
+  background: #674cf3 !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
 }
 
 .NavbarContainer {

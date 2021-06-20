@@ -15,35 +15,39 @@ function SiteLoader() {
   };
 
   useEffect(() => {
-    setTimeout(() => [setLoad(true)], 5000);
+    const body = document.getElementsByTagName("body")[0];
+
+    body.style.overflow = "hidden";
+    setTimeout(() => {
+      setLoad(true);
+    }, 5000);
+
+    setTimeout(() => {
+      body.style.setProperty("overflow", "auto", "important");
+    }, 5750);
   }, []);
+
+  // function finishLoading() {
+  //   const body = document.getElementsByTagName("body")[0];
+
+  //   setLoad(true);
+  //   setTimeout(() => {
+  //     body.style.setProperty("overflow", "auto", "important");
+  //   }, 1000);
+  // }
+
   return (
     <div className={`loaded ${load === true && "finish"}`}>
-      <Lottie options={defaultOptions} />
+      <Lottie
+        options={defaultOptions}
+        width={window.screen.width * 0.3}
+        height={window.screen.height * 0.3}
+      />
       {/* <div id="loader-wrapper">
         <div id="loader"></div>
         <div className="loader-section section-left"></div>
         <div className="loader-section section-right"></div>
       </div> */}
-      <div className="mouse">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-mouse"
-          width="50"
-          height="50"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#674cf3"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          onClick={() => setLoad(true)}
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <rect x="6" y="3" width="12" height="18" rx="4" />
-          <line x1="12" y1="7" x2="12" y2="11" />
-        </svg>
-      </div>
     </div>
   );
 }

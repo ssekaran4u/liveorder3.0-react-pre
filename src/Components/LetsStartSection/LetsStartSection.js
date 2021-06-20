@@ -10,7 +10,11 @@ class LetsStartSection extends Component {
           <p className="body-copy mb-5 text-white">
             Live Order & you, the dynamic duo.
           </p>
-          <button type="submit" className="btn demo-card-btn">
+          <button
+            type="submit"
+            className="btn demo-card-btn"
+            onClick={() => this.props.schedulerModalHandler(true)}
+          >
             Schedule A Demo
           </button>
           <div className="purple-blob2"></div>

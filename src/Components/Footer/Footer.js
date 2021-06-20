@@ -1,32 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { Container, Row, Col } from "reactstrap";
-// import Grid from "@material-ui/core/Grid";
-// import { Link } from "react-router-dom";
 import FooterImg1 from "../../Images/Value driven.svg";
 import FooterImg2 from "../../Images/Cost-effective .svg";
 import FooterImg3 from "../../Images/Secure-Payments.svg";
 import siteLogoWhite from "../../Images/main logo footer.svg";
 
-// import Container from "@material-ui/core/Container";
-// import InputAdornment from "@material-ui/core/InputAdornment";
-// import Button from "@material-ui/core/Button";
-// import TextField from "@material-ui/core/TextField";
-// import Tooltip from "@material-ui/core/Tooltip";
-// import Zoom from "@material-ui/core/Zoom";
-// import { FooterReducerEntity, LandingListEntity, LandingPageListEntity } from "../../../common/model";
-
 function FooterPage(props) {
   //   const {landingPageResult ,footerSubscribe , footerSubscribeResult} = props
   //   const [email, setEMail] = useState("");
 
-  const handleSubscribe = (e) => {
-    //call api
-    // footerSubscribe(email)
-  };
-  const handleInputChange = (event) => {
-    //   setEMail(event.target.value);
-  };
+  // const handleSubscribe = (e) => {
+  //   //call api
+  //   // footerSubscribe(email)
+  // };
+  // const handleInputChange = (event) => {
+  //   //   setEMail(event.target.value);
+  // };
   return (
     <div>
       {/* <div className="footer-above-sec">
@@ -113,59 +104,61 @@ function FooterPage(props) {
         </Container>
       </div> */}
       <div className="footer">
-        <Container fixed>
-          <Row container className="top-bottom-space footer-top-row">
-            <Col item xs={3}>
+        <Container>
+          <Row className="top-bottom-space footer-top-row">
+            <Col xs={3}>
               <img src={siteLogoWhite} alt="site_img" className="footerImg" />
             </Col>
-            {/* <Col item xs={9}> */}
-            <Col item xs={2} className="space">
+            {/* <Col  xs={9}> */}
+            <Col xs={2} className="space">
               <h3 className="footer-title">Know Us</h3>
               <ul className="footer-list">
                 <li>
-                  <a to="/">Why Live Order</a>
+                  <Link to="/#whyLive">Why Live Order</Link>
                 </li>
                 <li>
-                  <a to="/">Case Study</a>
+                  <a href="#">Case Study</a>
                 </li>
                 <li>
-                  <a to="/">Schedule A Demo</a>
+                  <a onClick={() => props.schedulerModalHandler(true)}>
+                    Schedule A Demo
+                  </a>
                 </li>
               </ul>
             </Col>
-            <Col item xs={2} className="space">
+            <Col xs={2} className="space">
               <h3 className="footer-title">Our Policies </h3>
               <ul className="footer-list">
                 <li>
-                  <a href="/privacy-and-policy">Privacy policy</a>
+                  <a href="#">Privacy policy</a>
                 </li>
                 <li>
-                  <a href="/terms-and-condition">Terms and Conditions</a>
+                  <Link to="/terms">Terms and Conditions</Link>
                 </li>
                 <li>
-                  <a to="/">Cookies Policy</a>
+                  <a href="#">Cookies Policy</a>
                 </li>
               </ul>
             </Col>
-            <Col item xs={2} className="space">
+            <Col xs={2} className="space">
               <h3 className="footer-title"> Our Services</h3>
               <ul className="footer-list">
                 <li>
-                  <a to="/">Sell on Live Order</a>
+                  <a href="#">Sell on Live Order</a>
                 </li>
                 <li>
-                  <a to="/">Help</a>
+                  <Link to="/help">Help</Link>
                 </li>
               </ul>
             </Col>
-            <Col item xs={2} className="space">
+            <Col xs={2} className="space">
               <h3 className="footer-title">Need Help</h3>
               <ul className="footer-list">
                 <li>
-                  <a to="/">Support@c2info.com</a>
+                  <a href="#">Support@c2info.com</a>
                 </li>
                 <li>
-                  <a to="/">+91 908 765 6789</a>
+                  <a href="#">+91 908 765 6789</a>
                 </li>
               </ul>
             </Col>

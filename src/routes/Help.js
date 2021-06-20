@@ -13,7 +13,6 @@ function Help() {
   const generalRef = useRef(null);
 
   const moveSlider = (e, cb, cbv) => {
-    console.log(e, cb, cbv);
     let marker = document.querySelector("#marker");
 
     marker.style.left = e.target.offsetLeft + "px";
@@ -23,7 +22,6 @@ function Help() {
   };
 
   useEffect(() => {
-    console.log(generalRef);
     let marker = document.querySelector("#marker");
 
     marker.style.left = generalRef?.current?.offsetLeft + "px";

@@ -1,65 +1,26 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 import { MenuItems } from "./MenuItems";
 import logo from "../../Images/Logo.svg";
-import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
+// import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
 
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showSchedulerModal: false,
-      schedulerData: {
-        firmName: "",
-        ownerName: "",
-        phone: "",
-        pinCode: "",
-        description: "",
-        isSeller: false,
-      },
-    };
-    this.scheduleDemoHandler = this.scheduleDemoHandler.bind(this);
-    this.scheduleDataHandler = this.scheduleDataHandler.bind(this);
-  }
-
-  scheduleDemoHandler() {
-    this.setState((prev) => ({
-      showSchedulerModal: !prev.showSchedulerModal,
-      schedulerData: {
-        firmName: "",
-        ownerName: "",
-        phone: "",
-        pinCode: "",
-        description: "",
-        isSeller: false,
-      },
-    }));
-  }
-
-  scheduleDataHandler(data) {
-    this.setState(
-      {
-        schedulerData: data,
-      },
-      () => console.log(this.state.schedulerData)
-    );
-  }
-
   render() {
     return (
       <div className="NavbarContainer">
         <nav className="NavbarItems MainContainer">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Live Order" className="logo" />
-          </a>
+          </Link>
           <div className="linksContainer d-flex mr-3">
             <ul className="mb-0 d-none d-lg-flex">
               {MenuItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a
-                      href={item.url}
+                    <Link
+                      to={item.url}
                       className={
                         window.location.pathname === `/${item.url}`
                           ? `navbar-highlight ${item.cName}`
@@ -67,7 +28,7 @@ class Navbar extends Component {
                       }
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
@@ -76,7 +37,7 @@ class Navbar extends Component {
               <button
                 type="button"
                 className="btn btn-outline-primary schedule-btn"
-                onClick={this.scheduleDemoHandler}
+                onClick={() => this.props.schedulerModalHandler(true)}
               >
                 <span className="d-none d-lg-inline-block">
                   Schedule A&nbsp;
@@ -94,8 +55,8 @@ class Navbar extends Component {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className={
                       window.location.pathname === `/${item.url}`
                         ? `navbar-highlight ${item.cName}`
@@ -103,18 +64,18 @@ class Navbar extends Component {
                     }
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
           </ul>
         </nav>
 
-        <ScheduleADemo
+        {/* <ScheduleADemo
           scheduleDemoHandler={this.scheduleDemoHandler}
           scheduleDataHandler={this.scheduleDataHandler}
           isOpen={this.state.showSchedulerModal}
-        />
+        /> */}
       </div>
     );
   }

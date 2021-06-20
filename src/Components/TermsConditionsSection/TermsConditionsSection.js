@@ -1,7 +1,11 @@
-import React, { useState } from "react";
-import { Accordion, Card, Row, Button } from "react-bootstrap";
+import React from "react";
+import {
+  // Accordion, Card,
+  Row,
+  Button,
+} from "react-bootstrap";
 import { Container } from "reactstrap";
-import PolicyBG from "../../Images/Bg Of policy doc.svg";
+// import PolicyBG from "../../Images/Bg Of policy doc.svg";
 // import faqData from "./helpdata.json";
 import "./TermsConditionsSection.css";
 // import PatternHelp from "../Images/pattern help.svg";

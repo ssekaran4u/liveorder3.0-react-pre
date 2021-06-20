@@ -32,18 +32,6 @@
   background-color: rgb(255 115 0 / 10%);
 } */
 
-.CardIconHolder.TrackingImg {
-  background-color: rgb(76 123 255 / 10%);
-}
-
-.CardIconHolder.ReconciliatonImg {
-  background-color: rgba(103, 76, 243, 0.2);
-}
-
-.CardIconHolder.ManageTeamImg {
-  background-color: rgb(255 190 11 / 10%);
-}
-
 .SellerTrackingCardSection.section-2 {
   margin-top: 111px;
 }
@@ -82,7 +70,8 @@
 }
 
 .SellerTrackingCardSection .card.right-seller:hover .CardIconHolder.SellerImg {
-  background-color: rgba(255, 115, 0, 0.1) !important;
+  /* background-color: rgba(255, 115, 0, 0.1) !important; */
+  background-color: rgb(255 178 114) !important;
 }
 
 /*  */
@@ -102,15 +91,17 @@
   fill: #fff;
 }
 
-.SellerTrackingCardSection .card.right-seller .CardIconHolder.TrackingImg {
+.SellerTrackingCardSection
+  .card.centralized-tracking
+  .CardIconHolder.TrackingImg {
   transition: 0.3s ease-in-out;
-  background-color: rgb(255 115 0 / 10%);
+  background-color: rgba(235, 240, 254, 1);
 }
 
 .SellerTrackingCardSection
-  .card.right-seller:hover
+  .card.centralized-tracking:hover
   .CardIconHolder.TrackingImg {
-  background-color: rgba(255, 115, 0, 0.1) !important;
+  background-color: rgb(131, 163, 255) !important;
 }
 
 /*  */
@@ -123,6 +114,16 @@
 .SellerTrackingCardSection .card.GradientCard svg {
   transition: 0.3s ease-in-out;
   fill: rgba(103, 76, 243, 1);
+}
+
+.CardIconHolder.ReconciliatonImg {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(103, 76, 243, 0.2);
+}
+.SellerTrackingCardSection
+  .card.GradientCard:hover
+  .CardIconHolder.ReconciliatonImg {
+  background-color: rgb(163, 147, 252);
 }
 
 .SellerTrackingCardSection .card.GradientCard:hover svg g path {
@@ -157,16 +158,22 @@
   fill: #fff;
 }
 
-.SellerTrackingCardSection .card.right-seller .CardIconHolder.ManageTeamImg {
+.SellerTrackingCardSection .card.manage-team .CardIconHolder.ManageTeamImg {
   transition: 0.3s ease-in-out;
-  background-color: rgb(255 115 0 / 10%);
+  background-color: rgba(254, 247, 228, 1);
 }
 
 .SellerTrackingCardSection
-  .card.right-seller:hover
+  .card.manage-team:hover
+  .CardIconHolder.ManageTeamImg {
+  background-color: rgba(253, 220, 129, 1);
+}
+
+/* .SellerTrackingCardSection
+  .card.manage-team:hover
   .CardIconHolder.ManageTeamImg {
   background-color: rgba(255, 115, 0, 0.1) !important;
-}
+} */
 
 /*  */
 

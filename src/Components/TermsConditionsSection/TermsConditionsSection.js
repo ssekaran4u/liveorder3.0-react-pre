@@ -22,7 +22,7 @@ function TermsConditions() {
         <Container className="terms-heading-container">
           <Row className="terms-container-welcome">
             <div>
-              <p className="mt-5 mb-3 terms-heading">Terms & Conditions</p>
+              <p className="mt-1 mb-3 terms-heading">Terms & Conditions</p>
               <p className="h3 mb-3 terms-subheading">Version: 22.02.2021</p>
             </div>
           </Row>

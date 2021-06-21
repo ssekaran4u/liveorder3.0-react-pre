@@ -40,6 +40,7 @@
 .terms-content-container {
   width: 768px !important;
   min-height: 921.6px;
+  margin-bottom: 2rem !important;
   background-color: white;
   margin-top: -139px !important;
   padding: 47px 34px 40px 47.6px !important;

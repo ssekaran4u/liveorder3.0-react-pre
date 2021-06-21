@@ -17,6 +17,7 @@
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
+  font-weight: 500;
   line-height: 1.58;
   letter-spacing: normal;
   text-align: left;
@@ -26,7 +27,8 @@
 .footer-title {
   color: #fff;
   margin-top: 0;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.1px;
+  font-weight: 600;
   font-size: 0.875em;
   margin-bottom: 1em;
   font-family: "Quicksand";
@@ -44,18 +46,31 @@
 .footer-list li {
   line-height: 1;
   margin-bottom: 0.625em;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6) !important;
+  transition: 0.3s ease-in-out;
 }
-.footer-list li a,
-.footer-list li a:hover,
-.footer-list li a:focus,
-.footer-list li a:active {
+.footer-list li a {
   /* color: #fff; */
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6) !important;
   text-decoration: unset;
   font-size: 0.75em;
   /* margin-bottom: 0.833em; */
 }
+.footer-list li a:hover,
+.footer-list li a:focus,
+.footer-list li a:active {
+  /* color: #fff; */
+  color: rgba(255, 255, 255, 1) !important;
+  text-decoration: unset;
+  font-size: 0.75em;
+  /* margin-bottom: 0.833em; */
+}
+
+.footer-list li:hover {
+  transform: translateX(4px);
+}
+
 .terms-text {
   font-size: 12px;
   font-family: "Quicksand";
@@ -225,7 +240,7 @@
 .footer-about-us-sec {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   /* flex-wrap: wrap; */
 }
@@ -239,7 +254,7 @@
 .footer-about-us-eachsec-right {
   /* width: calc(100% - 98px); */
   width: calc(100% - 92px);
-  padding: 0 24px;
+  padding: 0 8px 0 24px;
 }
 .footer-about-us-eachsec-right h3 {
   font-family: "Quicksand";
@@ -250,9 +265,9 @@
 }
 .footer-about-us-eachsec-right h4 {
   font-family: "Quicksand";
-  font-size: 11px;
+  font-size: 12px;
   color: #ccd5dc;
-  line-height: 16.5px;
+  line-height: 17px;
   margin-top: 0;
   margin-bottom: 0;
 }

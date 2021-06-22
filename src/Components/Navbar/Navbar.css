@@ -21,6 +21,26 @@
   z-index: 999;
 }
 
+.NavbarContainer.navbar-fixed {
+  border-bottom: 1px solid #c3cde4;
+}
+
+.NavbarContainer.navbar-fixed .btn.schedule-btn {
+  color: #fff;
+  background-color: #674cf3;
+  border-color: #674cf3;
+  /* box-shadow: 0 6px 12px #674cf3; */
+}
+.NavbarContainer.navbar-fixed .btn.schedule-btn:hover {
+  color: #fff;
+  background-image: none;
+  background-color: #8039db;
+  border-color: #8039db;
+  box-shadow: 0 6px 12px #8039db;
+  /* background-color: #674cf3;
+  border-color: #674cf3; */
+}
+
 /* .NavbarItems {
   position: fixed;
   width: 100vw;

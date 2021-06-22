@@ -7,9 +7,29 @@ import logo from "../../Images/Logo.svg";
 // import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
 
 class Navbar extends Component {
+  state = {
+    scroll: false,
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        this.setState({
+          scroll: true,
+        });
+      } else if (window.scrollY < 50) {
+        this.setState({
+          scroll: false,
+        });
+      }
+    });
+  }
   render() {
     return (
-      <div className="NavbarContainer">
+      <div
+        className={`NavbarContainer ${
+          this.state.scroll === true ? "navbar-fixed" : ""
+        }`}
+      >
         <nav className="NavbarItems MainContainer">
           <Link to="/">
             <img src={logo} alt="Live Order" className="logo" />

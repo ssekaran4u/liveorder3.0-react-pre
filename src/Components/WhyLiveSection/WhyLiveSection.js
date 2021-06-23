@@ -1,18 +1,75 @@
 import React, { Component } from "react";
-import QMarkImg from "../../Images/QMarkImg.svg";
+import Lottie from "react-lottie";
+// import QMarkImg from "../../Images/QMarkImg.svg";
+import QMarkAnimated from "../../Images/animated/Why-live-order.json";
 // import SellerImg from "../../Images/SellerImg.svg";
 // import TrackingImg from "../../Images/TrackingImg.svg";
 // import ReconciliationImg from "../../Images/ReconciliationImg.svg";
 // import ManageTeamImg from "../../Images/ManageTeamImg.svg";
 import "./WhyLiveSection.css";
 
+const defaultOptions = {
+  loop: false,
+  autoplay: true,
+  animationData: QMarkAnimated,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
 class WhyLiveSection extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      defaultOptions: {},
+    };
+    this.handleIntersection = this.handleIntersection.bind(this);
+  }
+
+  componentDidMount() {
+    // let div = document.querySelector(".whyLiveSectionTitle");
+    // const options = {};
+    // let lottieOptions;
+    // let observer = new IntersectionObserver(function (entries, observer) {
+    //   if (entries[0].isIntersecting === true) {
+    //     lottieOptions = defaultOptions;
+    //     // this.setState({
+    //     //   defaultOptions: defaultOptions,
+    //     // });
+    //   }
+    // }, options);
+    // // console.log(observer);
+    // if (div !== null) {
+    //   observer.observe(div);
+    //   this.setState({
+    //     defaultOptions: lottieOptions,
+    //   });
+    // }
+  }
+
+  handleIntersection() {
+    // this.setState({
+    //   defaultOptions: defaultOptions,
+    // });
+  }
+
   render() {
     return (
       <div className="WhyLiveSection d-lg-flex MainContainer py-4" id="whyLive">
         <div className="d-flex align-items-center">
-          <div className="whyLiveSectionTitle mr-0 mr-lg-4 mb-4 mb-lg-0">
-            <img src={QMarkImg} alt="Why Live Order" className="mb-3" />
+          <div className="whyLiveSectionTitle mr-0 mr-lg-4 mb-4 mb-lg-0 d-flex flex-column align-items-start">
+            {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
+            <Lottie
+              options={defaultOptions}
+              style={{
+                width: "94px",
+                height: "auto",
+                overflow: "hidden",
+                margin: "0px 0",
+                outline: "none",
+                marginLeft: "-24px",
+              }}
+            />
             <h3 className="h3 mb-3">Why Live Order ?</h3>
             <p className="body-copy mb-4">
               B2B online ordering platform connecting Buyers & sellers which

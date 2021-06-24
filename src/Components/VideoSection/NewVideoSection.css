@@ -116,8 +116,8 @@
 .play-button-container::after {
   content: "";
   position: absolute;
-  width: inherit;
-  height: inherit;
+  width: 80px;
+  height: 80px;
   position: absolute;
   /* left: 50%;
   top: 50%; */
@@ -148,6 +148,8 @@
   box-shadow: 0 24px 72px 0 rgb(0 0 0 / 50%);
   -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  /* animation: waterEffect 1s linear infinite; */
+  /* animation-delay: 0.25s; */
 }
 
 .play-button-container::before {
@@ -172,6 +174,17 @@
   align-items: center;
   justify-content: center;
   padding: 17px 16.2px 16px 24px;
+  /* animation: waterEffect 1s linear infinite; */
+}
+
+.play-button-container span {
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  background: #fff;
+  border-color: #fff;
+  border-radius: 50%;
 }
 
 .play-button-container .play-button-img {
@@ -183,13 +196,51 @@
 }
 
 .play-button-container:hover::after {
-  width: 112px;
-  height: 112px;
+  /* width: 112px; */
+  /* height: 112px; */
+  animation: waterEffect 2s linear infinite;
+  -webkit-animation: waterEffect 2s linear infinite;
 }
 
 .play-button-container:hover::before {
-  width: 88px;
-  height: 88px;
+  /* width: 88px; */
+  /* height: 88px; */
+  animation: waterEffect 2s linear infinite;
+  -webkit-animation: waterEffect 2s linear infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+@keyframes waterEffect {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
+
+  25% {
+    width: 120px;
+    height: 120px;
+    opacity: 0.25;
+  }
+
+  50% {
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+  }
+
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
 }
 
 /* .play-button-container .play-button img {

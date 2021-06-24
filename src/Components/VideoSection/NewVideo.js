@@ -54,11 +54,14 @@ class NewVideo extends Component {
                     </svg>
 
                     <div className="play-button-container" title="Play Video">
-                      <img
-                        className="play-button-img"
-                        src={PlayButtonSVG}
-                        alt="play button icon"
-                      />
+                      <span>
+                        <img
+                          className="play-button-img"
+                          src={PlayButtonSVG}
+                          alt="play button icon"
+                        />
+                      </span>
+
                       {/* <div className="play-button">
                         <img src={PlayButtonSVG} alt="play button icon" /> */}
                       {/* <svg>

@@ -1,34 +1,59 @@
+import WellNess from "../../Images/Wellness.png";
+import Mahaveer from "../../Images/mahaveer.png";
+import Tesmed from "../../Images/Tasmed.png";
+import Netmeds from "../../Images/netmeds.png";
+import FrankRoss from "../../Images/FrankRoss.png";
+import Paras from "../../Images/Paras.png";
+import Zenwick from "../../Images/zenwick.png";
+import Rajsons from "../../Images/Rajsons.png";
+
 export const TestimonialContent = [
   {
-    CompanyName: 'Wellness',
-    CompanyText: 'Wellness - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market.'
+    CompanyName: "Tesmed",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Tesmed,
   },
   {
-    CompanyName: 'Rajsons',
-    CompanyText: 'Rajsons - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "Wellness",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market.",
+    Companyimage: WellNess,
   },
   {
-    CompanyName: 'Tesmed',
-    CompanyText: 'Tesmed- As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "Mahaveer",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Mahaveer,
   },
   {
-    CompanyName: 'Netmeds',
-    CompanyText: 'Netmeds - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "Netmeds",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Netmeds,
   },
   {
-    CompanyName: 'FrankRoss',
-    CompanyText: 'FrankRoss - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "Rajsons",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Rajsons,
   },
   {
-    CompanyName: 'Paras',
-    CompanyText: 'Paras - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "Zenwick",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Zenwick,
   },
   {
-    CompanyName: 'Zenwick',
-    CompanyText: 'Zenwick - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
+    CompanyName: "FrankRoss",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: FrankRoss,
   },
   {
-    CompanyName: 'Mahaveer',
-    CompanyText: 'Mahaveer - As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market'
-  }
-]
+    CompanyName: "Paras",
+    CompanyText:
+      "As online is an emerging space, C-Square all in one <br /> solution for online space allowed us to tweak <br /> our business model & try different things in market",
+    Companyimage: Paras,
+  },
+];

@@ -10,6 +10,21 @@
   background-size: 100% auto;
 }
 
+#before,
+#after {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+}
+
+#before {
+  left: 0;
+}
+
+#after {
+  right: 0;
+}
+
 .TestimonialContent p {
   font-size: 19px;
   font-weight: 500;
@@ -42,10 +57,15 @@
   position: absolute;
   background: #ffffff;
   border-radius: 50%;
-  box-shadow: -20.8px 12px 79px 0 rgb(16 66 97 / 10%);
+  transition: 1.5s ease-in-out;
+  box-shadow: -20.8px 12px 79px 0 rgb(16 66 97 / 35%);
 }
 
-.WellNessLogo {
+.clientLogos img {
+  transition: 1.5s ease-in-out;
+}
+
+/* .WellNessLogo {
   bottom: 0;
   left: 8px;
 }
@@ -84,4 +104,4 @@
 .TesmedLogo {
   top: 8px;
   left: 8%;
-}
+} */

@@ -21,37 +21,41 @@ class WhyLiveSection extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultOptions: {},
+      isIntersecting: false,
+      defaultOptions: {
+        loop: false,
+        autoplay: false,
+        animationData: QMarkAnimated,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice",
+        },
+      },
     };
-    this.handleIntersection = this.handleIntersection.bind(this);
+    // this.handleIntersection = this.handleIntersection.bind(this);
   }
 
   componentDidMount() {
-    // let div = document.querySelector(".whyLiveSectionTitle");
-    // const options = {};
-    // let lottieOptions;
-    // let observer = new IntersectionObserver(function (entries, observer) {
-    //   if (entries[0].isIntersecting === true) {
-    //     lottieOptions = defaultOptions;
-    //     // this.setState({
-    //     //   defaultOptions: defaultOptions,
-    //     // });
-    //   }
-    // }, options);
-    // // console.log(observer);
-    // if (div !== null) {
-    //   observer.observe(div);
-    //   this.setState({
-    //     defaultOptions: lottieOptions,
-    //   });
-    // }
+    let div = document.querySelector(".whyLiveSectionTitle");
+    
+    let observer = new IntersectionObserver((entries, observer) => {
+       this.setState((prev => ({
+         isIntersecting: entries[0].isIntersecting,
+         defaultOptions: {
+           ...prev,
+           autoplay: entries[0].isIntersecting
+         }
+       })))
+
+       console.log(entries[0])
+      
+    }, {threshold: 1});
+    
+      observer.observe(div);
+    
+    
   }
 
-  handleIntersection() {
-    // this.setState({
-    //   defaultOptions: defaultOptions,
-    // });
-  }
+  
 
   render() {
     return (
@@ -60,7 +64,7 @@ class WhyLiveSection extends Component {
           <div className="whyLiveSectionTitle mr-0 mr-lg-4 mb-4 mb-lg-0 d-flex flex-column align-items-start">
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
             <Lottie
-              options={defaultOptions}
+              options={this.state.defaultOptions}
               style={{
                 width: "94px",
                 height: "auto",
@@ -70,6 +74,14 @@ class WhyLiveSection extends Component {
                 marginLeft: "-24px",
               }}
             />
+            <lottie-player
+          ref={this.myRef} // 2. set the reference for the player
+          id="firstLottie"
+          controls
+          mode="normal"
+          src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
+          style={{ width: '320px' }}
+        ></lottie-player>
             <h3 className="h3 mb-3">Why Live Order ?</h3>
             <p className="body-copy mb-4">
               B2B online ordering platform connecting Buyers & sellers which

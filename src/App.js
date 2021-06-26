@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import HeroSection from "./Components/HeroSection/HeroSection";
@@ -39,6 +39,10 @@ function App() {
     });
   }
 
+  // useEffect(() => {
+  //   console.log(window.location);
+  // }, [window.location]);
+
   function scheduleDataHandler(data) {
     setSchedulerData((prev) => ({ ...prev, data }));
   }
@@ -64,7 +68,8 @@ function App() {
           {/* <FooterPage /> */}
         </Route>
         <Route path="/">
-          <SiteLoader />
+          {console.log(window.location.hash)}
+          {window.location.hash === "" && <SiteLoader />}
           {/* <Navbar /> */}
           <HeroSection />
           <WhyLiveSection schedulerModalHandler={setShowModal} />

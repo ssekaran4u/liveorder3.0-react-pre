@@ -13,7 +13,14 @@ function ScrollToTop({ history }) {
       //   console.log(elmnt);
       //   // elmnt.scrollIntoView();
       // }
-      window.scrollTo(0, 0);
+      console.log(window.location.hash);
+      if (window.location.hash === "") {
+        window.scrollTo(0, 0);
+      } else {
+        let elm = document.querySelector(window.location.hash);
+        // console.log(elm);
+        elm !== null && elm.scrollIntoView();
+      }
     });
     return () => {
       unlisten();

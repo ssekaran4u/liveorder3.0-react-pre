@@ -5,6 +5,8 @@ import "./SiteLoader.css";
 
 function SiteLoader() {
   const [load, setLoad] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(null);
+  const [screenHeight, setScreenHeight] = useState(null);
   const defaultOptions = {
     loop: false,
     autoplay: true,
@@ -13,6 +15,11 @@ function SiteLoader() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  useEffect(() => {
+    setScreenWidth(window.screen.width * 0.3);
+    setScreenHeight(window.screen.height * 0.3);
+  }, [window.screen.width, window.screen.height]);
 
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
@@ -40,8 +47,8 @@ function SiteLoader() {
     <div className={`loaded ${load === true && "finish"}`}>
       <Lottie
         options={defaultOptions}
-        width={window.screen.width * 0.3}
-        height={window.screen.height * 0.3}
+        width={screenWidth}
+        height={screenHeight}
       />
       {/* <div id="loader-wrapper">
         <div id="loader"></div>

@@ -36,26 +36,30 @@ class WhyLiveSection extends Component {
 
   componentDidMount() {
     let div = document.querySelector(".whyLiveSectionTitle");
-    
-    let observer = new IntersectionObserver((entries, observer) => {
-       this.setState((prev => ({
-         isIntersecting: entries[0].isIntersecting,
-         defaultOptions: {
-           ...prev,
-           autoplay: entries[0].isIntersecting
-         }
-       })))
 
-       console.log(entries[0])
-      
-    }, {threshold: 1});
-    
-      observer.observe(div);
-    
-    
+    let observer = new IntersectionObserver(
+      (entries, observer) => {
+        this.setState((prev) => ({
+          isIntersecting: entries[0].isIntersecting,
+          defaultOptions: {
+            ...prev,
+            autoplay: entries[0].isIntersecting,
+          },
+        }));
+
+        // console.log(entries[0]);
+      },
+      { threshold: 1 }
+    );
+
+    observer.observe(div);
+
+    if (window.location.hash === "#whyLive") {
+      let elm = document.querySelector(window.location.hash);
+
+      elm.scrollIntoView();
+    }
   }
-
-  
 
   render() {
     return (
@@ -75,13 +79,13 @@ class WhyLiveSection extends Component {
               }}
             />
             <lottie-player
-          ref={this.myRef} // 2. set the reference for the player
-          id="firstLottie"
-          controls
-          mode="normal"
-          src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-          style={{ width: '320px' }}
-        ></lottie-player>
+              ref={this.myRef} // 2. set the reference for the player
+              id="firstLottie"
+              controls
+              mode="normal"
+              src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
+              style={{ width: "320px" }}
+            ></lottie-player>
             <h3 className="h3 mb-3">Why Live Order ?</h3>
             <p className="body-copy mb-4">
               B2B online ordering platform connecting Buyers & sellers which

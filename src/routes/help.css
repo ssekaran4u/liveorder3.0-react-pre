@@ -119,7 +119,8 @@
 }
 
 .help-card-body {
-  padding: 0 0rem 1.25rem 0rem !important;
+  padding: 0 1.25rem 1.25rem 0rem !important;
+  margin-right: 2rem;
   font-weight: normal !important;
   font-stretch: normal !important;
   font-style: normal !important;

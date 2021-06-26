@@ -104,7 +104,7 @@ function Help() {
             </div>
             <span className="help-faq-row-horizontal-line"></span>
           </Row>
-          <Accordion className="px-5">
+          <Accordion className="px-5 mb-5">
             {faqData[section].map((sec, secIndex) => {
               return (
                 <Card className="help-card text-left" key={secIndex}>

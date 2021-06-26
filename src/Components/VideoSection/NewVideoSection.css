@@ -113,9 +113,15 @@
   -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.play-button-container > span {
+  cursor: pointer;
+}
+
 .play-button-container::after {
   content: "";
   position: absolute;
+  cursor: pointer;
   width: 80px;
   height: 80px;
   position: absolute;
@@ -317,5 +323,33 @@ img.card {
   .column-container {
     -webkit-box-flex: 1;
     flex: 1;
+  }
+}
+
+.video-btn.video-popup:hover > svg {
+  animation: bottomTop 1.5s infinite alternate ease-in-out;
+}
+
+.video-btn.video-popup:hover::before {
+  animation: topToBottom 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bottomTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-90px);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(90px);
   }
 }

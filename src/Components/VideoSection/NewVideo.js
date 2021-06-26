@@ -37,7 +37,7 @@ class NewVideo extends Component {
                   />
                   <div
                     className="video-btn video-popup px-0"
-                    onClick={this.openModal}
+                    // onClick={this.openModal}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,11 @@ class NewVideo extends Component {
                       />
                     </svg>
 
-                    <div className="play-button-container" title="Play Video">
+                    <div
+                      className="play-button-container"
+                      title="Play Video"
+                      onClick={this.openModal}
+                    >
                       <span>
                         <img
                           className="play-button-img"

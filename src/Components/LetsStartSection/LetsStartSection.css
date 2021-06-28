@@ -7,7 +7,6 @@
   margin: 136px auto 148px;
   border-radius: 14px;
   box-shadow: -35.5px 20.5px 79px 0 rgba(103, 76, 243, 0.3);
-  background: #6c19d8 url("../../Images/LetsStartBG.png") no-repeat center/cover;
 }
 
 .LetsStartSectionCard h3 {
@@ -42,7 +41,7 @@
   z-index: -1;
   bottom: 0;
   left: 0px;
-  background: url("../../Images/Blob2.png") no-repeat center/cover;
+  background: url("../../Images/blob\ lets\ start.svg") no-repeat center/cover;
 }
 
 .orange-circle {
@@ -81,4 +80,65 @@
     width: 384px;
     height: 415px;
   }
+}
+
+.LetsStartSection.on_scroll {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.LetsStartSection.on_scroll .LetsStartSectionCard {
+  flex-grow: 1;
+  margin: 0 !important;
+  z-index: 1000;
+  height: inherit;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.LetsStartSection.on_scroll .LetsStartSectionCard img {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #6c19d8;
+}
+
+.LetsStartSectionCard img {
+  background-color: #6c19d8;
+  position: absolute;
+}
+
+.LetsStartSectionCard img,
+.LetsStartSectionCard {
+  transition: 1.5s ease-in-out;
+}
+
+.LetsStartSection .LetsStartSectionCard img,
+.LetsStartSection .LetsStartSectionCard h3,
+.LetsStartSection .LetsStartSectionCard p,
+.LetsStartSection .LetsStartSectionCard button {
+  z-index: 1000;
+}
+
+.LetsStartSection.on_scroll .LetsStartSectionCard h3 {
+  font-size: 40px !important;
+}
+.LetsStartSection.on_scroll .LetsStartSectionCard p {
+  font-size: 20px !important;
+}
+
+.LetsStartSection.on_scroll .LetsStartSectionCard button {
+  font-size: 24px !important;
+  width: 240px !important;
+  height: 68px !important;
+}
+
+.LetsStartSection.on_scroll .LetsStartSectionCard .purple-blob2,
+.LetsStartSection.on_scroll .LetsStartSectionCard .green-circle,
+.LetsStartSection.on_scroll .LetsStartSectionCard .orange-circle {
+  visibility: hidden;
 }

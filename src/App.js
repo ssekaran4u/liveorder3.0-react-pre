@@ -18,6 +18,7 @@ import ScheduleADemo from "./Components/ScheduleADemo/ScheduleADemo";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
   const [_, setSchedulerData] = useState({
     firmName: "",
     ownerName: "",
@@ -39,9 +40,16 @@ function App() {
     });
   }
 
-  // useEffect(() => {
-  //   console.log(window.location);
-  // }, [window.location]);
+  useEffect(() => {
+    console.log(window.location, "Hello");
+  }, [window.location.hash, window.location.pathname]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLoader(true);
+    }, 5000);
+    window.scrollTo(0, 0);
+  }, []);
 
   function scheduleDataHandler(data) {
     setSchedulerData((prev) => ({ ...prev, data }));
@@ -58,26 +66,26 @@ function App() {
       <Navbar schedulerModalHandler={setShowModal} />
       <Switch>
         <Route path="/help">
-          {/* <Navbar schedulerModalHandler={setShowModal} /> */}
           <Help />
-          {/* <FooterPage /> */}
         </Route>
         <Route path="/terms">
-          {/* <Navbar/> */}
           <TermsConditions />
-          {/* <FooterPage /> */}
         </Route>
         <Route path="/">
           {console.log(window.location.hash)}
-          {window.location.hash === "" && <SiteLoader />}
-          {/* <Navbar /> */}
-          <HeroSection />
-          <WhyLiveSection schedulerModalHandler={setShowModal} />
-          <NewVideo />
-          <PartnerSection />
-          <Testimonials />
-          <LetsStartSection schedulerModalHandler={setShowModal} />
-          {/* <FooterPage /> */}
+          {/* {window.location.hash === "" && ( */}
+          <SiteLoader showLoader={showLoader} />
+          {/* )} */}
+          {showLoader === true && (
+            <>
+              <HeroSection />
+              <WhyLiveSection schedulerModalHandler={setShowModal} />
+              <NewVideo />
+              <PartnerSection />
+              <Testimonials />
+              <LetsStartSection schedulerModalHandler={setShowModal} />
+            </>
+          )}
         </Route>
       </Switch>
       <FooterPage schedulerModalHandler={setShowModal} />

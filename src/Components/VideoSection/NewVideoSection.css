@@ -201,14 +201,14 @@
   transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.play-button-container:hover::after {
+.VideoContainer.animate_video .play-button-container::after {
   /* width: 112px; */
   /* height: 112px; */
   animation: waterEffect 2s linear infinite;
   -webkit-animation: waterEffect 2s linear infinite;
 }
 
-.play-button-container:hover::before {
+.VideoContainer.animate_video .play-button-container::before {
   /* width: 88px; */
   /* height: 88px; */
   animation: waterEffect 2s linear infinite;

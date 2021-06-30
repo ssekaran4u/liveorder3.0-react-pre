@@ -9,6 +9,7 @@ class NewVideo extends Component {
     super();
     this.state = {
       isOpen: false,
+      isIntersecting: false,
     };
     this.openModal = this.openModal.bind(this);
   }
@@ -17,9 +18,27 @@ class NewVideo extends Component {
     this.setState({ isOpen: true });
   }
 
+  componentDidMount() {
+    let div = document.querySelector(".VideoContainer");
+
+    let observer = new IntersectionObserver((entries, observer) => {
+      this.setState((prev) => ({
+        isIntersecting: entries[0].isIntersecting,
+      }));
+
+      // console.log(entries[0]);
+    }, {});
+
+    observer.observe(div);
+  }
+
   render() {
     return (
-      <div className="VideoContainer MainContainer text-center pt-5">
+      <div
+        className={`VideoContainer MainContainer text-center pt-5 ${
+          this.state.isIntersecting ? "animate_video" : ""
+        }`}
+      >
         <h2 className="h2 mb-4">Want to know More ?</h2>
         <h4 className="h4 grey-subtitle">
           Click on the video to get to know us better

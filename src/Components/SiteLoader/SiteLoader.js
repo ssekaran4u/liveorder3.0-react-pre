@@ -29,8 +29,8 @@ function SiteLoader(props) {
     // setTimeout(() => {
     // }, 5000);
     if (props.showLoader === true) {
-      setLoad(true);
-      body.style.setProperty("overflow", "auto", "important");
+      // setLoad(true);
+      // body.style.setProperty("overflow", "auto", "important");
     }
 
     console.log(props);
@@ -49,7 +49,7 @@ function SiteLoader(props) {
     <div className={`loaded ${load === true && "finish"}`}>
       <Lottie
         options={defaultOptions}
-        // width={screenWidth}
+        width="256"
         // height={screenHeight}
       />
       {/* <div id="loader-wrapper">

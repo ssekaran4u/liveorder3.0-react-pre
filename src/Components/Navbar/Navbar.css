@@ -34,9 +34,10 @@
 .NavbarContainer.navbar-fixed .btn.schedule-btn:hover {
   color: #fff;
   background-image: none;
-  background-color: #8039db;
-  border-color: #8039db;
-  box-shadow: 0 6px 12px #8039db;
+  background-color: #4e2df0;
+  border-color: #4e2df0;
+  /* box-shadow: 0 6px 12px #4E2DF0; */
+  box-shadow: 0 6px 12px rgba(78, 45, 240, 0.05);
   /* background-color: #674cf3;
   border-color: #674cf3; */
 }
@@ -159,6 +160,6 @@
   }
 
   .NavbarContainer.navbar-fixed .NavbarItems {
-    padding: 15px 0;
+    padding: 19px 0;
   }
 }

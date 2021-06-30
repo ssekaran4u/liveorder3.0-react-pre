@@ -32,8 +32,10 @@
 }
 
 .btn.demo-card-btn:hover {
-  /* color: #4e2df0 !important; */
-  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.2);
+  /* background-color: #674cf3 !important; */
+  color: rgba(78, 45, 240, 1);
+  /* box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.2); */
+  box-shadow: -1.1px 8.9px 21px 0 rgba(78, 45, 240, 1);
 }
 
 .purple-blob2 {

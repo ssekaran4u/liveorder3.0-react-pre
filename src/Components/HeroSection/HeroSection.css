@@ -97,7 +97,7 @@ h5.h5.HeroSubTitle {
 }
 
 .btn.search-btn {
-  border-radius: 8px;
+  border-radius: 14px;
   background-color: #674cf3;
   transition: all 0.5s;
   padding: 7px 19px !important;
@@ -105,8 +105,8 @@ h5.h5.HeroSubTitle {
 
 .btn.search-btn:hover {
   background-image: none;
-  background-color: #8039db;
-  border-color: #8039db;
+  background-color: rgba(78, 45, 240, 1);
+  border-color: rgba(78, 45, 240, 1);
 }
 
 @media only screen and (min-width: 769px) {

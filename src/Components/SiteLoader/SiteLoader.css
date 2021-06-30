@@ -17,6 +17,7 @@
 
 .loaded.finish {
   top: -100%;
+  visibility: hidden;
 }
 
 .mouse {
@@ -26,20 +27,7 @@
   left: 50%;
 }
 
-@keyframes fade-out {
-  0% {
-  }
-
-  50% {
-    opacity: 0.75;
-  }
-
-  75% {
-    opacity: 0.25;
-  }
-
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+.loaded div[aria-label="animation"] {
+  width: 100vw !important;
+  height: 50vh !important;
 }

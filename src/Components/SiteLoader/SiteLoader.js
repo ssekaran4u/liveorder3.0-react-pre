@@ -29,8 +29,8 @@ function SiteLoader(props) {
     // setTimeout(() => {
     // }, 5000);
     if (props.showLoader === true) {
-      // setLoad(true);
-      // body.style.setProperty("overflow", "auto", "important");
+      setLoad(true);
+      body.style.setProperty("overflow", "auto", "important");
     }
 
     console.log(props);

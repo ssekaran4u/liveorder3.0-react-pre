@@ -326,13 +326,13 @@ img.card {
   }
 }
 
-.video-btn.video-popup:hover > svg {
+/* .video-btn.video-popup:hover > svg {
   animation: bottomTop 1.5s infinite alternate ease-in-out;
 }
 
 .video-btn.video-popup:hover::before {
   animation: topToBottom 1.5s infinite alternate ease-in-out;
-}
+} */
 
 @keyframes bottomTop {
   0% {

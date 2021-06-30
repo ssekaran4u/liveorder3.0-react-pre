@@ -83,7 +83,8 @@
 }
 
 .LetsStartSection.on_scroll {
-  height: 100vh;
+  height: 65vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +125,7 @@
   z-index: 1000;
 }
 
-.LetsStartSection.on_scroll .LetsStartSectionCard h3 {
+/* .LetsStartSection.on_scroll .LetsStartSectionCard h3 {
   font-size: 40px !important;
 }
 .LetsStartSection.on_scroll .LetsStartSectionCard p {
@@ -135,7 +136,7 @@
   font-size: 24px !important;
   width: 240px !important;
   height: 68px !important;
-}
+} */
 
 .LetsStartSection.on_scroll .LetsStartSectionCard .purple-blob2,
 .LetsStartSection.on_scroll .LetsStartSectionCard .green-circle,

@@ -35,7 +35,8 @@
   /* background-color: #674cf3 !important; */
   color: rgba(78, 45, 240, 1) !important;
   /* box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.2); */
-  box-shadow: -1.1px 8.9px 21px 0 rgba(78, 45, 240, 1) !important;
+  /* box-shadow: -1.1px 8.9px 21px 0 rgba(78, 45, 240, 1) !important; */
+  box-shadow: -1.1px 8.9px 21px 0 #64589e !important;
 }
 
 .purple-blob2 {

@@ -28,6 +28,6 @@
 }
 
 .loaded div[aria-label="animation"] {
-  width: 100vw !important;
+  /* width: 100vw !important; */
   height: 50vh !important;
 }

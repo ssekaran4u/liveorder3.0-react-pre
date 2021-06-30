@@ -109,7 +109,9 @@
 }
 
 .LetsStartSectionCard img {
-  background-color: #6c19d8;
+  /* background-color: #6c19d8; */
+  background-image: linear-gradient(to right, #674cf3, #6c19d8);
+  border-radius: 14px !important;
   position: absolute;
 }
 

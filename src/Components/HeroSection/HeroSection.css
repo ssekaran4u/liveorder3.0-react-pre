@@ -1,7 +1,8 @@
 .HeroSection {
   /* padding: 64px 0 196px 0; */
   padding: 8px 0 88px 0;
-  margin-top: 96px;
+  /* margin-top: 96px; */
+  margin-top: 88px;
   font-family: "Quicksand", sans-serif;
   background: url("../../Images/hero_bg.png") no-repeat center/cover;
   /* background: url("../../Images/hero_bg@3x.png") no-repeat center/cover; */
@@ -96,7 +97,7 @@ h5.h5.HeroSubTitle {
 }
 
 .btn.search-btn {
-  border-radius: 14px;
+  border-radius: 8px;
   background-color: #674cf3;
   transition: all 0.5s;
   padding: 7px 19px !important;

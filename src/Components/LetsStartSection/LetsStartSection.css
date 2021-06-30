@@ -21,18 +21,20 @@
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
-  color: #674cf3;
+  color: #674cf3 !important;
   margin: 0 auto;
   width: 168px;
   height: 48px;
+  border-radius: 8px;
   background-color: #ffffff;
   transition: all 0.5s;
+  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.1);
 }
 
-/* .btn.demo-card-btn:hover {
-  background-color: #674cf3;
-  color: #ffffff;
-} */
+.btn.demo-card-btn:hover {
+  /* color: #4e2df0 !important; */
+  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.2);
+}
 
 .purple-blob2 {
   width: 200px;

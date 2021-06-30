@@ -9,18 +9,23 @@
   letter-spacing: normal;
   color: #ffffff;
   /* border-radius: 0.5rem; */
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 12px 18px;
   opacity: 0.9;
   border: none;
+  background-color: #674cf3 !important;
+  border-color: #674cf3 !important;
   transition: 0.3s ease-in-out;
   box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.1);
 }
 
 .btn.demo-btn:hover {
   background-image: none;
-  background-color: #8039db;
-  border-color: #8039db;
+  background-color: #4e2df0 !important;
+  /* background-color: #8039db; */
+  /* border-color: #8039db; */
+  border-color: #4e2df0 !important;
+  box-shadow: -1.1px 8.9px 21px 0 rgba(103, 76, 243, 0.2);
 }
 
 .WhyLiveSection .card {

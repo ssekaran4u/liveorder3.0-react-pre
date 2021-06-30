@@ -28,6 +28,14 @@
 }
 
 .loaded div[aria-label="animation"] {
-  /* width: 100vw !important; */
+  width: 100vw !important;
+  /* width: 192px I !important; */
   height: 50vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaded div[aria-label="animation"] svg {
+  width: 75% !important;
 }

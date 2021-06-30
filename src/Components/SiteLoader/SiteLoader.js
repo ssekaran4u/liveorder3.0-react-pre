@@ -49,8 +49,11 @@ function SiteLoader(props) {
     <div className={`loaded ${load === true && "finish"}`}>
       <Lottie
         options={defaultOptions}
-        width="192"
+        // width="192"
         // height={screenHeight}
+        style={{
+          width: "100%",
+        }}
       />
       {/* <div id="loader-wrapper">
         <div id="loader"></div>

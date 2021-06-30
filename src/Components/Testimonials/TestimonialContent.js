@@ -1,6 +1,6 @@
 import WellNess from "../../Images/Wellness.png";
 import Mahaveer from "../../Images/mahaveer.png";
-import Tesmed from "../../Images/Tasmed.png";
+import Tesmed from "../../Images/Tas med@3x.png";
 import Netmeds from "../../Images/netmeds.png";
 import FrankRoss from "../../Images/FrankRoss.png";
 import Paras from "../../Images/Paras.png";

@@ -1,5 +1,6 @@
 .HeroSection {
-  padding: 64px 0 196px 0;
+  /* padding: 64px 0 196px 0; */
+  padding: 64px 0 126px 0;
   margin-top: 96px;
   font-family: "Quicksand", sans-serif;
   background: url("../../Images/hero_bg.png") no-repeat center/cover;

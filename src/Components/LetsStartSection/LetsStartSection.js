@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./LetsStartSection.css";
-import letsStartBGSVG from "../../Images/lets-start-bg.svg";
+// import letsStartBGSVG from "../../Images/lets-start-bg.svg";
+import letsStartBGSVG from "../../Images/lets start bg.svg";
 
 class LetsStartSection extends Component {
   componentDidMount() {

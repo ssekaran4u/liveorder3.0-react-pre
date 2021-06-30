@@ -65,7 +65,7 @@ class WhyLiveSection extends Component {
     return (
       <div className="WhyLiveSection d-lg-flex MainContainer py-4" id="whyLive">
         <div className="d-flex align-items-center">
-          <div className="whyLiveSectionTitle mr-0 mr-lg-4 mb-4 mb-lg-0 d-flex flex-column align-items-start">
+          <div className="whyLiveSectionTitle mb-4 mb-lg-0 d-flex flex-column align-items-start">
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
             <Lottie
               options={this.state.defaultOptions}
@@ -76,6 +76,7 @@ class WhyLiveSection extends Component {
                 margin: "0px 0",
                 outline: "none",
                 marginLeft: "-24px",
+                marginBottom: "-20px",
               }}
             />
             <lottie-player

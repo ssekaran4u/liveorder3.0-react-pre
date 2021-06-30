@@ -243,3 +243,8 @@
   font-weight: 600 !important;
   color: #e8eef2;
 }
+
+.whyLiveSectionTitle {
+  margin-top: -96px;
+  margin-right: 2rem !important;
+}

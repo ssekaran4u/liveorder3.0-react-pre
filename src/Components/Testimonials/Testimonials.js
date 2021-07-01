@@ -57,7 +57,7 @@ class Testimonials extends Component {
       //   { bottom: "71%", right: "1%", width: "81px", height: "81px" },
       //   { top: "44%", right: "5%", width: "81px", height: "81px" },
       // ],
-      stylesArray2: [
+      stylesArray_1280: [
         {
           width: "41px",
           height: "41px",
@@ -99,6 +99,92 @@ class Testimonials extends Component {
           transform: "translate3d(530px, 70px, 0px)",
         },
       ],
+      stylesArray_1440: [
+        {
+          width: "41px",
+          height: "41px",
+          transform: "translate3d(-550px, -175px, 0px)",
+        },
+        {
+          width: "115px",
+          height: "114px",
+          transform: " translate3d(-650px, 150px, 0px)",
+        },
+        {
+          width: "96px",
+          height: "96px",
+          transform: "translate3d(-375px, -50px, 0px)",
+        },
+        {
+          width: "106px",
+          height: "106px",
+          transform: "translate3D(0px, -140px, 0px)",
+        },
+        {
+          width: "76px",
+          height: "76px",
+          transform: "translate3d(275px, -170px, 0px)",
+        },
+        {
+          width: "53px",
+          height: "53px",
+          transform: "translate3d(400px, 135px, 0px)",
+        },
+        {
+          width: "81px",
+          height: "81px",
+          transform: "translate3d(625px, -135px, 0px)",
+        },
+        {
+          width: "81px",
+          height: "81px",
+          transform: "translate3d(600px, 70px, 0px)",
+        },
+      ],
+      stylesArray_1920: [
+        {
+          width: "41px",
+          height: "41px",
+          transform: "translate3d(-700px, -175px, 0px)",
+        },
+        {
+          width: "115px",
+          height: "114px",
+          transform: " translate3d(-875px, 150px, 0px)",
+        },
+        {
+          width: "96px",
+          height: "96px",
+          transform: "translate3d(-575px, -50px, 0px)",
+        },
+        {
+          width: "106px",
+          height: "106px",
+          transform: "translate3D(0px, -140px, 0px)",
+        },
+        {
+          width: "76px",
+          height: "76px",
+          transform: "translate3d(275px, -170px, 0px)",
+        },
+        {
+          width: "53px",
+          height: "53px",
+          transform: "translate3d(500px, 135px, 0px)",
+        },
+        {
+          width: "81px",
+          height: "81px",
+          transform: "translate3d(875px, -135px, 0px)",
+        },
+        {
+          width: "81px",
+          height: "81px",
+          transform: "translate3d(800px, 70px, 0px)",
+        },
+      ],
+      styleArray: "",
+      activeStylesArray: [],
     };
   }
 
@@ -114,33 +200,75 @@ class Testimonials extends Component {
       });
     });
 
-    this.setState({
-      companyData: arrayOfCompanies,
-      activeCompany: {
-        icon: TestimonialContent[3].Companyimage,
-        name: TestimonialContent[3].CompanyName,
-        description: TestimonialContent[3].CompanyText.split("<br />"),
+    window.addEventListener("resize", this.resizeFunction);
+
+    this.setState(
+      {
+        companyData: arrayOfCompanies,
+        activeCompany: {
+          icon: TestimonialContent[3].Companyimage,
+          name: TestimonialContent[3].CompanyName,
+          description: TestimonialContent[3].CompanyText.split("<br />"),
+        },
+        indexState: arrayOfCompanies.length / 2 - 1,
       },
-      indexState: arrayOfCompanies.length / 2 - 1,
-    });
+      () => this.resizeFunction()
+    );
   }
 
+  resizeFunction = () => {
+    this.setState({ activeStylesArray: [] });
+    if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
+      this.setState((prev) => ({
+        styleArray: "stylesArray_1280",
+        activeStylesArray: prev.stylesArray_1280,
+      }));
+    } else if (window.innerWidth >= 1440 && window.innerWidth < 1920) {
+      this.setState((prev) => ({
+        styleArray: "stylesArray_1440",
+        activeStylesArray: prev.stylesArray_1440,
+      }));
+    } else if (window.innerWidth >= 1920) {
+      this.setState((prev) => ({
+        styleArray: "stylesArray_1920",
+        activeStylesArray: prev.stylesArray_1920,
+      }));
+    }
+  };
+
   changeTestimonialHandler = (index) => {
-    console.log(index, "yey");
     let newIndexState = 0;
-    const { stylesArray2, companyData, indexState } = this.state;
+    const {
+      stylesArray_1280,
+      stylesArray_1440,
+      stylesArray_1920,
+      companyData,
+      indexState,
+    } = this.state;
 
     if (index === -1) {
-      let companyRemoved = stylesArray2.shift();
-      stylesArray2.push(companyRemoved);
+      let companyRemoved = stylesArray_1280.shift();
+      stylesArray_1280.push(companyRemoved);
+
+      let companyRemoved2 = stylesArray_1440.shift();
+      stylesArray_1440.push(companyRemoved2);
+      let companyRemoved3 = stylesArray_1920.shift();
+      stylesArray_1920.push(companyRemoved3);
+
       if (indexState + index >= 0) {
         newIndexState = indexState + index;
       } else {
         newIndexState = companyData.length - 1;
       }
     } else if (index === 1) {
-      let companyRemoved = stylesArray2.pop();
-      stylesArray2.unshift(companyRemoved);
+      let companyRemoved = stylesArray_1280.pop();
+      stylesArray_1280.unshift(companyRemoved);
+
+      let companyRemoved2 = stylesArray_1440.pop();
+      stylesArray_1440.unshift(companyRemoved2);
+      let companyRemoved3 = stylesArray_1920.pop();
+      stylesArray_1920.unshift(companyRemoved3);
+
       if (indexState + index <= companyData.length - 1) {
         newIndexState = indexState + index;
       } else {
@@ -149,7 +277,9 @@ class Testimonials extends Component {
     }
 
     this.setState((prev) => ({
-      stylesArray2,
+      stylesArray_1280,
+      stylesArray_1440,
+      stylesArray_1920,
       activeCompany: {
         ...companyData[newIndexState],
         description: companyData[newIndexState].description.split("<br />"),
@@ -160,7 +290,6 @@ class Testimonials extends Component {
 
   showTestimonial = (e, sourceLogo) => {
     e.preventDefault();
-    console.log(sourceLogo, TestimonialContent);
     for (var i = 0; i < TestimonialContent.length; i++) {
       if (TestimonialContent[i].CompanyName === sourceLogo) {
         document.getElementById("TestimonialText").innerHTML =
@@ -168,6 +297,7 @@ class Testimonials extends Component {
       }
     }
   };
+
   render() {
     return (
       <div className="Testimonials text-center">
@@ -192,27 +322,31 @@ class Testimonials extends Component {
               {this.state.activeCompany.description[2]}
             </p>
           </div>
-          {this.state.companyData.map((compData, compIndex) => {
-            return (
-              <p
-                href="#"
-                // onClick={(e) => this.showTestimonial(e, "Wellness")}
-                className={`clientLogos ${compData.name}Logo`}
-                style={{
-                  ...this.state.stylesArray2[compIndex],
-                  height: "auto",
-                  width: "auto",
-                }}
-              >
-                <img
-                  src={compData.icon}
-                  height={this.state.stylesArray2[compIndex].height}
-                  width={this.state.stylesArray2[compIndex].width}
-                  alt="Wellness Forever"
-                />
-              </p>
-            );
-          })}
+          {this.state.styleArray !== "" &&
+            this.state.companyData.map((compData, compIndex) => {
+              return (
+                <p
+                  key={compIndex}
+                  href="#"
+                  className={`clientLogos ${compData.name}Logo`}
+                  style={{
+                    ...this.state[this.state.styleArray][compIndex],
+                    height: "auto",
+                    width: "auto",
+                  }}
+                >
+                  <img
+                    src={compData.icon}
+                    height={this.state[this.state.styleArray][compIndex].height}
+                    // height={this.state.activeStylesArray[compIndex].height}
+                    width={this.state[this.state.styleArray][compIndex].width}
+                    // width={this.state.activeStylesArray[compIndex].width}
+                    alt="Wellness Forever"
+                  />
+                </p>
+              );
+            })}
+
           {/* <a
             href="clientLogo"
             onClick={(e) => this.showTestimonial(e, "Wellness")}

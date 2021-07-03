@@ -304,14 +304,40 @@ class Testimonials extends Component {
         <h2 className="h2 mb-3">Testimonials</h2>
         <h4 className="h4 grey-subtitle mb-5">Hear from our happy customers</h4>
         <div className="TestimonialBg d-flex align-items-center justify-content-center">
-          <span
-            id="before"
-            onClick={() => this.changeTestimonialHandler(1)}
-          ></span>
-          <span
-            id="after"
-            onClick={() => this.changeTestimonialHandler(-1)}
-          ></span>
+          <span id="before" onClick={() => this.changeTestimonialHandler(1)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-chevron-left"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="#2e3e6a"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </span>
+          <span id="after" onClick={() => this.changeTestimonialHandler(-1)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-chevron-right"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="#2e3e6a"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </span>
           <div className="TestimonialContent text-center">
             <p id="TestimonialText">
               <span className="font-weight-bold">

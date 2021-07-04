@@ -66,11 +66,12 @@
 .SellerTrackingCardSection .card::after {
   position: absolute;
   content: "";
-  top: 50%;
-  height: 0%;
-  width: 0%;
-  left: 50%;
-  transition: 0.4s ease-in-out;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
 }
 
 .SellerTrackingCardSection .card .card-body {
@@ -78,10 +79,10 @@
 }
 
 .SellerTrackingCardSection .card:hover::after {
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  left: 0%;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* top: 0%; */
+  /* left: 0%; */
   /* background-color: orange; */
   z-index: 0;
   border-radius: inherit;
@@ -100,7 +101,9 @@
 }
 
 .SellerTrackingCardSection .card.card.manage-team:hover::after {
-  background: rgba(255, 195, 31, 1);
+  /* background: rgba(255, 195, 31, 1); */
+  /* background: rgba(253, 220, 129, 1); */
+  background: #f5b400;
 }
 
 /* Individual card section properties */
@@ -126,7 +129,7 @@
 
 .SellerTrackingCardSection .card.right-seller svg,
 .SellerTrackingCardSection .card.right-seller svg g {
-  transition: 0.1s ease-in-out;
+  transition: 0.05s ease-in-out;
   transition-property: fill;
   fill: rgba(255, 115, 0, 1);
 }
@@ -246,13 +249,33 @@
 /* } */
 
 .SellerTrackingCardSection .card.manage-team svg {
-  transition: 0.3s ease-in-out;
-  fill: rgba(255, 190, 11, 1);
+  transition: 0.05s ease-in-out;
+  /* fill: rgba(255, 190, 11, 1); */
 }
 
-.SellerTrackingCardSection .card.manage-team:hover svg g path {
-  fill: #fff;
+#Path_39086,
+#Path_39087,
+#Path_39088 {
+  fill: rgba(255, 190, 11, 0.3) !important;
 }
+
+#Path_39089 {
+  fill: rgba(255, 190, 11, 1) !important;
+}
+
+.SellerTrackingCardSection .card.manage-team:hover path#Path_39086,
+.SellerTrackingCardSection .card.manage-team:hover path#Path_39087,
+.SellerTrackingCardSection .card.manage-team:hover path#Path_39088 {
+  fill: rgb(255 232 171) !important;
+}
+
+.SellerTrackingCardSection .card.manage-team:hover path#Path_39089 {
+  fill: white !important;
+}
+
+/* .SellerTrackingCardSection .card.manage-team:hover svg g path {
+  fill: #fff !important;
+} */
 
 .SellerTrackingCardSection .card.manage-team .CardIconHolder.ManageTeamImg {
   transition: 0.3s ease-in-out;

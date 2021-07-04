@@ -194,6 +194,15 @@
   letter-spacing: normal !important;
   text-align: left !important;
   color: #2e3e6a !important;
+  transition: 0.5s ease-in-out;
+}
+
+.close-btn:hover {
+  background-color: rgba(195, 205, 228, 0.3);
+}
+
+.schedule-demo-form-btn {
+  transition: 0.5s ease-in-out !important;
 }
 
 .schedule-demo-form-btn:hover {

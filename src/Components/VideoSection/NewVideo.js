@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import PlayButtonSVG from "../../Images/Play icon.svg";
 import VideoPreview from "../../Images/Watch the Video.png";
 import "./NewVideoSection.css";
@@ -21,6 +23,10 @@ class NewVideo extends Component {
   componentDidMount() {
     let div = document.querySelector(".VideoContainer");
 
+    Aos.init({
+      duration: 1000,
+    });
+
     let observer = new IntersectionObserver((entries, observer) => {
       this.setState((prev) => ({
         isIntersecting: entries[0].isIntersecting,
@@ -39,11 +45,23 @@ class NewVideo extends Component {
           this.state.isIntersecting ? "animate_video" : ""
         }`}
       >
-        <h2 className="h2 mb-4">Want to know More ?</h2>
-        <h4 className="h4 grey-subtitle">
+        <h2 className="h2 mb-4" data-aos="fade-up">
+          Want to know More ?
+        </h2>
+        <h4
+          className="h4 grey-subtitle"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="0"
+        >
           Click on the video to get to know us better
         </h4>
-        <div className="row-narrow">
+        <div
+          className="row-narrow"
+          data-aos="fade-up"
+          data-aos-offset="150"
+          data-aos-delay="500"
+        >
           <div className="featured-video">
             <div className="column-container">
               <div className="column centered">

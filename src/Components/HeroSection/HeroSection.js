@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./HeroSection.css";
 import SearchIconSVG from "../../Images/Search icon.svg";
 
@@ -16,20 +18,37 @@ class HeroSection extends Component {
       searchTerm,
     });
   }
+
+  componentDidMount() {
+    Aos.init({ duration: 1000 });
+  }
+
   render() {
     return (
       <div className="HeroSection text-center">
         <div className="HeroBg">
           <div className="text-center HeroCopy">
-            <h1 className="h1 HeroTitle mb-4">
+            <h1
+              className="h1 HeroTitle mb-4"
+              data-aos="fade-up"
+              data-aos-delay="1500"
+            >
               Always say <span>“YES”</span> to your Customers
             </h1>
-            <h5 className="h5 HeroSubTitle">
+            <h5
+              className="h5 HeroSubTitle"
+              data-aos="fade-up"
+              data-aos-delay="1750"
+            >
               “Live Order” Pharma Eco-System Makes{" "}
               <br className="d-none d-md-block" />
               your Business Future-Ready
             </h5>
-            <div className="search-container d-flex align-items-center">
+            <div
+              className="search-container d-flex align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="2000"
+            >
               <form className="w-100" autoComplete="off">
                 <div className="d-flex justify-content-between">
                   <div className="d-flex justify-content-center align-items-center w-100">

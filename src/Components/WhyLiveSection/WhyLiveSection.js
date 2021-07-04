@@ -1,21 +1,10 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
-// import QMarkImg from "../../Images/QMarkImg.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import QMarkAnimated from "../../Images/animated/Why-live-order.json";
-// import SellerImg from "../../Images/SellerImg.svg";
-// import TrackingImg from "../../Images/TrackingImg.svg";
-// import ReconciliationImg from "../../Images/ReconciliationImg.svg";
-// import ManageTeamImg from "../../Images/ManageTeamImg.svg";
-import "./WhyLiveSection.css";
 
-const defaultOptions = {
-  loop: false,
-  autoplay: true,
-  animationData: QMarkAnimated,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+import "./WhyLiveSection.css";
 
 class WhyLiveSection extends Component {
   constructor(props) {
@@ -35,6 +24,8 @@ class WhyLiveSection extends Component {
   }
 
   componentDidMount() {
+    Aos.init({ duration: 1000 });
+
     let div = document.querySelector(".whyLiveSectionTitle");
 
     let observer = new IntersectionObserver(
@@ -67,33 +58,39 @@ class WhyLiveSection extends Component {
         <div className="d-flex align-items-center">
           <div className="whyLiveSectionTitle mb-4 mb-lg-0 d-flex flex-column align-items-start">
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
-            <Lottie
-              options={this.state.defaultOptions}
-              style={{
-                width: "94px",
-                height: "auto",
-                overflow: "hidden",
-                margin: "0px 0",
-                outline: "none",
-                marginLeft: "-24px",
-                marginBottom: "-20px",
-              }}
-            />
-            <lottie-player
-              ref={this.myRef} // 2. set the reference for the player
-              id="firstLottie"
-              controls
-              mode="normal"
-              src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-              style={{ width: "320px" }}
-            ></lottie-player>
-            <h3 className="h3 mb-3">Why Live Order ?</h3>
-            <p className="body-copy mb-4">
+            <span
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-offset="-100"
+            >
+              <Lottie
+                options={this.state.defaultOptions}
+                style={{
+                  width: "94px",
+                  height: "auto",
+                  overflow: "hidden",
+                  margin: "0px 0",
+                  outline: "none",
+                  marginLeft: "-24px",
+                  marginBottom: "-20px",
+                }}
+              />
+            </span>
+            <h3 data-aos="fade-up" data-aos-delay="500" className="h3 mb-3">
+              Why Live Order ?
+            </h3>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="body-copy mb-4"
+            >
               B2B online ordering platform connecting Buyers & sellers which
               gives over all solution to “Buyers” in turn increasing the
               business of “Sellers.”
             </p>
             <button
+              data-aos="flip-left"
+              data-aos-delay="1000"
               type="button"
               className="btn btn-primary demo-btn"
               onClick={() => this.props.schedulerModalHandler(true)}
@@ -102,7 +99,11 @@ class WhyLiveSection extends Component {
             </button>
           </div>
         </div>
-        <div className="SellerTrackingCardSection section-1 mr-0 mr-lg-4">
+        <div
+          className="SellerTrackingCardSection section-1 mr-0 mr-lg-4"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <div className="card mb-4 right-seller">
             <div className="card-body p-0">
               <div className="CardIconHolder SellerImg d-flex align-items-center justify-content-center mb-4">
@@ -209,7 +210,12 @@ class WhyLiveSection extends Component {
             </div>
           </div>
         </div>
-        <div className="SellerTrackingCardSection section-2">
+        <div
+          className="SellerTrackingCardSection section-2"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-offset="-100"
+        >
           <div className="card mb-4 GradientCard bill-to-bill">
             <div className="card-body p-0">
               <div className="CardIconHolder ReconciliatonImg d-flex align-items-center justify-content-center mb-4">

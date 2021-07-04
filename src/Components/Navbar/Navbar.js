@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Navbar.css";
-
 import { MenuItems } from "./MenuItems";
 import logo from "../../Images/Logo.svg";
 // import ScheduleADemo from "../ScheduleADemo/ScheduleADemo";
@@ -11,6 +12,10 @@ class Navbar extends Component {
     scroll: false,
   };
   componentDidMount() {
+    Aos.init({
+      duration: 1000,
+    });
+
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
         this.setState({
@@ -23,9 +28,12 @@ class Navbar extends Component {
       }
     });
   }
+
   render() {
     return (
       <div
+        data-aos-delay="500"
+        data-aos="slide-down"
         className={`NavbarContainer ${
           this.state.scroll === true ? "navbar-fixed" : ""
         }`}

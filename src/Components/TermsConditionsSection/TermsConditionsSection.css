@@ -16,12 +16,15 @@
 
 .terms-container-fluid .left-pattern {
   left: 0;
-  top: 0;
+  /* top: 0; */
+  top: 52px;
+  height: 70%;
 }
 
 .terms-container-fluid .right-pattern {
   right: 0;
-  top: 0;
+  top: 45px;
+  height: 85%;
 }
 
 .terms-heading-container {

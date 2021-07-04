@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Testimonials.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { TestimonialContent } from "./TestimonialContent";
 // import WellNess from "../../Images/Wellness.png";
 // import Mahaveer from "../../Images/mahaveer.png";
@@ -192,6 +194,9 @@ class Testimonials extends Component {
   }
 
   componentDidMount() {
+    Aos.init({
+      duration: 1000,
+    });
     let arrayOfCompanies = [];
     TestimonialContent.map((test, testIndex) => {
       return arrayOfCompanies.push({
@@ -309,8 +314,17 @@ class Testimonials extends Component {
   render() {
     return (
       <div className="Testimonials text-center">
-        <h2 className="h2 mb-3">Testimonials</h2>
-        <h4 className="h4 grey-subtitle mb-5">Hear from our happy customers</h4>
+        <h2 className="h2 mb-3" data-aos="fade-up" data-aos-offset="200">
+          Testimonials
+        </h2>
+        <h4
+          className="h4 grey-subtitle mb-5"
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-delay="500"
+        >
+          Hear from our happy customers
+        </h4>
         <div className="TestimonialBg d-flex align-items-center justify-content-center">
           {/* <span id="before" onClick={() => this.changeTestimonialHandler(1)}>
             <svg
@@ -347,7 +361,12 @@ class Testimonials extends Component {
             </svg>
           </span> */}
           <div className="TestimonialContent text-center">
-            <p id="TestimonialText">
+            <p
+              id="TestimonialText"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+            >
               <span className="font-weight-bold">
                 {this.state.activeCompany.name}
               </span>

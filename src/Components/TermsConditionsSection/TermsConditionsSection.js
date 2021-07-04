@@ -5,12 +5,10 @@ import {
   Button,
 } from "react-bootstrap";
 import { Container } from "reactstrap";
-// import PolicyBG from "../../Images/Bg Of policy doc.svg";
-// import faqData from "./helpdata.json";
+
+import LeftPatternSVG from "../../Images/terms left pattern.svg";
+import RightPatternSVG from "../../Images/terms right pattern.svg";
 import "./TermsConditionsSection.css";
-// import PatternHelp from "../Images/pattern help.svg";
-// import PlusSVG from "../Images/plus.svg";
-// import MinusSVG from "../Images/Minus .svg";
 
 function TermsConditions() {
   //   const [section, setSection] = useState("general");
@@ -20,6 +18,8 @@ function TermsConditions() {
     <div className="text-center terms-container">
       <Container fluid className="terms-container-fluid">
         <Container className="terms-heading-container">
+          <img src={LeftPatternSVG} className="left-pattern" alt="" />
+          <img src={RightPatternSVG} className="right-pattern" alt="" />
           <Row className="terms-container-welcome">
             <div>
               <p className="mt-1 mb-3 terms-heading">Terms & Conditions</p>

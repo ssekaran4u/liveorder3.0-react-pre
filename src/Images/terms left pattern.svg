@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="177.517" height="229.017" viewBox="0 0 177.517 229.017">
+    <defs>
+        <clipPath id="clip-path">
+            <path fill="none" d="M0 0H117V117H0z"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#cceaef}
+        </style>
+    </defs>
+    <g id="left_pattern" transform="translate(0 -159.983)">
+        <path id="Rectangle_3686" fill="#cceaef" d="M34 0h2a34 34 0 0 1 34 34H0A34 34 0 0 1 34 0z" opacity="0.54" transform="translate(70 306) rotate(180)"/>
+        <g id="Repeat_Grid_2" clip-path="url(#clip-path)" transform="translate(32 272)">
+            <g transform="translate(-1098 -320)">
+                <circle id="Ellipse_1464" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -320)">
+                <circle id="Ellipse_1464-2" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-2" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-2" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-2" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1098 -298)">
+                <circle id="Ellipse_1464-3" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-3" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-3" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-3" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -298)">
+                <circle id="Ellipse_1464-4" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-4" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-4" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-4" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1098 -276)">
+                <circle id="Ellipse_1464-5" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-5" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-5" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-5" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -276)">
+                <circle id="Ellipse_1464-6" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-6" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-6" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-6" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1098 -254)">
+                <circle id="Ellipse_1464-7" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-7" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-7" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-7" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -254)">
+                <circle id="Ellipse_1464-8" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-8" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-8" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-8" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1098 -232)">
+                <circle id="Ellipse_1464-9" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-9" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-9" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-9" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -232)">
+                <circle id="Ellipse_1464-10" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-10" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-10" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-10" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1098 -210)">
+                <circle id="Ellipse_1464-11" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-11" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-11" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-11" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+            <g transform="translate(-1010 -210)">
+                <circle id="Ellipse_1464-12" cx="3" cy="3" r="3" class="cls-4" transform="translate(1098 320)"/>
+                <circle id="Ellipse_1466-12" cx="3" cy="3" r="3" class="cls-4" transform="translate(1142 320)"/>
+                <circle id="Ellipse_1465-12" cx="3" cy="3" r="3" class="cls-4" transform="translate(1120 320)"/>
+                <circle id="Ellipse_1467-12" cx="3" cy="3" r="3" class="cls-4" transform="translate(1164 320)"/>
+            </g>
+        </g>
+        <path id="Polygon_2" d="M21.01 3.363a4 4 0 0 1 5.979 0l15.093 16.98A4 4 0 0 1 39.093 27H8.907a4 4 0 0 1-2.99-6.657z" class="cls-4" transform="translate(177.517 179.075) rotate(135)"/>
+    </g>
+</svg>

@@ -2,9 +2,26 @@
   margin-top: 96px;
 }
 .terms-container-fluid {
-  background: url("../../Images/Bg\ Of\ policy\ doc.svg") no-repeat center;
+  position: relative;
+  /* background: url("../../Images/Bg\ Of\ policy\ doc.svg") no-repeat center; */
   height: 320px;
   background-color: #ebf7f9;
+}
+
+.terms-container-fluid .left-pattern,
+.terms-container-fluid .right-pattern {
+  position: absolute;
+  height: 100%;
+}
+
+.terms-container-fluid .left-pattern {
+  left: 0;
+  top: 0;
+}
+
+.terms-container-fluid .right-pattern {
+  right: 0;
+  top: 0;
 }
 
 .terms-heading-container {
@@ -39,6 +56,7 @@
 }
 
 .terms-content-container {
+  position: relative;
   width: 768px !important;
   min-height: 921.6px;
   margin-bottom: 2rem !important;

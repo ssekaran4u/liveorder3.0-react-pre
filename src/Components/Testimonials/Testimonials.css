@@ -15,20 +15,24 @@
   position: absolute;
   /* width: 45%; */
   /* height: 100%; */
-  border: 3px solid #2e3e6a;
+  background-color: white;
+  /* border: 3px solid #2e3e6a; */
   border-radius: 50%;
   cursor: pointer;
 }
 
 #before {
-  left: 0;
-  left: 5%;
-  top: 40%;
+  /* left: 5%; */
+  /* left: 1%; */
+  left: 46%;
+  top: 65%;
 }
 
 #after {
-  right: 5%;
-  top: 40%;
+  /* right: 5%; */
+  /* right: 1%; */
+  right: 46%;
+  top: 65%;
 }
 
 .TestimonialContent p {
@@ -111,3 +115,84 @@
   top: 8px;
   left: 8%;
 } */
+
+@keyframes transformTime1280 {
+  0% {
+    transform: translate3d(-550px, 150px, 0px);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate3d(-700px, 150px, 0px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate3d(700px, 70px, 0px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate3d(590px, 70px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(530px, 70px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes transformTime1440 {
+  0% {
+    transform: translate3d(-650px, 150px, 0px);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate3d(-900px, 150px, 0px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate3d(900px, 70px, 0px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate3d(760px, 70px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(600px, 70px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes transformTime1920 {
+  0% {
+    transform: translate3d(-875px, 150px, 0px);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate3d(-1000px, 150px, 0px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate3d(1100px, 70px, 0px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate3d(1050px, 70px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(800px, 70px, 0px);
+    opacity: 1;
+  }
+}

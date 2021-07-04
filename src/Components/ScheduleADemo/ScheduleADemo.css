@@ -53,12 +53,14 @@
   line-height: 16px !important;
   letter-spacing: normal !important;
   text-align: left !important;
-  color: #5b636a !important;
+  /* color: #5b636a !important; */
+  color: rgba(91, 99, 106, 0.5) !important;
 }
 
 .schedule-form:not(:placeholder-shown) {
   font-size: 13px !important;
   font-weight: 600 !important;
+  color: rgba(91, 99, 106, 1) !important;
 }
 
 .schedule-form:focus {
@@ -194,6 +196,11 @@
   color: #2e3e6a !important;
 }
 
+.schedule-demo-form-btn:hover {
+  background-color: #4e2df0 !important;
+  border-color: #4e2df0 I !important;
+}
+
 .description-row-header {
   display: flex;
   justify-content: space-between;
@@ -283,9 +290,12 @@
 
 .sample-input-text::placeholder {
   color: rgba(91, 99, 106, 0.5);
+  font-size: 13px !important;
+  font-weight: 600 !important;
 }
 
 .sample-input-text:not(:placeholder-shown) {
-  color: rgba(91, 99, 106, 1);
+  color: rgba(91, 99, 106, 1) !important;
   font-size: 13px !important;
+  font-weight: 600 !important;
 }

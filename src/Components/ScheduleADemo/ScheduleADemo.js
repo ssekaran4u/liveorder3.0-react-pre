@@ -215,7 +215,11 @@ function ScheduleADemo(props) {
               </Button>
             </div>
             <div className="mr-3">
-              <Button variant="primary" onClick={dataHandler}>
+              <Button
+                variant="primary"
+                className="schedule-demo-form-btn"
+                onClick={dataHandler}
+              >
                 Schedule Demo
               </Button>
             </div>

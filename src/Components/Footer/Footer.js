@@ -205,8 +205,11 @@ function FooterPage(props) {
                   <div className="footer-about-us-eachsec-right">
                     <h3>Secure-Payments</h3>
                     <h4>
-                      More Secure Payments with Jio Payment Gateway, and our pay
-                      later options you can shop carefree.
+                      More Secure Payments with{" "}
+                      <span className="font-weight-bold text-white">
+                        Jio Payment Gateway,
+                      </span>{" "}
+                      and our pay later options you can shop carefree.
                     </h4>
                   </div>
                 </div>

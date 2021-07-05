@@ -104,7 +104,7 @@
 .SellerTrackingCardSection .card.card.manage-team:hover::after {
   /* background: rgba(255, 195, 31, 1); */
   /* background: rgba(253, 220, 129, 1); */
-  background: #f5b400;
+  background: #00d3b4;
 }
 
 /* Individual card section properties */
@@ -257,21 +257,30 @@
 #Path_39086,
 #Path_39087,
 #Path_39088 {
-  fill: rgba(255, 190, 11, 0.3) !important;
+  transition: 0.1s ease-in-out;
+  /* fill: rgba(255, 190, 11, 0.3) !important; */
+  fill: rgba(0, 211, 180, 0.3) !important;
 }
 
 #Path_39089 {
-  fill: rgba(255, 190, 11, 1) !important;
+  /* fill: rgba(255, 190, 11, 1) !important; */
+  fill: rgba(0, 211, 180, 1) !important;
 }
 
 .SellerTrackingCardSection .card.manage-team:hover path#Path_39086,
 .SellerTrackingCardSection .card.manage-team:hover path#Path_39087,
 .SellerTrackingCardSection .card.manage-team:hover path#Path_39088 {
-  fill: rgb(255 232 171) !important;
+  /* fill: rgba(255, 232, 171, 1) !important; */
+  /* fill: rgba(0, 211, 180, 1) !important; */
+  fill: rgba(17, 165, 143, 0.5) !important;
 }
 
 .SellerTrackingCardSection .card.manage-team:hover path#Path_39089 {
   fill: white !important;
+}
+
+.SellerTrackingCardSection .card.card.manage-team:hover .body-copy {
+  color: #f7fffe !important;
 }
 
 /* .SellerTrackingCardSection .card.manage-team:hover svg g path {
@@ -280,13 +289,16 @@
 
 .SellerTrackingCardSection .card.manage-team .CardIconHolder.ManageTeamImg {
   transition: 0.3s ease-in-out;
-  background-color: rgba(254, 247, 228, 1);
+  /* background-color: rgba(254, 247, 228, 1); */
+  background-color: rgba(0, 211, 180, 0.3);
 }
 
 .SellerTrackingCardSection
   .card.manage-team:hover
   .CardIconHolder.ManageTeamImg {
-  background-color: rgba(253, 220, 129, 1);
+  /* background-color: rgba(253, 220, 129, 1); */
+  /* background-color: rgba(0, 211, 180, 0.3); */
+  background-color: rgb(0 255 218 / 50%);
 }
 
 /* .SellerTrackingCardSection
@@ -320,7 +332,7 @@
 .SellerTrackingCardSection .card:hover .body-copy {
   font-family: Quicksand;
   font-weight: 600 !important;
-  color: #e8eef2;
+  color: #faeee4;
 }
 
 .whyLiveSectionTitle {

@@ -60,6 +60,7 @@ class WhyLiveSection extends Component {
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
             <span
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="1250"
               data-aos-offset="-100"
             >
@@ -76,11 +77,17 @@ class WhyLiveSection extends Component {
                 }}
               />
             </span>
-            <h3 data-aos="fade-up" data-aos-delay="250" className="h3 mb-3">
+            <h3
+              data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              className="h3 mb-3"
+            >
               Why Live Order ?
             </h3>
             <p
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="500"
               className="body-copy mb-4"
             >
@@ -90,6 +97,7 @@ class WhyLiveSection extends Component {
             </p>
             <button
               data-aos="flip-left"
+              data-aos-once="true"
               data-aos-delay="750"
               type="button"
               className="btn btn-primary demo-btn"
@@ -103,6 +111,7 @@ class WhyLiveSection extends Component {
           <div
             className="card mb-4 right-seller"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="1500"
           >
             <div className="card-body p-0">
@@ -166,6 +175,7 @@ class WhyLiveSection extends Component {
           <div
             className="card mb-4 mb-lg-0 centralized-tracking"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="500"
           >
             <div className="card-body p-0">
@@ -218,6 +228,7 @@ class WhyLiveSection extends Component {
           <div
             className="card mb-4 GradientCard bill-to-bill"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="1500"
             data-aos-offset="-100"
           >
@@ -306,6 +317,7 @@ class WhyLiveSection extends Component {
           <div
             className="card manage-team"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="500"
           >
             <div className="card-body p-0">

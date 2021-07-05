@@ -31,6 +31,7 @@ class HeroSection extends Component {
             <h1
               className="h1 HeroTitle mb-4"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="1500"
             >
               Always say <span>“YES”</span> to your Customers
@@ -38,6 +39,7 @@ class HeroSection extends Component {
             <h5
               className="h5 HeroSubTitle"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="1750"
             >
               “Live Order” Pharma Eco-System Makes{" "}
@@ -47,6 +49,7 @@ class HeroSection extends Component {
             <div
               className="search-container d-flex align-items-center"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="2000"
             >
               <form className="w-100" autoComplete="off">

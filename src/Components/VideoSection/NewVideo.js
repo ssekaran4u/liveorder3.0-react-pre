@@ -45,11 +45,12 @@ class NewVideo extends Component {
           this.state.isIntersecting ? "animate_video" : ""
         }`}
       >
-        <h2 className="h2 mb-4" data-aos="fade-up">
+        <h2 className="h2 mb-4" data-aos-once="true" data-aos="fade-up">
           Want to know More ?
         </h2>
         <h4
           className="h4 grey-subtitle"
+          data-aos-once="true"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-delay="0"
@@ -58,6 +59,7 @@ class NewVideo extends Component {
         </h4>
         <div
           className="row-narrow"
+          data-aos-once="true"
           data-aos="fade-up"
           data-aos-offset="150"
           data-aos-delay="500"
@@ -78,6 +80,7 @@ class NewVideo extends Component {
                   >
                     <span
                       className="svg-blob-red"
+                      data-aos-once="true"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-delay="550"

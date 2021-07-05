@@ -20,7 +20,7 @@ class PartnerSection extends Component {
   render() {
     return (
       <div className="PartnerSection text-center py-5 mt-4">
-        <h2 className="h2 mb-4" data-aos="fade-up">
+        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-once="true">
           Join the Online Revolution
         </h2>
         <div className="DataCountsContainer mb-5 d-flex justify-content-center flex-column flex-md-row">
@@ -28,6 +28,7 @@ class PartnerSection extends Component {
             className="mobile-break-section d-flex justify-content-center mb-4 mb-md-0"
             data-aos="fade-up"
             data-aos-delay="500"
+            data-aos-once="true"
           >
             <div className="DataCount">
               <h4 className="h4 mb-2">10K+</h4>
@@ -42,6 +43,7 @@ class PartnerSection extends Component {
             className="mobile-break-section d-flex justify-content-center mr-0"
             data-aos="fade-up"
             data-aos-delay="500"
+            data-aos-once="true"
           >
             <div className="DataCount">
               <h4 className="h4 mb-2">1k+</h4>
@@ -58,6 +60,7 @@ class PartnerSection extends Component {
             className="PartnerLogoContainer mr-0 mr-lg-4"
             data-aos="fade-right"
             data-aos-delay="1000"
+            data-aos-once="true"
           >
             <div className="PartnerLogoBox GSKImg mb-4 mr-4 mr-lg-0">
               <img src={GSKImg} alt="GSK" />
@@ -70,6 +73,7 @@ class PartnerSection extends Component {
             className="PartnerLogoContainer mr-0 mr-lg-4 mt-0 mt-lg-5"
             data-aos="fade-right"
             data-aos-delay="750"
+            data-aos-once="true"
           >
             <div className="PartnerLogoBox AbbottImg mb-4 mr-4 mr-lg-0">
               <img src={AbbottImg} alt="Abbott" />
@@ -82,6 +86,7 @@ class PartnerSection extends Component {
             className="PartnerLogoContainer mr-0 mr-lg-4"
             data-aos="fade-left"
             data-aos-delay="750"
+            data-aos-once="true"
           >
             <div className="PartnerLogoBox DrBLalImg mb-4 mr-4 mr-lg-0">
               <img src={DrBLal} alt="DrBLal" />
@@ -94,6 +99,7 @@ class PartnerSection extends Component {
             className="PartnerLogoContainer mr-0 mr-lg-4 mt-0 mt-lg-5"
             data-aos="fade-left"
             data-aos-delay="1000"
+            data-aos-once="true"
           >
             <div className="PartnerLogoBox AlkemImg mb-4 mr-4 mr-lg-0">
               <img src={AlkemImg} alt="Alkem" />

@@ -314,7 +314,12 @@ class Testimonials extends Component {
   render() {
     return (
       <div className="Testimonials text-center">
-        <h2 className="h2 mb-3" data-aos="fade-up" data-aos-offset="200">
+        <h2
+          className="h2 mb-3"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-once="true"
+        >
           Testimonials
         </h2>
         <h4
@@ -322,6 +327,7 @@ class Testimonials extends Component {
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="500"
+          data-aos-once="true"
         >
           Hear from our happy customers
         </h4>
@@ -366,6 +372,7 @@ class Testimonials extends Component {
               data-aos="fade-up"
               data-aos-offset="150"
               data-aos-delay="1000"
+              data-aos-once="true"
             >
               <span className="font-weight-bold">
                 {this.state.activeCompany.name}

@@ -17,9 +17,11 @@ import FooterPage from "./Components/Footer/Footer";
 import SiteLoader from "./Components/SiteLoader/SiteLoader";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ScheduleADemo from "./Components/ScheduleADemo/ScheduleADemo";
+import SuccessModal from "./Components/SuccessModal/SuccessModal";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [successModal, setSuccessModal] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
   const [_, setSchedulerData] = useState({
     firmName: "",
@@ -40,16 +42,24 @@ function App() {
       description: "",
       isSeller: false,
     });
+    setSuccessModal(true);
+    setTimeout(() => {
+      setSuccessModal(false);
+    }, 3000);
   }
 
-  useEffect(() => {
-    console.log(window.location, "Hello");
-  }, [window.location.hash, window.location.pathname]);
+  // useEffect(() => {
+  //   console.log(window.location, "Hello");
+  // }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    if (window.location.hash === "") {
+      setTimeout(() => {
+        setShowLoader(true);
+      }, 5000);
+    } else {
       setShowLoader(true);
-    }, 5000);
+    }
     // window.scrollTo(0, 0);
   }, []);
 
@@ -60,12 +70,17 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      {console.log(window.location)}
       <Switch>
         <Route path="/help">
           <ScheduleADemo
             scheduleDemoHandler={scheduleDemoHandler}
             scheduleDataHandler={scheduleDataHandler}
             isOpen={showModal}
+          />
+          <SuccessModal
+            isOpen={successModal}
+            closeModal={() => setSuccessModal(false)}
           />
           <Navbar schedulerModalHandler={setShowModal} />
           <Help />
@@ -102,10 +117,10 @@ function App() {
           <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/">
-          {console.log(window.location.hash)}
-          {/* {window.location.hash === "" && ( */}
-          <SiteLoader showLoader={showLoader} />
-          {/* )} */}
+          {/* {console.log(window.location.hash)} */}
+          {window.location.hash === "" && (
+            <SiteLoader showLoader={showLoader} />
+          )}
           {showLoader === true && (
             <>
               <ScheduleADemo

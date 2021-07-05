@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Accordion, Card, Row } from "react-bootstrap";
 import { Container } from "reactstrap";
-import faqData from "./helpdata.json";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./help.css";
+import faqData from "./helpdata.json";
 import PatternHelp from "../Images/pattern help.svg";
 import PlusSVG from "../Images/plus.svg";
 import MinusSVG from "../Images/Minus .svg";
@@ -22,6 +24,9 @@ function Help() {
   };
 
   useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
     let marker = document.querySelector("#marker");
 
     marker.style.left = generalRef?.current?.offsetLeft + "px";
@@ -38,9 +43,25 @@ function Help() {
           <Container>
             <Row className="help-container-welcome">
               <div style={{ textAlign: "left" }} className="pt-5">
-                <h3 className="h3 mt-5 mb-3 help-heading">Namaste!</h3>
-                <h3 className="h3 mb-3 help-heading">How can we assist you?</h3>
-                <p className="help-write-to-us body-copy mb-3">
+                <h3
+                  className="h3 mt-5 mb-3 help-heading"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  Namaste!
+                </h3>
+                <h3
+                  className="h3 mb-3 help-heading"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  How can we assist you?
+                </h3>
+                <p
+                  className="help-write-to-us body-copy mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >
                   Write us on{" "}
                   <span className="highlight-purple">Support@liveorder.in</span>{" "}
                   or Call{" "}
@@ -58,7 +79,7 @@ function Help() {
 
         <Container className="help-faq-container">
           <Row className="help-faq-row mx-5 my-1 ml-0 mb-3">
-            <div id="marker"></div>
+            <div id="marker" data-aos="zoom-out-up" data-aos-delay="1000"></div>
             <div
               className="d-flex align-items-baseline justify-content-start"
               style={{
@@ -76,6 +97,8 @@ function Help() {
                     ? "cursor-pointer active"
                     : "cursor-pointer"
                 }
+                data-aos="flip-down"
+                data-aos-delay="1000"
               >
                 General
               </h4>
@@ -87,6 +110,8 @@ function Help() {
                     ? "cursor-pointer active"
                     : "cursor-pointer"
                 }
+                data-aos="flip-down"
+                data-aos-delay="1250"
               >
                 For Buyers
               </h4>
@@ -98,6 +123,8 @@ function Help() {
                     ? "cursor-pointer active"
                     : "cursor-pointer"
                 }
+                data-aos="flip-down"
+                data-aos-delay="1500"
               >
                 For Sellers
               </h4>
@@ -107,7 +134,13 @@ function Help() {
           <Accordion className="px-5 mb-5">
             {faqData[section].map((sec, secIndex) => {
               return (
-                <Card className="help-card text-left" key={secIndex}>
+                <Card
+                  className="help-card text-left"
+                  key={secIndex}
+                  data-aos="fade-up"
+                  data-aos-delay={`${(secIndex + 1) * 50}`}
+                  data-aos-offset="50"
+                >
                   <Accordion.Toggle
                     as="text"
                     eventKey={`${secIndex}`}
@@ -157,12 +190,6 @@ function Help() {
           </Accordion>
         </Container>
       </div>
-      {/* <HeroSection />
-      <WhyLiveSection />
-      <NewVideo />
-      <PartnerSection />
-      <Testimonials />
-      <LetsStartSection /> */}
     </>
   );
 }

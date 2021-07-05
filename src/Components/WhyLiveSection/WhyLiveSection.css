@@ -72,6 +72,7 @@
   left: 0%;
   background-color: #fff;
   transition: 0.2s ease-in-out;
+  border-radius: 14px;
 }
 
 .SellerTrackingCardSection .card .card-body {

@@ -1,0 +1,203 @@
+.terms-container {
+  margin-top: 96px;
+}
+.terms-container-fluid {
+  position: relative;
+  /* background: url("../../Images/Bg\ Of\ policy\ doc.svg") no-repeat center; */
+  height: 320px;
+  background-color: #ebf7f9;
+}
+
+.terms-container-fluid .left-pattern,
+.terms-container-fluid .right-pattern {
+  position: absolute;
+  height: 100%;
+}
+
+.terms-container-fluid .left-pattern {
+  left: 0;
+  /* top: 0; */
+  top: 52px;
+  height: 70%;
+}
+
+.terms-container-fluid .right-pattern {
+  right: 0;
+  top: 45px;
+  height: 85%;
+}
+
+.terms-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.terms-heading,
+.terms-subheading {
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  /* text-align: left; */
+  color: #2e3e6a !important;
+}
+
+.terms-heading {
+  /* margin: 0 0 12px 164px; */
+  font-family: Quicksand;
+  font-size: 39px !important;
+  font-weight: bold !important;
+}
+
+.terms-subheading {
+  /* margin: 12px 96px 103px 52px; */
+  font-family: Quicksand;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+}
+
+.terms-content-container {
+  position: relative;
+  width: 768px !important;
+  min-height: 921.6px;
+  margin-bottom: 2rem !important;
+  background-color: white;
+  margin-top: -139px !important;
+  padding: 47px 34px 40px 47.6px !important;
+  text-align: left;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.06) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.terms-content-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.terms-content-header {
+  font-family: Quicksand;
+  font-size: 23px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #343a40;
+  margin-bottom: 8px !important;
+}
+
+.terms-content-date {
+  font-size: 14px;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b636a;
+}
+
+.terms-content-disclaimer {
+  margin-top: 31px !important;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b636a;
+}
+
+.terms-content-point {
+  margin-top: 24px !important;
+  margin-bottom: 12px !important;
+  font-family: Quicksand;
+  font-size: 19px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #343a40;
+}
+
+.terms-content-paragraph {
+  margin-top: 12px !important;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b636a;
+}
+
+.terms-content-subpoint {
+  position: relative;
+  font-family: Quicksand;
+  font-size: 16px;
+  padding-left: 24px !important;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b636a;
+}
+
+.terms-content-subpoint::before {
+  position: absolute;
+  content: "";
+  left: 8px;
+  top: 11px;
+  background-color: #343a40;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.terms-button-container {
+  margin-top: 62px;
+}
+
+.terms-button {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.57 !important;
+  letter-spacing: 0.28px !important;
+  /* s */
+}
+
+.terms-button.decline {
+  color: #343a40 !important;
+  width: 144px;
+  height: 48px;
+  margin: 0 24px 0px 0px;
+  border-radius: 8px;
+}
+
+.terms-button.decline:hover {
+  box-shadow: 0 6px 12px rgb(0 0 0 / 5%);
+}
+
+.terms-button.agree {
+  color: #ffffff !important;
+  width: 144px;
+  height: 48px;
+  margin: 0 6px 0 24px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #674bf2, #6c1ad8);
+}

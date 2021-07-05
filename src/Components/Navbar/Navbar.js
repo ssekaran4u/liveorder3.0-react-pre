@@ -32,7 +32,7 @@ class Navbar extends Component {
   render() {
     return (
       <div
-        data-aos-delay="500"
+        data-aos-delay="250"
         data-aos="slide-down"
         className={`NavbarContainer ${
           this.state.scroll === true ? "navbar-fixed" : ""
@@ -47,8 +47,8 @@ class Navbar extends Component {
               {MenuItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <Link
-                      to={item.url}
+                    <a
+                      href={item.url}
                       className={
                         window.location.pathname === `/${item.url}`
                           ? `navbar-highlight ${item.cName}`
@@ -56,7 +56,7 @@ class Navbar extends Component {
                       }
                     >
                       {item.title}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}

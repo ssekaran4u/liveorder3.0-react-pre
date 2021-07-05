@@ -130,13 +130,13 @@ function FooterPage(props) {
               <h3 className="footer-title">Our Policies </h3>
               <ul className="footer-list">
                 <li>
-                  <a href="#">Privacy policy</a>
+                  <a href="/privacy">Privacy policy</a>
                 </li>
                 <li>
-                  <Link to="/terms">Terms and Conditions</Link>
+                  <a href="/terms">Terms and Conditions</a>
                 </li>
                 <li>
-                  <a href="#">Cookies Policy</a>
+                  <a href="/cookie">Cookies Policy</a>
                 </li>
               </ul>
             </Col>

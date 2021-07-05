@@ -8,6 +8,8 @@ import PartnerSection from "./Components/PartnerSection/PartnerSection";
 import LetsStartSection from "./Components/LetsStartSection/LetsStartSection";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import TermsConditions from "./Components/TermsConditionsSection/TermsConditionsSection";
+import CookiePolicy from "./Components/CookiePolicy/CookiePolicy";
+import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
 import NewVideo from "./Components/VideoSection/NewVideo";
 import "../node_modules/react-modal-video/css/modal-video.min.css";
 import Help from "./routes/Help";
@@ -48,7 +50,7 @@ function App() {
     setTimeout(() => {
       setShowLoader(true);
     }, 5000);
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   function scheduleDataHandler(data) {
@@ -58,18 +60,46 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <ScheduleADemo
-        scheduleDemoHandler={scheduleDemoHandler}
-        scheduleDataHandler={scheduleDataHandler}
-        isOpen={showModal}
-      />
-      <Navbar schedulerModalHandler={setShowModal} />
       <Switch>
         <Route path="/help">
+          <ScheduleADemo
+            scheduleDemoHandler={scheduleDemoHandler}
+            scheduleDataHandler={scheduleDataHandler}
+            isOpen={showModal}
+          />
+          <Navbar schedulerModalHandler={setShowModal} />
           <Help />
+          <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/terms">
+          <ScheduleADemo
+            scheduleDemoHandler={scheduleDemoHandler}
+            scheduleDataHandler={scheduleDataHandler}
+            isOpen={showModal}
+          />
+          <Navbar schedulerModalHandler={setShowModal} />
           <TermsConditions />
+          <FooterPage schedulerModalHandler={setShowModal} />
+        </Route>
+        <Route path="/privacy">
+          <ScheduleADemo
+            scheduleDemoHandler={scheduleDemoHandler}
+            scheduleDataHandler={scheduleDataHandler}
+            isOpen={showModal}
+          />
+          <Navbar schedulerModalHandler={setShowModal} />
+          <PrivacyPolicy />
+          <FooterPage schedulerModalHandler={setShowModal} />
+        </Route>
+        <Route path="/cookie">
+          <ScheduleADemo
+            scheduleDemoHandler={scheduleDemoHandler}
+            scheduleDataHandler={scheduleDataHandler}
+            isOpen={showModal}
+          />
+          <Navbar schedulerModalHandler={setShowModal} />
+          <CookiePolicy />
+          <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/">
           {console.log(window.location.hash)}
@@ -78,17 +108,24 @@ function App() {
           {/* )} */}
           {showLoader === true && (
             <>
+              <ScheduleADemo
+                scheduleDemoHandler={scheduleDemoHandler}
+                scheduleDataHandler={scheduleDataHandler}
+                isOpen={showModal}
+              />
+              <Navbar schedulerModalHandler={setShowModal} />
               <HeroSection />
               <WhyLiveSection schedulerModalHandler={setShowModal} />
               <NewVideo />
               <PartnerSection />
               <Testimonials />
               <LetsStartSection schedulerModalHandler={setShowModal} />
+              <FooterPage schedulerModalHandler={setShowModal} />
             </>
           )}
         </Route>
       </Switch>
-      <FooterPage schedulerModalHandler={setShowModal} />
+      {/* <FooterPage schedulerModalHandler={setShowModal} /> */}
     </Router>
   );
 }

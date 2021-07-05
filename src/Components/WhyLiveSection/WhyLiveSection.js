@@ -60,7 +60,7 @@ class WhyLiveSection extends Component {
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
             <span
               data-aos="fade-up"
-              data-aos-delay="500"
+              data-aos-delay="1500"
               data-aos-offset="-100"
             >
               <Lottie
@@ -102,7 +102,7 @@ class WhyLiveSection extends Component {
         <div
           className="SellerTrackingCardSection section-1 mr-0 mr-lg-4"
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="1500"
         >
           <div className="card mb-4 right-seller">
             <div className="card-body p-0">
@@ -213,7 +213,7 @@ class WhyLiveSection extends Component {
         <div
           className="SellerTrackingCardSection section-2"
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="1500"
           data-aos-offset="-100"
         >
           <div className="card mb-4 GradientCard bill-to-bill">

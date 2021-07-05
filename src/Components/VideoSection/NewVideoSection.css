@@ -57,9 +57,7 @@
   outline: none;
 }
 
-.featured-video .video-btn.video-popup:before {
-  content: "";
-  display: block;
+.featured-video .video-btn.video-popup .svg-blob-red {
   position: absolute;
   z-index: -1;
   width: 160px;
@@ -71,7 +69,7 @@
   top: -60px;
 }
 
-.featured-video .video-btn.video-popup > svg {
+.featured-video .video-btn.video-popup .svg-blob-blue {
   bottom: -28%;
   /* left: -32%; */
   left: -19%;

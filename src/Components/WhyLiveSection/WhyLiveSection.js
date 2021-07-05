@@ -60,7 +60,7 @@ class WhyLiveSection extends Component {
             {/* <img src={QMarkImg} alt="Why Live Order" className="mb-3" /> */}
             <span
               data-aos="fade-up"
-              data-aos-delay="1500"
+              data-aos-delay="1250"
               data-aos-offset="-100"
             >
               <Lottie
@@ -76,7 +76,7 @@ class WhyLiveSection extends Component {
                 }}
               />
             </span>
-            <h3 data-aos="fade-up" data-aos-delay="500" className="h3 mb-3">
+            <h3 data-aos="fade-up" data-aos-delay="250" className="h3 mb-3">
               Why Live Order ?
             </h3>
             <p
@@ -90,7 +90,7 @@ class WhyLiveSection extends Component {
             </p>
             <button
               data-aos="flip-left"
-              data-aos-delay="1000"
+              data-aos-delay="750"
               type="button"
               className="btn btn-primary demo-btn"
               onClick={() => this.props.schedulerModalHandler(true)}
@@ -99,12 +99,12 @@ class WhyLiveSection extends Component {
             </button>
           </div>
         </div>
-        <div
-          className="SellerTrackingCardSection section-1 mr-0 mr-lg-4"
-          data-aos="fade-up"
-          data-aos-delay="1500"
-        >
-          <div className="card mb-4 right-seller">
+        <div className="SellerTrackingCardSection section-1 mr-0 mr-lg-4">
+          <div
+            className="card mb-4 right-seller"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+          >
             <div className="card-body p-0">
               <div className="CardIconHolder SellerImg d-flex align-items-center justify-content-center mb-4">
                 {/* <img src={SellerImg} alt="Find The Right Sellers" /> */}
@@ -163,7 +163,11 @@ class WhyLiveSection extends Component {
               </p>
             </div>
           </div>
-          <div className="card mb-4 mb-lg-0 centralized-tracking">
+          <div
+            className="card mb-4 mb-lg-0 centralized-tracking"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className="card-body p-0">
               <div className="CardIconHolder TrackingImg d-flex align-items-center justify-content-center mb-4">
                 {/* <img src={TrackingImg} alt="Centralised Tracking" /> */}
@@ -210,13 +214,13 @@ class WhyLiveSection extends Component {
             </div>
           </div>
         </div>
-        <div
-          className="SellerTrackingCardSection section-2"
-          data-aos="fade-up"
-          data-aos-delay="1500"
-          data-aos-offset="-100"
-        >
-          <div className="card mb-4 GradientCard bill-to-bill">
+        <div className="SellerTrackingCardSection section-2">
+          <div
+            className="card mb-4 GradientCard bill-to-bill"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-offset="-100"
+          >
             <div className="card-body p-0">
               <div className="CardIconHolder ReconciliatonImg d-flex align-items-center justify-content-center mb-4">
                 {/* <img
@@ -299,7 +303,11 @@ class WhyLiveSection extends Component {
               </p>
             </div>
           </div>
-          <div className="card manage-team">
+          <div
+            className="card manage-team"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className="card-body p-0">
               <div className="CardIconHolder ManageTeamImg d-flex align-items-center justify-content-center mb-4">
                 {/* <img src={ManageTeamImg} alt="Manage Your Entire Team" /> */}

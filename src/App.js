@@ -70,7 +70,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      {console.log(window.location)}
+      {/* {console.log(window.location)}
+      {console.log(props)} */}
+      {/* {console.log(document., "document")} */}
       <Switch>
         <Route path="/help">
           <ScheduleADemo
@@ -92,6 +94,10 @@ function App() {
             scheduleDataHandler={scheduleDataHandler}
             isOpen={showModal}
           />
+          <SuccessModal
+            isOpen={successModal}
+            closeModal={() => setSuccessModal(false)}
+          />
           <Navbar schedulerModalHandler={setShowModal} />
           <TermsConditions />
           <FooterPage schedulerModalHandler={setShowModal} />
@@ -102,6 +108,10 @@ function App() {
             scheduleDataHandler={scheduleDataHandler}
             isOpen={showModal}
           />
+          <SuccessModal
+            isOpen={successModal}
+            closeModal={() => setSuccessModal(false)}
+          />
           <Navbar schedulerModalHandler={setShowModal} />
           <PrivacyPolicy />
           <FooterPage schedulerModalHandler={setShowModal} />
@@ -111,6 +121,10 @@ function App() {
             scheduleDemoHandler={scheduleDemoHandler}
             scheduleDataHandler={scheduleDataHandler}
             isOpen={showModal}
+          />
+          <SuccessModal
+            isOpen={successModal}
+            closeModal={() => setSuccessModal(false)}
           />
           <Navbar schedulerModalHandler={setShowModal} />
           <CookiePolicy />
@@ -127,6 +141,10 @@ function App() {
                 scheduleDemoHandler={scheduleDemoHandler}
                 scheduleDataHandler={scheduleDataHandler}
                 isOpen={showModal}
+              />
+              <SuccessModal
+                isOpen={successModal}
+                closeModal={() => setSuccessModal(false)}
               />
               <Navbar schedulerModalHandler={setShowModal} />
               <HeroSection />

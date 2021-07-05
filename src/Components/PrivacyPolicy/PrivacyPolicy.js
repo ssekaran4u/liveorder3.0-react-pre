@@ -34,14 +34,14 @@ function PrivacyPolicy() {
               <p
                 className="mt-1 mb-3 terms-heading"
                 data-aos="fade-up"
-                data-aos-delay="750"
+                data-aos-delay="250"
               >
                 Privacy Policy
               </p>
               <p
                 className="h3 mb-3 terms-subheading"
                 data-aos="fade-up"
-                data-aos-delay="1000"
+                data-aos-delay="400"
               >
                 Version: 22.02.2021
               </p>
@@ -53,19 +53,19 @@ function PrivacyPolicy() {
       <Container
         className="terms-content-container"
         data-aos="fade-up"
-        data-aos-delay="1500"
+        // data-aos-delay="1500"
       >
         <p
           className="terms-content-header"
           data-aos="fade-up"
-          data-aos-delay="1750"
+          // data-aos-delay="1750"
         >
           Terms & Conditions
         </p>
         <p
           className="terms-content-date"
           data-aos="fade-up"
-          data-aos-delay="1850"
+          // data-aos-delay="1850"
         >
           Last Revised: 15 February, 2021
         </p>
@@ -73,21 +73,21 @@ function PrivacyPolicy() {
         <p
           className="terms-content-disclaimer"
           data-aos="fade-up"
-          data-aos-delay="1950"
+          // data-aos-delay="1950"
         >
           Please read all the terms & conditions carefully before accepting it.
         </p>
         <p
           className="terms-content-point"
           data-aos="fade-up"
-          data-aos-delay="2000"
+          // data-aos-delay="2000"
         >
           1. General
         </p>
         <p
           className="terms-content-paragraph"
           data-aos="fade-up"
-          data-aos-delay="2050"
+          // data-aos-delay="2050"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -96,7 +96,7 @@ function PrivacyPolicy() {
         <p
           className="terms-content-point"
           data-aos="fade-up"
-          data-aos-delay="2200"
+          // data-aos-delay="2200"
         >
           {" "}
           2. Credit Limit Introduction
@@ -104,7 +104,7 @@ function PrivacyPolicy() {
         <p
           className="terms-content-paragraph"
           data-aos="fade-up"
-          data-aos-delay="2250"
+          // data-aos-delay="2250"
         >
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
@@ -120,7 +120,8 @@ function PrivacyPolicy() {
         <p
           className="terms-content-point"
           data-aos="fade-up"
-          data-aos-delay="2400"
+          // data-aos-delay="2400"
+          data-aos-offset="-500"
         >
           2.1 Define Instruction
         </p>
@@ -143,14 +144,16 @@ function PrivacyPolicy() {
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="2450"
+          data-aos-offset="-500"
+          // data-aos-delay="2450"
         >
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced.
         </p>
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="2600"
+          data-aos-offset="-500"
+          // data-aos-delay="2600"
           data-aos-offset="-100"
         >
           1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.
@@ -158,7 +161,8 @@ function PrivacyPolicy() {
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="2650"
+          data-aos-offset="-500"
+          // data-aos-delay="2650"
           data-aos-offset="-100"
         >
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced.
@@ -166,14 +170,16 @@ function PrivacyPolicy() {
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-offset="-500"
+          // data-aos-delay="200"
         >
           1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.
         </p>
         <p
           className="terms-content-point"
           data-aos="fade-up"
-          data-aos-delay="350"
+          data-aos-offset="-500"
+          // data-aos-delay="350"
         >
           2.2 Terms & conditions
         </p>
@@ -189,14 +195,16 @@ function PrivacyPolicy() {
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-offset="-500"
+          // data-aos-delay="400"
         >
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced.
         </p>
         <p
           className="terms-content-subpoint"
           data-aos="fade-up"
-          data-aos-delay="450"
+          data-aos-offset="-500"
+          // data-aos-delay="450"
         >
           1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.
         </p>
@@ -205,7 +213,8 @@ function PrivacyPolicy() {
             variant="#343a40"
             className="terms-button decline mr-1"
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-offset="-500"
+            // data-aos-delay="500"
           >
             DECLINE
           </Button>
@@ -213,7 +222,8 @@ function PrivacyPolicy() {
             variant="primary"
             className="terms-button agree"
             data-aos="fade-up"
-            data-aos-delay="550"
+            data-aos-offset="-500"
+            // data-aos-delay="550"
           >
             I AGREE
           </Button>

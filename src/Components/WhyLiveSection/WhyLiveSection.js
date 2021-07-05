@@ -48,7 +48,7 @@ class WhyLiveSection extends Component {
     if (window.location.hash === "#whyLive") {
       let elm = document.querySelector(window.location.hash);
 
-      setTimeout(() => elm.scrollIntoView(), 500);
+      setTimeout(() => elm.scrollIntoView(), 150);
     }
   }
 

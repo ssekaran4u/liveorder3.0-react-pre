@@ -45,22 +45,22 @@ function Help() {
               <div style={{ textAlign: "left" }} className="pt-5">
                 <h3
                   className="h3 mt-5 mb-3 help-heading"
-                  data-aos="fade-up"
+                  data-aos="fade-down"
                   data-aos-delay="500"
                 >
                   Namaste!
                 </h3>
                 <h3
                   className="h3 mb-3 help-heading"
-                  data-aos="fade-up"
-                  data-aos-delay="700"
+                  data-aos="fade-down"
+                  data-aos-delay="500"
                 >
                   How can we assist you?
                 </h3>
                 <p
                   className="help-write-to-us body-copy mb-3"
-                  data-aos="fade-up"
-                  data-aos-delay="900"
+                  data-aos="fade-down"
+                  data-aos-delay="500"
                 >
                   Write us on{" "}
                   <span className="highlight-purple">Support@liveorder.in</span>{" "}
@@ -98,7 +98,7 @@ function Help() {
                     : "cursor-pointer"
                 }
                 data-aos="flip-down"
-                data-aos-delay="1000"
+                data-aos-delay="250"
               >
                 General
               </h4>
@@ -111,7 +111,7 @@ function Help() {
                     : "cursor-pointer"
                 }
                 data-aos="flip-down"
-                data-aos-delay="1250"
+                data-aos-delay="500"
               >
                 For Buyers
               </h4>
@@ -124,7 +124,7 @@ function Help() {
                     : "cursor-pointer"
                 }
                 data-aos="flip-down"
-                data-aos-delay="1500"
+                data-aos-delay="750"
               >
                 For Sellers
               </h4>
@@ -139,7 +139,7 @@ function Help() {
                   key={secIndex}
                   data-aos="fade-up"
                   data-aos-delay={`${(secIndex + 1) * 50}`}
-                  data-aos-offset="50"
+                  data-aos-offset="-500"
                 >
                   <Accordion.Toggle
                     as="text"

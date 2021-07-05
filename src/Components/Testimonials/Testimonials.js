@@ -382,9 +382,9 @@ class Testimonials extends Component {
                   key={compIndex}
                   href="#"
                   className={`clientLogos ${compData.name}Logo`}
-                  data-aos="zoom-out"
-                  data-aos-delay="1050"
-                  data-aos-offset="100"
+                  // data-aos="zoom-out"
+                  // data-aos-delay="1050"
+                  // data-aos-offset="100"
                   style={{
                     ...this.state[this.state.styleArray][compIndex],
                     height: "auto",

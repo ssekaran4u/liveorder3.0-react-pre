@@ -11,14 +11,21 @@ import "./ScheduleADemo.css";
 function ScheduleADemo(props) {
   const [modal, setModal] = useState(false);
   const [firstName, setFirstName] = useState("");
+  const [errorName, setErrorName] = useState(false);
+
   const [ownerName, setOwnerName] = useState("");
+  const [errorOwner, setErrorOwner] = useState(false);
+
   const [phone, setPhone] = useState("");
-  // const [inValidPhone, setInvalidPhone] = useState(false);
-  // const [inValidPincode, setInvalidPincode] = useState(false);
+  const [errorPhone, setErrorPhone] = useState(false);
+
   const [pinCode, setPinCode] = useState("");
+  const [errorPincode, setErrorPincode] = useState(false);
+
   const [description, setDescription] = useState(
     "Yes, I am interested in a demo."
   );
+  const [errorDescription, setErrorDescription] = useState(false);
   const [isSeller, setIsSeller] = useState(false);
 
   useEffect(() => {
@@ -26,6 +33,26 @@ function ScheduleADemo(props) {
   }, [props.isOpen]);
 
   function dataHandler() {
+    // if (firstName === "") {
+    //   setErrorName(true);
+    // }
+
+    // if (ownerName === "") {
+    //   setErrorOwner(true);
+    // }
+
+    // if (phone === "") {
+    //   setErrorPhone(true);
+    // }
+
+    // if (pinCode === "") {
+    //   setErrorPincode(true);
+    // }
+
+    // if (description === "") {
+    //   setErrorDescription(true);
+    // }
+
     let data = {
       firstName,
       ownerName,
@@ -34,10 +61,29 @@ function ScheduleADemo(props) {
       description,
       isSeller,
     };
+
+    // if (
+    //   errorName === false &&
+    //   errorOwner === false &&
+    //   errorPhone === false &&
+    //   errorPincode === false &&
+    //   errorDescription === false
+    // ) {
     props.scheduleDataHandler(data);
     setModal(false);
     props.scheduleDemoHandler();
+    resetFormData();
+    // }
   }
+
+  const resetFormData = () => {
+    setFirstName("");
+    setOwnerName("");
+    setPhone("");
+    setPinCode("");
+    setDescription("");
+    setIsSeller(false);
+  };
 
   const handleNumberChange = (e, type) => {
     let telephone = e.target.value;
@@ -89,7 +135,16 @@ function ScheduleADemo(props) {
         <Form className="mt-4">
           {/* Firm Name and Owner Name */}
           <Row className="align-items-center justify-content-center mt-auto mb-3 mx-5">
-            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
+            <Col
+              xs="12"
+              sm="12"
+              md="12"
+              lg="6"
+              xl="6"
+              className={`${
+                errorName === true ? "error-red" : ""
+              } pl-auto pr-2`}
+            >
               <div className="sample-input-img shop">
                 <img src={ShopSVG} width="16px" height="16px" alt="user-icon" />
               </div>
@@ -98,10 +153,27 @@ function ScheduleADemo(props) {
                 type="text"
                 placeholder="Firm Name"
                 value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorName(true);
+                    setFirstName(e.target.value);
+                  } else {
+                    setErrorName(false);
+                    setFirstName(e.target.value);
+                  }
+                }}
               />
             </Col>
-            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
+            <Col
+              xs="12"
+              sm="12"
+              md="12"
+              lg="6"
+              xl="6"
+              className={`${
+                errorOwner === true ? "error-red" : ""
+              } pr-auto pl-2`}
+            >
               <div className="sample-input-img user">
                 <img src={UserSVG} width="16px" height="16px" alt="user-icon" />
               </div>
@@ -110,14 +182,31 @@ function ScheduleADemo(props) {
                 type="text"
                 placeholder="Owner Name"
                 value={ownerName}
-                onChange={(e) => setOwnerName(e.target.value)}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorOwner(true);
+                    setOwnerName(e.target.value);
+                  } else {
+                    setErrorOwner(false);
+                    setOwnerName(e.target.value);
+                  }
+                }}
               />
             </Col>
           </Row>
 
           {/* Phone Number and Pin Code */}
           <Row className="align-items-center justify-content-center mb-3 mt-2 mx-5">
-            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pl-auto pr-2">
+            <Col
+              xs="12"
+              sm="12"
+              md="12"
+              lg="6"
+              xl="6"
+              className={`${
+                errorPhone === true ? "error-red" : ""
+              } pr-2 pl-auto`}
+            >
               <div className="sample-input-img smartphone">
                 <img
                   src={SmartphoneSVG}
@@ -133,10 +222,27 @@ function ScheduleADemo(props) {
                 maxLength={10}
                 placeholder="Phone Number/Landline"
                 value={phone}
-                onChange={(e) => handleNumberChange(e, "phone")}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorPhone(true);
+                    handleNumberChange(e, "phone");
+                  } else {
+                    setErrorPhone(false);
+                    handleNumberChange(e, "phone");
+                  }
+                }}
               />
             </Col>
-            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="pr-auto pl-2">
+            <Col
+              xs="12"
+              sm="12"
+              md="12"
+              lg="6"
+              xl="6"
+              className={`${
+                errorPincode === true ? "error-red" : ""
+              } pr-auto pl-2`}
+            >
               <div className="sample-input-img pincode">
                 <img
                   src={ZipcodeSVG}
@@ -152,7 +258,15 @@ function ScheduleADemo(props) {
                 placeholder="Pincode"
                 maxLength={6}
                 value={pinCode}
-                onChange={(e) => handleNumberChange(e, "pincode")}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorPincode(true);
+                    handleNumberChange(e, "pincode");
+                  } else {
+                    setErrorPincode(false);
+                    handleNumberChange(e, "pincode");
+                  }
+                }}
               />
             </Col>
           </Row>
@@ -186,12 +300,22 @@ function ScheduleADemo(props) {
                   resize: "none",
                 }}
                 id="inlineFormInputGroup"
-                className="schedule-form"
+                className={`${
+                  errorDescription === true ? "error-red" : ""
+                } schedule-form`}
                 as="textarea"
                 rows={4}
                 maxLength="500"
                 value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorDescription(true);
+                    setDescription(e.target.value);
+                  } else {
+                    setErrorDescription(false);
+                    setDescription(e.target.value);
+                  }
+                }}
               />
             </Col>
           </Row>
@@ -210,7 +334,7 @@ function ScheduleADemo(props) {
           </Row>
           <Row className="mx-5 mb-4 mt-auto justify-content-end row">
             <div className="mr-3 close-btn">
-              <Button variant="#c3cde4" onClick={props.scheduleDemoHandler}>
+              <Button variant="#c3cde4" onClick={props.closeModal}>
                 Close
               </Button>
             </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+
 import Navbar from "./Components/Navbar/Navbar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import WhyLiveSection from "./Components/WhyLiveSection/WhyLiveSection";
@@ -18,6 +19,9 @@ import SiteLoader from "./Components/SiteLoader/SiteLoader";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import ScheduleADemo from "./Components/ScheduleADemo/ScheduleADemo";
 import SuccessModal from "./Components/SuccessModal/SuccessModal";
+
+import { createBrowserHistory } from "history";
+let history = createBrowserHistory();
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -48,104 +52,64 @@ function App() {
     }, 3000);
   }
 
-  // useEffect(() => {
-  //   console.log(window.location, "Hello");
-  // }, []);
-
   useEffect(() => {
-    if (window.location.hash === "") {
+    if (history.location.pathname === "/" && history.location.hash === "") {
       setTimeout(() => {
         setShowLoader(true);
       }, 5000);
     } else {
       setShowLoader(true);
     }
-    // window.scrollTo(0, 0);
-  }, []);
+  }, [history.location.pathname]);
 
   function scheduleDataHandler(data) {
     setSchedulerData((prev) => ({ ...prev, data }));
   }
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
-      {/* {console.log(window.location)}
-      {console.log(props)} */}
-      {/* {console.log(document., "document")} */}
+
+      <ScheduleADemo
+        scheduleDemoHandler={scheduleDemoHandler}
+        scheduleDataHandler={scheduleDataHandler}
+        isOpen={showModal}
+        closeModal={() => setShowModal(false)}
+      />
+
+      <SuccessModal
+        isOpen={successModal}
+        closeModal={() => setSuccessModal(false)}
+      />
+
       <Switch>
         <Route path="/help">
-          <ScheduleADemo
-            scheduleDemoHandler={scheduleDemoHandler}
-            scheduleDataHandler={scheduleDataHandler}
-            isOpen={showModal}
-          />
-          <SuccessModal
-            isOpen={successModal}
-            closeModal={() => setSuccessModal(false)}
-          />
           <Navbar schedulerModalHandler={setShowModal} />
           <Help />
           <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/terms">
-          <ScheduleADemo
-            scheduleDemoHandler={scheduleDemoHandler}
-            scheduleDataHandler={scheduleDataHandler}
-            isOpen={showModal}
-          />
-          <SuccessModal
-            isOpen={successModal}
-            closeModal={() => setSuccessModal(false)}
-          />
           <Navbar schedulerModalHandler={setShowModal} />
           <TermsConditions />
           <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/privacy">
-          <ScheduleADemo
-            scheduleDemoHandler={scheduleDemoHandler}
-            scheduleDataHandler={scheduleDataHandler}
-            isOpen={showModal}
-          />
-          <SuccessModal
-            isOpen={successModal}
-            closeModal={() => setSuccessModal(false)}
-          />
           <Navbar schedulerModalHandler={setShowModal} />
           <PrivacyPolicy />
           <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/cookie">
-          <ScheduleADemo
-            scheduleDemoHandler={scheduleDemoHandler}
-            scheduleDataHandler={scheduleDataHandler}
-            isOpen={showModal}
-          />
-          <SuccessModal
-            isOpen={successModal}
-            closeModal={() => setSuccessModal(false)}
-          />
           <Navbar schedulerModalHandler={setShowModal} />
           <CookiePolicy />
           <FooterPage schedulerModalHandler={setShowModal} />
         </Route>
         <Route path="/">
-          {/* {console.log(window.location.hash)} */}
-          {window.location.hash === "" && (
-            <SiteLoader showLoader={showLoader} />
-          )}
+          {history.location.pathname === "/" &&
+            history.location.hash === "" && (
+              <SiteLoader showLoader={showLoader} />
+            )}
           {showLoader === true && (
             <>
-              <ScheduleADemo
-                scheduleDemoHandler={scheduleDemoHandler}
-                scheduleDataHandler={scheduleDataHandler}
-                isOpen={showModal}
-              />
-              <SuccessModal
-                isOpen={successModal}
-                closeModal={() => setSuccessModal(false)}
-              />
               <Navbar schedulerModalHandler={setShowModal} />
               <HeroSection />
               <WhyLiveSection schedulerModalHandler={setShowModal} />
@@ -158,8 +122,7 @@ function App() {
           )}
         </Route>
       </Switch>
-      {/* <FooterPage schedulerModalHandler={setShowModal} /> */}
-    </Router>
+    </>
   );
 }
 

@@ -313,3 +313,9 @@
   font-size: 13px !important;
   font-weight: 600 !important;
 }
+
+.error-red .sample-input-img,
+.error-red .sample-input-text,
+.error-red.schedule-form {
+  border-color: #ef2b4a !important;
+}

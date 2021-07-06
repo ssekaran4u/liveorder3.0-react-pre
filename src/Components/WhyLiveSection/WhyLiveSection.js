@@ -98,7 +98,8 @@ class WhyLiveSection extends Component {
             <button
               data-aos="flip-left"
               data-aos-once="true"
-              data-aos-delay="750"
+              // data-aos-delay="750"
+              data-aos-offset="300"
               type="button"
               className="btn btn-primary demo-btn"
               onClick={() => this.props.schedulerModalHandler(true)}

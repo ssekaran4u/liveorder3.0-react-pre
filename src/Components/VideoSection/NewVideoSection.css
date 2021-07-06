@@ -351,3 +351,14 @@ img.card {
     transform: translateY(90px);
   }
 }
+
+.VideoContainer .featured-video {
+  padding-top: 350px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.VideoContainer .featured-video.fade-up-animation {
+  padding-top: 0px;
+  opacity: 1;
+}

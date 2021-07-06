@@ -21,19 +21,27 @@ class NewVideo extends Component {
   }
 
   componentDidMount() {
-    let div = document.querySelector(".VideoContainer");
+    let div = document.querySelector(".featured-video");
 
     Aos.init({
       duration: 1000,
     });
 
-    let observer = new IntersectionObserver((entries, observer) => {
-      this.setState((prev) => ({
-        isIntersecting: entries[0].isIntersecting,
-      }));
+    let observer = new IntersectionObserver(
+      (entries, observer) => {
+        this.setState((prev) => ({
+          isIntersecting: entries[0].isIntersecting,
+        }));
 
-      // console.log(entries[0]);
-    }, {});
+        // console.log(entries[0]);
+        if (entries[0].isIntersecting) {
+          if (!div.classList.contains("fade-up-animation")) {
+            div.classList.add("fade-up-animation");
+          }
+        }
+      },
+      { rootMargin: "-200px" }
+    );
 
     observer.observe(div);
   }
@@ -57,13 +65,7 @@ class NewVideo extends Component {
         >
           Click on the video to get to know us better
         </h4>
-        <div
-          className="row-narrow"
-          data-aos-once="true"
-          data-aos="fade-up"
-          data-aos-offset="150"
-          data-aos-delay="500"
-        >
+        <div className="row-narrow">
           <div className="featured-video">
             <div className="column-container">
               <div className="column centered">

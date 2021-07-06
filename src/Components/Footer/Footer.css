@@ -50,7 +50,9 @@
   color: rgba(255, 255, 255, 0.6) !important;
   transition: 0.3s ease-in-out;
 }
-.footer-list li a {
+.footer-list li a,
+.footer-list li span {
+  cursor: pointer;
   /* color: #fff; */
   color: rgba(255, 255, 255, 0.6) !important;
   text-decoration: unset;
@@ -59,7 +61,10 @@
 }
 .footer-list li a:hover,
 .footer-list li a:focus,
-.footer-list li a:active {
+.footer-list li a:active,
+.footer-list li span:hover,
+.footer-list li span:focus,
+.footer-list li span:active {
   /* color: #fff; */
   color: rgba(255, 255, 255, 1) !important;
   text-decoration: unset;

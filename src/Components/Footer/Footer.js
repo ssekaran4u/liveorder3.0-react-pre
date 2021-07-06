@@ -156,7 +156,7 @@ function FooterPage(props) {
                   <a href="#">support@c2info.com</a>
                 </li>
                 <li>
-                  <a href="#">+91 908 765 6789</a>
+                  <span>+91 908 765 6789</span>
                 </li>
               </ul>
             </Col>

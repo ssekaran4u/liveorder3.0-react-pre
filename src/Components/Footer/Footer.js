@@ -114,11 +114,9 @@ function FooterPage(props) {
               <h3 className="footer-title">Know Us</h3>
               <ul className="footer-list">
                 <li>
-                  <Link to="/#whyLive">Why Live Order</Link>
+                  <a href="/#whyLive">Why Live Order</a>
                 </li>
-                <li>
-                  <a href="#">Case Study</a>
-                </li>
+
                 <li>
                   <a onClick={() => props.schedulerModalHandler(true)}>
                     Schedule A Demo
@@ -155,7 +153,7 @@ function FooterPage(props) {
               <h3 className="footer-title">Need Help</h3>
               <ul className="footer-list">
                 <li>
-                  <a href="#">Support@c2info.com</a>
+                  <a href="#">support@c2info.com</a>
                 </li>
                 <li>
                   <a href="#">+91 908 765 6789</a>

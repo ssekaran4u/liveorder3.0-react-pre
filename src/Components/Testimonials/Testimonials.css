@@ -8,6 +8,7 @@
   /* background: url("../../Images/pattern.png") no-repeat center/cover; */
   background: url("../../Images/PatternTestimonials.svg") no-repeat;
   background-size: 100% auto;
+  overflow-x: hidden;
 }
 
 #before,

@@ -224,7 +224,7 @@ class Testimonials extends Component {
         this.resizeFunction();
         setInterval(() => {
           this.changeTestimonialHandler(-1);
-        }, 10000);
+        }, 7500);
       }
     );
   }
@@ -317,7 +317,7 @@ class Testimonials extends Component {
         <h2
           className="h2 mb-3"
           data-aos="fade-up"
-          data-aos-offset="200"
+          data-aos-offset="150"
           data-aos-once="true"
         >
           Testimonials
@@ -325,8 +325,8 @@ class Testimonials extends Component {
         <h4
           className="h4 grey-subtitle mb-5"
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="500"
+          data-aos-offset="100"
+          data-aos-delay="250"
           data-aos-once="true"
         >
           Hear from our happy customers
@@ -370,8 +370,8 @@ class Testimonials extends Component {
             <p
               id="TestimonialText"
               data-aos="fade-up"
-              data-aos-offset="150"
-              data-aos-delay="1000"
+              data-aos-offset="-100"
+              data-aos-delay="500"
               data-aos-once="true"
             >
               <span className="font-weight-bold">

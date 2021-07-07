@@ -208,12 +208,19 @@ h5.h5.HeroSubTitle {
 
 @media only screen and (max-width: 1599px) {
   .HeroSection {
-    padding: 0px 0 88px 0;
+    /* padding: 0px 0 88px 0; */
+    padding: 0px 0 16px 0;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .HeroSection {
-    padding: 8px 0 140px 0;
+    padding: 0px 0 16px 0;
+  }
+}
+
+@media only screen and (min-width: 1919px) {
+  .HeroSection {
+    padding: 16px 0 88px 0;
   }
 }

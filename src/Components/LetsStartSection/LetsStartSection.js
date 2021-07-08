@@ -39,7 +39,7 @@ class LetsStartSection extends Component {
         <div
           className="LetsStartSectionCard position-relative text-center"
           data-aos="fade-up"
-          data-aos-offset="300"
+          data-aos-offset="-100"
           data-aos-delay="0"
           data-aos-once="true"
         >
@@ -47,7 +47,7 @@ class LetsStartSection extends Component {
           <h3
             className="h3 text-white"
             data-aos="fade-up"
-            data-aos-offset="100"
+            data-aos-offset="-100"
             data-aos-delay="100"
             data-aos-once="true"
           >
@@ -56,7 +56,7 @@ class LetsStartSection extends Component {
           <p
             className="body-copy mb-5 text-white"
             data-aos="fade-up"
-            data-aos-offset="150"
+            data-aos-offset="-100"
             data-aos-delay="100"
             data-aos-once="true"
           >
@@ -66,8 +66,8 @@ class LetsStartSection extends Component {
             type="submit"
             className="btn demo-card-btn"
             data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="400"
+            data-aos-offset="-100"
+            data-aos-delay="100"
             data-aos-once="true"
             onClick={() => this.props.schedulerModalHandler(true)}
           >
@@ -76,22 +76,22 @@ class LetsStartSection extends Component {
           <div
             className="purple-blob2"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-delay="400"
+            data-aos-offset="-50"
+            data-aos-delay="100"
             data-aos-once="true"
           ></div>
           <div
             className="green-circle"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-delay="200"
+            data-aos-offset="-50"
+            data-aos-delay="100"
             data-aos-once="true"
           ></div>
           <div
             className="orange-circle"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-delay="600"
+            data-aos-offset="-50"
+            data-aos-delay="100"
             data-aos-once="true"
           ></div>
         </div>
